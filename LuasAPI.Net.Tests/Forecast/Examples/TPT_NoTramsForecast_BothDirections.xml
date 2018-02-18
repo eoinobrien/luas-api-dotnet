@@ -1,0 +1,9 @@
+﻿<stopInfo created="2018-02-18T01:14:49" stop="The Point" stopAbv="TPT">
+	<message>Red Line services operating normally</message>
+	<direction name="Inbound">
+		<tram destination="No trams forecast" dueMins="" />
+	</direction>
+	<direction name="Outbound">
+		<tram destination="No trams forecast" dueMins="" />
+	</direction>
+</stopInfo>
