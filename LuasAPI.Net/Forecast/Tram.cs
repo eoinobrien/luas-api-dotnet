@@ -1,4 +1,4 @@
-﻿using LuasAPI.Net;
+﻿using LuasAPI.NET.Stations;
 using System.Xml.Serialization;
 
 namespace LuasAPI.NET.Forecast
@@ -16,7 +16,7 @@ namespace LuasAPI.NET.Forecast
 
 		public bool IsDue => DueMins.ToUpperInvariant() == "DUE";
 
-		public bool NoTramsForcast => Destination.ToUpperInvariant() == "NO TRAMS FORECAST";
+		public bool NoTramsForcast => Destination.ToUpperInvariant() == "NO TRAMS FORECAST" || DestinationStation == null;
 
 
 		public int Minutes
@@ -45,11 +45,11 @@ namespace LuasAPI.NET.Forecast
 
 			if (direction == Direction.Inbound)
 			{
-				return tram.DestinationStation.StationOrder <= userDestination.StationOrder;
+				return tram.DestinationStation.InboundStations.Contains(userDestination);
 			}
 			else
 			{
-				return tram.DestinationStation.StationOrder >= userDestination.StationOrder;
+				return tram.DestinationStation.OutboundStations.Contains(userDestination);
 			}
 		}
 	}

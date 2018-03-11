@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LuasAPI.Net
+namespace LuasAPI.NET
 {
 	public enum Direction
 	{

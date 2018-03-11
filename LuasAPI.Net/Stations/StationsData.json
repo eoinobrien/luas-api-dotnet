@@ -1,0 +1,700 @@
+﻿[{
+	"abbreviation" : "DEP",
+	"name" : "Depot",
+	"pronunciation" :"depot",
+	"line": "Depot",
+	"walking-transfer" : [],
+	"inbound-stations" : [],
+	"outbound-stations" : [],
+	"in-use" : false
+},
+{
+	"abbreviation" : "TPT",
+	"name" : "The Point",
+	"pronunciation" : "the point",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : [],
+	"outbound-stations" : ["SDK", "MYS", "GDK", "BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "SDK",
+	"name" : "Spencer Dock",
+	"pronunciation" : "spencer dock",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["TPT"],
+	"outbound-stations" : ["MYS", "GDK", "BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "MYS",
+	"name": "Mayor Square - NCI",
+	"pronunciation" : "mayor square - <say-as interpret-as=\"spell-out\">nci</say-as>",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["SDK", "TPT"],
+	"outbound-stations" : ["GDK", "BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "GDK",
+	"name" : "George's Dock",
+	"pronunciation" : "george's dock",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["MYS", "SDK", "TPT"],
+	"outbound-stations" : ["BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG",],
+	"in-use" : true
+},
+{
+	"abbreviation" : "CON",
+	"name" : "Connolly",
+	"pronunciation" : "connolly",
+	"line": "Red",
+	"walking-transfer" : ["BUS"],
+	"inbound-stations" : [],
+	"outbound-stations" : ["BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG",],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BUS",
+	"name": "Busáras",
+	"pronunciation" : "<phoneme alphabet=\"ipa\" ph=\"bʌsˠˌɑːɾˠəsˠ\">busaras</phoneme>",
+	"line": "Red",
+	"walking-transfer" : ["CON"],
+	"inbound-stations" : ["CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "ABB",
+	"name" : "Abbey Street",
+	"pronunciation" : "abbey street",
+	"line": "Red",
+	"walking-transfer" : ["OPG", "MAR"],
+	"inbound-stations" : ["BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "JER",
+	"name" : "Jervis",
+	"pronunciation" : "jervis",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "FOU",
+	"name" : "Four Courts",
+	"pronunciation" : "four courts",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "SMI",
+	"name" : "Smithfield",
+	"pronunciation" : "smithfield",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "MUS",
+	"name" : "Museum",
+	"pronunciation" : "museum",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "HEU",
+	"name" : "Heuston",
+	"pronunciation" : "heuston",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "JAM",
+	"name" : "James's",
+	"pronunciation" : "james's",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "FAT",
+	"name" : "Fatima",
+	"pronunciation" : "fatima",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "RIA",
+	"name" : "Rialto",
+	"pronunciation" : "rialto",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "SUI",
+	"name" : "Suir Road",
+	"pronunciation" : "suir road",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "GOL",
+	"name" : "Goldenbridge",
+	"pronunciation" : "goldenbridge",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "DRI",
+	"name" : "Drimnagh",
+	"pronunciation" : "drimnagh",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BLA",
+	"name" : "Blackhorse",
+	"pronunciation" : "blackhorse",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BLU",
+	"name" : "Bluebell",
+	"pronunciation" : "bluebell",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "KYL",
+	"name" : "Kylemore",
+	"pronunciation" : "kylemore",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "RED",
+	"name" : "Red Cow",
+	"pronunciation" : "red cow",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "KIN",
+	"name" : "Kingswood",
+	"pronunciation" : "kingswood",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BEL",
+	"name" : "Belgard",
+	"pronunciation" : "belgard",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "COO",
+	"name" : "Cookstown",
+	"pronunciation" : "cookstown",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["HOS", "TAL"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "HOS",
+	"name" : "Hospital",
+	"pronunciation" : "hospital",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["COO", "BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["TAL"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "TAL",
+	"name" : "Tallaght",
+	"pronunciation" : "tallaght",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["HOS", "COO", "BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : [],
+	"in-use" : true
+},
+{
+	"abbreviation" : "FET",
+	"name" : "Fettercairn",
+	"pronunciation" : "fettercairn",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["CVN", "CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "CVN",
+	"name" : "Cheeverstown",
+	"pronunciation" : "cheeverstown",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["FET", "BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["CIT", "FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "CIT",
+	"name" : "Citywest Campus",
+	"pronunciation" : "citywest campus",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CVN", "FET", "BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["FOR", "SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "FOR",
+	"name" : "Fortunestown",
+	"pronunciation" : "fortunestown",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CIT", "CVN", "FET", "BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : ["SAG"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "SAG",
+	"name" : "Saggart",
+	"pronunciation" : "saggart",
+	"line": "Red",
+	"walking-transfer" : [],
+	"inbound-stations" : ["FOR", "CIT", "CVN", "FET", "BEL", "KIN", "RED", "KYL", "BLU", "BLA", "DRI", "GOL", "SUI", "RIA", "FAT", "JAM", "HEU", "MUS", "SMI", "FOU", "JER", "ABB", "BUS", "CON", "GDK", "MYS", "SDK", "TPT"],
+	"outbound-stations" : [],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BRO",
+	"name" : "Broombridge",
+	"pronunciation" : "broombridge",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : [],
+	"outbound-stations" : ["CAB", "PHI", "GRA", "BRD", "DOM", "PAR", "MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "CAB",
+	"name" : "Cabra",
+	"pronunciation" : "cabra",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BRO"],
+	"outbound-stations" : ["PHI", "GRA", "BRD", "DOM", "PAR", "MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "PHI",
+	"name" : "Phibsborough",
+	"pronunciation" : "phibsborough",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CAB", "BRO"],
+	"outbound-stations" : ["GRA", "BRD", "DOM", "PAR", "MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "GRA",
+	"name" : "Grangegorman",
+	"pronunciation" : "grangegorman",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["PHI", "CAB", "BRO"],
+	"outbound-stations" : ["BRD", "DOM", "PAR", "MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BRD",
+	"name": "Broadstone - DIT",
+	"pronunciation" : "broadstone - <say-as interpret-as=\"spell-out\">dit</say-as>",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["DOM", "PAR", "MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "DOM",
+	"name" : "Dominick",
+	"pronunciation" : "dominick",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["PAR", "MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "PAR",
+	"name" : "Parnell",
+	"pronunciation" : "parnell",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : [],
+	"outbound-stations" : ["MAR", "TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "MAR",
+	"name" : "Marlborough",
+	"pronunciation" : "marlborough",
+	"line": "Green",
+	"walking-transfer" : ["ABB"],
+	"inbound-stations" : [],
+	"outbound-stations" : ["TRY", "DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "TRY",
+	"name" : "Trinity",
+	"pronunciation" : "trinity",
+	"line": "Green",
+	"walking-transfer" : ["WES"],
+	"inbound-stations" : [],
+	"outbound-stations" : ["DAW", "STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "OUP",
+	"name": "O'Connell - Upper",
+	"pronunciation" : "o'connell - upper",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : [],
+	"in-use" : true
+},
+{
+	"abbreviation" : "OGP",
+	"name": "O'Connell - GPO",
+	"pronunciation" : "o'connell - <say-as interpret-as=\"spell-out\">gpo</say-as>",
+	"line": "Green",
+	"walking-transfer" : ["ABB"],
+	"inbound-stations" : ["OUP", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : [],
+	"in-use" : true
+},
+{
+	"abbreviation" : "WES",
+	"name" : "Westmoreland",
+	"pronunciation" : "westmoreland",
+	"line": "Green",
+	"walking-transfer" : ["TRY"],
+	"inbound-stations" : ["OGP", "OUP", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : [],
+	"in-use" : true
+},
+{
+	"abbreviation" : "DAW",
+	"name" : "Dawson",
+	"pronunciation" : "dawson",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["STS", "HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "STS",
+	"name": "St. Stephen's Green",
+	"pronunciation" : "st. stephen's green",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["HAR", "CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "HAR",
+	"name" : "Harcourt",
+	"pronunciation" : "harcourt",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["CHA", "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "CHA",
+	"name" : "Charlemont",
+	"pronunciation" : "charlemont",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : [ "RAN", "BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "RAN",
+	"name" : "Ranelagh",
+	"pronunciation" : "ranelagh",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["BEE", "COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BEE",
+	"name" : "Beechwood",
+	"pronunciation" : "beechwood",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["COW", "MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "COW",
+	"name" : "Cowper",
+	"pronunciation" : "cowper",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["MIL", "WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "MIL",
+	"name" : "Milltown",
+	"pronunciation" : "milltown",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "WIN",
+	"name" : "Windy Arbour",
+	"pronunciation" : "windy arbour",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["WIN", "DUN", "BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "DUN",
+	"name" : "Dundrum",
+	"pronunciation" : "dundrum",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["BAL", "KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BAL",
+	"name" : "Balally",
+	"pronunciation" : "balally",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["KIL", "STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "KIL",
+	"name" : "Kilmacud",
+	"pronunciation" : "kilmacud",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["STI", "SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "STI",
+	"name" : "Stillorgan",
+	"pronunciation" : "stillorgan",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["SAN", "CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "SAN",
+	"name" : "Sandyford",
+	"pronunciation" : "sandyford",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["CPK", "GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "CPK",
+	"name" : "Central Park",
+	"pronunciation" : "central park",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["GLE", "GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "GLE",
+	"name" : "Glencairn",
+	"pronunciation" : "glencairn",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["GAL", "LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "GAL",
+	"name" : "The Gallops",
+	"pronunciation" : "the gallops",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["LEO", "BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "LEO",
+	"name" : "Leopardstown Valley",
+	"pronunciation" : "leopardstown valley",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["BAW", "RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BAW",
+	"name" : "Ballyogan Wood",
+	"pronunciation" : "ballyogan wood",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "RCC",
+	"name" : "Racecourse",
+	"pronunciation" : "racecourse",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BAW", "LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["RCC", "CCK", "BRE", "LAU", "CHE", "BRI"],
+	"in-use" : false
+},
+{
+	"abbreviation" : "CCK",
+	"name" : "Carrickmines",
+	"pronunciation" : "carrickmines",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["RCC", "BAW", "LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["BRE", "LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "BRE",
+	"name" : "Brennanstown",
+	"pronunciation" : "brennanstown",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CCK", "RCC", "BAW", "LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["LAU", "CHE", "BRI"],
+	"in-use" : true
+},
+{
+	"abbreviation" : "LAU",
+	"name" : "Laughanstown",
+	"pronunciation" : "laughanstown",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["BRE", "CCK", "RCC", "BAW", "LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : ["CHE", "BRI"],
+	"in-use" : true
+},
+	{
+	"abbreviation": "CHE",
+	"name": "Cherrywood",
+	"pronunciation": "cherrywood",
+	"line": "Green",
+	"walking-transfer": [],
+	"inbound-stations": [ "LAU", "BRE", "CCK", "RCC", "BAW", "LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO" ],
+	"outbound-stations": [ "BRI" ],
+	"in-use": true
+	},
+{
+	"abbreviation" : "BRI",
+	"name" : "Bride's Glen",
+	"pronunciation" : "bride's glen",
+	"line": "Green",
+	"walking-transfer" : [],
+	"inbound-stations" : ["CHE", "LAU", "BRE", "CCK", "RCC", "BAW", "LEO", "GAL", "GLE", "CPK", "SAN", "STI", "KIL", "BAL", "DUN", "WIN", "MIL", "COW", "BEE", "RAN", "CHA", "HAR", "STS", "DAW", "WES", "OGP", "OUP", "PAR", "DOM", "BRD", "GRA", "PHI", "CAB", "BRO"],
+	"outbound-stations" : [],
+	"in-use" : true
+}]
