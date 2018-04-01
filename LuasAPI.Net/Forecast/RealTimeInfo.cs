@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 namespace LuasAPI.NET.Forecast
 {
 	[XmlRoot(ElementName = "stopInfo")]
-	public class RealTimeInfo
+	public class RealTimeInfo : IRealTimeInfo
 	{
 		[XmlElement(ElementName = "message")]
 		public string Message { get; set; }

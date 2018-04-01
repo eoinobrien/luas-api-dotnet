@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 namespace LuasAPI.NET.Forecast
 {
 	[XmlRoot(ElementName = "tram")]
-	public class Tram
+	public class Tram : ITram
 	{
 		[XmlAttribute(AttributeName = "dueMins")]
 		public string DueMins { get; set; }
@@ -12,7 +12,7 @@ namespace LuasAPI.NET.Forecast
 		[XmlAttribute(AttributeName = "destination")]
 		public string Destination { get; set; }
 
-		public Station DestinationStation => Station.GetFromNameOrAbbreviation(Destination);
+		public IStation DestinationStation => Station.GetFromNameOrAbbreviation(Destination);
 
 		public bool IsDue => DueMins.ToUpperInvariant() == "DUE";
 
@@ -29,27 +29,6 @@ namespace LuasAPI.NET.Forecast
 				}
 
 				return int.TryParse(DueMins, out int mins) ? mins : -1;
-			}
-		}
-	}
-
-
-	public static class TramExtensions
-	{
-		public static bool TramGoesToDestination(this Tram tram, Station userDestination, Direction direction)
-		{
-			if (tram.NoTramsForcast || tram.DestinationStation.Line != userDestination.Line)
-			{
-				return false;
-			}
-
-			if (direction == Direction.Inbound)
-			{
-				return tram.DestinationStation.InboundStations.Contains(userDestination);
-			}
-			else
-			{
-				return tram.DestinationStation.OutboundStations.Contains(userDestination);
 			}
 		}
 	}

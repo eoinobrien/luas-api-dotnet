@@ -1,17 +1,14 @@
-﻿using LuasAPI.NET.Forecast;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Xml.Serialization;
 
 namespace LuasAPI.NET.Stations
 {
-	public class Station
+	public class Station : IStation
 	{
 		static Station()
 		{
@@ -39,11 +36,11 @@ namespace LuasAPI.NET.Stations
 		[JsonConverter(typeof(StringEnumConverter))]
 		public Line Line { get; private set; }
 
-		public List<Station> InboundStations { get; private set; }
+		public IList<IStation> InboundStations { get; private set; }
 
-		public List<Station> OutboundStations { get; private set; }
+		public IList<IStation> OutboundStations { get; private set; }
 
-		public List<Station> WalkingTransfer { get; private set; }
+		public IList<IStation> WalkingTransfer { get; private set; }
 
 		[JsonProperty(PropertyName = "in-use")]
 		public bool IsInUse { get; private set; }
@@ -63,9 +60,9 @@ namespace LuasAPI.NET.Stations
 
 		public void ConvertStringsToStations()
 		{
-			InboundStations = new List<Station>();
-			OutboundStations = new List<Station>();
-			WalkingTransfer = new List<Station>();
+			InboundStations = new List<IStation>();
+			OutboundStations = new List<IStation>();
+			WalkingTransfer = new List<IStation>();
 
 			inboundStations.ForEach(st => InboundStations.Add(Station.GetFromAbbreviation(st)));
 			outboundStations.ForEach(st => OutboundStations.Add(Station.GetFromAbbreviation(st)));
@@ -73,7 +70,7 @@ namespace LuasAPI.NET.Stations
 		}
 
 
-		public List<Station> GetDirectionStations(Direction direction)
+		public IList<IStation> GetDirectionStations(Direction direction)
 		{
 			if (!stationsLoaded)
 			{
@@ -89,7 +86,7 @@ namespace LuasAPI.NET.Stations
 				return OutboundStations;
 			}
 
-			return new List<Station>();
+			return new List<IStation>();
 		}
 
 
@@ -174,45 +171,5 @@ namespace LuasAPI.NET.Stations
 		{
 			return Name;
 		}
-	}
-
-
-	public static class StationExtensions
-	{
-		public static Direction GetDirection(this Station origin, Station destination)
-		{
-			if (origin.Line != destination.Line)
-			{
-				return Direction.Undefined;
-			}
-			else if (origin.InboundStations.Contains(destination))
-			{
-				return Direction.Inbound;
-			}
-			else if (origin.OutboundStations.Contains(destination))
-			{
-				return Direction.Outbound;
-			}
-
-			return Direction.Undefined;
-		}
-
-
-		public static RealTimeInfo GetRealTimeInfo(this Station station)
-		{
-			string url = string.Format(luasApiUrl, station.Abbreviation);
-
-			HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-			request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
-
-			using (WebResponse response = request.GetResponse())
-			using (Stream stream = response.GetResponseStream())
-			{
-				XmlSerializer serializer = new XmlSerializer(typeof(RealTimeInfo));
-				return (RealTimeInfo)serializer.Deserialize(stream);
-			}
-		}
-
-		private const string luasApiUrl = "http://luasforecasts.rpa.ie/xml/get.ashx?action=forecast&stop={0}&encrypt=false";
 	}
 }

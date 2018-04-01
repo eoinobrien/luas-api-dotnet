@@ -13,8 +13,8 @@ namespace LuasAPI.NET.Tests.Forecast
 		{
 			RealTimeInfo realTimeInfo = ParseExampleRealTimeInfo(@".\Forecast\Examples\TPT_NoTramsForecast_BothDirections.xml");
 
-			Assert.True(realTimeInfo.Directions.TrueForAll(d => d.Trams.TrueForAll(t => t.NoTramsForcast)));
-			Assert.True(realTimeInfo.Directions.TrueForAll(d => d.NoTramsForcast));
+			Assert.True(realTimeInfo.Directions.All(d => d.Trams.All(t => t.NoTramsForcast)));
+			Assert.True(realTimeInfo.Directions.All(d => d.NoTramsForcast));
 		}
 
 
@@ -23,8 +23,8 @@ namespace LuasAPI.NET.Tests.Forecast
 		{
 			RealTimeInfo realTimeInfo = ParseExampleRealTimeInfo(@".\Forecast\Examples\TPT_NoTramsInbound_2TramsOutbound.xml");
 
-			Assert.True(realTimeInfo.Directions.Inbound().NoTramsForcast);
-			Assert.IsType<int>(realTimeInfo.Directions.Outbound().Trams.First().Minutes);
+			Assert.True(realTimeInfo.Directions.ElementAt((int) Direction.Inbound).NoTramsForcast);
+			Assert.IsType<int>(realTimeInfo.Directions.ElementAt((int)Direction.Outbound).Trams.First().Minutes);
 		}
 
 
@@ -33,15 +33,15 @@ namespace LuasAPI.NET.Tests.Forecast
 		{
 			RealTimeInfo realTimeInfo = ParseExampleRealTimeInfo(@".\Forecast\Examples\TPT_NoTramsInbound_2TramsOutboundOneDue.xml");
 
-			Assert.True(realTimeInfo.Directions.Inbound().NoTramsForcast);
+			Assert.True(realTimeInfo.Directions.ElementAt((int) Direction.Inbound).NoTramsForcast);
 
-			Assert.True(realTimeInfo.Directions.Outbound().Trams.First().IsDue);
-			Assert.IsType<int>(realTimeInfo.Directions.Outbound().Trams.First().Minutes);
-			Assert.Equal(0, realTimeInfo.Directions.Outbound().Trams.First().Minutes);
+			Assert.True(realTimeInfo.Directions.ElementAt((int) Direction.Outbound).Trams.First().IsDue);
+			Assert.IsType<int>(realTimeInfo.Directions.ElementAt((int) Direction.Outbound).Trams.First().Minutes);
+			Assert.Equal(0, realTimeInfo.Directions.ElementAt((int) Direction.Outbound).Trams.First().Minutes);
 
-			Assert.False(realTimeInfo.Directions.Outbound().Trams.ElementAt(1).IsDue);
-			Assert.IsType<int>(realTimeInfo.Directions.Outbound().Trams.ElementAt(1).Minutes);
-			Assert.NotEqual(0, realTimeInfo.Directions.Outbound().Trams.ElementAt(1).Minutes);
+			Assert.False(realTimeInfo.Directions.ElementAt((int) Direction.Outbound).Trams.ElementAt(1).IsDue);
+			Assert.IsType<int>(realTimeInfo.Directions.ElementAt((int) Direction.Outbound).Trams.ElementAt(1).Minutes);
+			Assert.NotEqual(0, realTimeInfo.Directions.ElementAt((int) Direction.Outbound).Trams.ElementAt(1).Minutes);
 		}
 
 
