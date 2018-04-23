@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Serialization;
 
 namespace LuasAPI.NET.Forecast
@@ -23,5 +24,7 @@ namespace LuasAPI.NET.Forecast
 
 		[XmlAttribute(AttributeName = "stopAbv")]
 		public string StopAbbreviation { get; set; }
+
+		public bool SeeNews => Directions.Any(d => d.SeeNews);
 	}
 }

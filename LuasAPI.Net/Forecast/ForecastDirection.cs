@@ -16,5 +16,7 @@ namespace LuasAPI.NET.Forecast
 		public Direction Direction => DirectionName.ParseDirection();
 
 		public bool NoTramsForcast => Trams.Any(t => t.NoTramsForcast);
+
+		public bool SeeNews => Trams.Any(d => d.SeeNews);
 	}
 }

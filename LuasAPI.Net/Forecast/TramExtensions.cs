@@ -11,13 +11,18 @@ namespace LuasAPI.NET.Forecast
 				return false;
 			}
 
+			if (tram.DestinationStation == userDestination)
+			{
+				return true;
+			}
+
 			if (direction == Direction.Inbound)
 			{
-				return tram.DestinationStation.InboundStations.Contains(userDestination);
+				return userDestination.InboundStations.Contains(tram.DestinationStation);
 			}
 			else
 			{
-				return tram.DestinationStation.OutboundStations.Contains(userDestination);
+				return userDestination.OutboundStations.Contains(tram.DestinationStation);
 			}
 		}
 	}

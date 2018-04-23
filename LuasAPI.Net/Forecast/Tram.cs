@@ -18,6 +18,8 @@ namespace LuasAPI.NET.Forecast
 
 		public bool NoTramsForcast => Destination.ToUpperInvariant() == "NO TRAMS FORECAST" || DestinationStation == null;
 
+		public bool SeeNews => Destination.ToUpperInvariant().Contains("SEE NEWS");
+
 
 		public int Minutes
 		{
