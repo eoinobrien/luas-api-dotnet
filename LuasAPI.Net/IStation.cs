@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LuasAPI.NET.Stations
+namespace LuasAPI.NET
 {
 	public interface IStation
 	{
@@ -11,6 +11,14 @@ namespace LuasAPI.NET.Stations
 		string Abbreviation { get; }
 
 		Line Line { get; }
+
+		bool HasParking { get; }
+
+		bool HasCycleParking { get; }
+
+		double Latitude { get; }
+
+		double Longitude { get; }
 
 		IList<IStation> InboundStations { get; }
 
