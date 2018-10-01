@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Stations\StationsData.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Stations\StationsData.json">
+    <EmbeddedResource Include="StationsData.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

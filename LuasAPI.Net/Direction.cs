@@ -9,6 +9,7 @@ namespace LuasAPI.NET
 		Outbound = 1
 	}
 
+
 	public static class DirectionExtensions
 	{
 		public static Direction ParseDirection(this string strDirection)
