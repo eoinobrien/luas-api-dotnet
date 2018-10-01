@@ -46,7 +46,7 @@ namespace LuasAPI.NET.Forecasts
 			{
 				return GetTrams(direction);
 			}
-			set
+			private set
 			{
 				SetTrams(direction, value);
 			}
@@ -68,7 +68,7 @@ namespace LuasAPI.NET.Forecasts
 			}
 		}
 
-		public void SetTrams(Direction direction, List<TramForcast> trams)
+		private void SetTrams(Direction direction, List<TramForcast> trams)
 		{
 			if (direction == Direction.Undefined)
 			{
