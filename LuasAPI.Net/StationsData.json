@@ -61,7 +61,7 @@
 	"longitude": -6.247575,
 	"walking-transfer" : [],
 	"inbound-stations" : ["MYS", "SDK", "TPT"],
-	"outbound-stations" : ["BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG",],
+	"outbound-stations" : ["BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
 	"in-use" : true
 },
 {
@@ -75,7 +75,7 @@
 	"longitude": -6.24994166666667,
 	"walking-transfer" : ["BUS"],
 	"inbound-stations" : [],
-	"outbound-stations" : ["BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG",],
+	"outbound-stations" : ["BUS", "ABB", "JER", "FOU", "SMI", "MUS", "HEU", "JAM", "FAT", "RIA", "SUI", "GOL", "DRI", "BLA", "BLU", "KYL", "RED", "KIN", "BEL", "COO", "HOS", "TAL", "FET", "CVN", "CIT", "FOR", "SAG"],
 	"in-use" : true
 },
 {
