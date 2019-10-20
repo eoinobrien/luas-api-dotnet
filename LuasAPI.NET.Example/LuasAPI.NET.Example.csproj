@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LuasAPI.Net\LuasAPI.NET.csproj" />
+    <ProjectReference Include="..\LuasAPI.NET\LuasAPI.NET.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET", "LuasAPI.NET\LuasAPI.NET.csproj", "{1C4888BA-96F4-4604-8762-76D4912A530F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET.Tests", "LuasAPI.NET.Tests\LuasAPI.NET.Tests.csproj", "{57C53DD4-D3AC-4B6E-8D47-B6BB8613EA02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuasAPI.NET.Tests", "LuasAPI.Net.Tests\LuasAPI.NET.Tests.csproj", "{AA5A75ED-03BD-48F8-875F-49D74CF1D921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET.Example", "LuasAPI.NET.Example\LuasAPI.NET.Example.csproj", "{AAE2491D-B691-4AAC-9FDD-04858112A26E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET", "LuasAPI.NET\LuasAPI.NET.csproj", "{92129F06-30FE-40A1-B509-B20BF72867ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C4888BA-96F4-4604-8762-76D4912A530F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C4888BA-96F4-4604-8762-76D4912A530F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C4888BA-96F4-4604-8762-76D4912A530F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C4888BA-96F4-4604-8762-76D4912A530F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA5A75ED-03BD-48F8-875F-49D74CF1D921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA5A75ED-03BD-48F8-875F-49D74CF1D921}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA5A75ED-03BD-48F8-875F-49D74CF1D921}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA5A75ED-03BD-48F8-875F-49D74CF1D921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C53DD4-D3AC-4B6E-8D47-B6BB8613EA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C53DD4-D3AC-4B6E-8D47-B6BB8613EA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C53DD4-D3AC-4B6E-8D47-B6BB8613EA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C53DD4-D3AC-4B6E-8D47-B6BB8613EA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE2491D-B691-4AAC-9FDD-04858112A26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE2491D-B691-4AAC-9FDD-04858112A26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE2491D-B691-4AAC-9FDD-04858112A26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE2491D-B691-4AAC-9FDD-04858112A26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92129F06-30FE-40A1-B509-B20BF72867ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92129F06-30FE-40A1-B509-B20BF72867ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92129F06-30FE-40A1-B509-B20BF72867ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92129F06-30FE-40A1-B509-B20BF72867ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
