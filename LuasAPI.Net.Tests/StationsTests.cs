@@ -1,103 +1,103 @@
-﻿using LuasAPI.NET;
+﻿using LuasAPI.NET.Models;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace LuasAPI.NET.Tests
 {
 	public class StationsTests
 	{
-		[Theory]
-		[InlineData("SAN")]
-		[InlineData("san")]
-		[InlineData("TPT")]
-		public void GetFromAbbreviation_ValidEverything_ReturnsCorrect(string abbreviation)
+		[Fact]
+		public void GetAllStations_NoStations_ReturnsEmptyList()
 		{
-			Assert.NotNull(Stations.GetFromAbbreviation(abbreviation));
-			Assert.Equal(typeof(Station), Stations.GetFromAbbreviation(abbreviation).GetType());
-			Assert.Equal(abbreviation.ToUpperInvariant(), Stations.GetFromAbbreviation(abbreviation).Abbreviation);
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.IsType<List<Station>>(stations.GetAllStations());
+			Assert.Empty(stations.GetAllStations());
 		}
 
-
-		[Theory]
-		[InlineData("s")]
-		[InlineData("S")]
-		[InlineData("NOt a Station")]
-		public void GetFromAbbreviation_ValidArgument_InvalidValue_ReturnsNull(string abbreviation)
+		[Fact]
+		public void GetAllStations_OneStation_ReturnsListWithOneItem()
 		{
-			Assert.Null(Stations.GetFromAbbreviation(abbreviation));
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+			loader.AddStations(new Station() { Abbreviation = "STS" });
+
+			Stations stations = new Stations(loader);
+
+			Assert.IsType<List<Station>>(stations.GetAllStations());
+			Assert.Single(stations.GetAllStations());
 		}
 
-
-		[Theory]
-		[InlineData(null)]
-		[InlineData("")]
-		public void GetFromAbbreviation_InvalidArgument_Throws(string abbreviation)
+		[Fact]
+		public void GetStation_WhiteSpaceAbbreviation_ThrowsArgumentException()
 		{
-			Assert.Throws<ArgumentException>(() => Stations.GetFromAbbreviation(abbreviation));
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.Throws<ArgumentException>(() => stations.GetStation(string.Empty));
 		}
 
-		[Theory]
-		[InlineData("Sandyford")]
-		[InlineData("The Point")]
-		[InlineData("Abbey Street")]
-		public void GetFromName_ValidEverything_ReturnsCorrect(string name)
+		[Fact]
+		public void GetStation_NullAbbreviation_ThrowsArgumentException()
 		{
-			Assert.NotNull(Stations.GetFromName(name));
-			Assert.Equal(typeof(Station), Stations.GetFromName(name).GetType());
-			Assert.Equal(name.ToUpperInvariant(), Stations.GetFromName(name).Name.ToUpperInvariant());
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.Throws<ArgumentException>(() => stations.GetStation(null));
 		}
 
-
-		[Theory]
-		[InlineData("s")]
-		[InlineData("S")]
-		[InlineData("NOt a Station")]
-		public void GetFromName_ValidArgument_InvalidValue_ReturnsNull(string name)
+		[Fact]
+		public void GetStation_StationNotFound_ThrowsException()
 		{
-			Assert.Null(Stations.GetFromName(name));
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.Throws<StationNotFoundException>(() => stations.GetStation("STS"));
 		}
 
-
-		[Theory]
-		[InlineData(null)]
-		[InlineData("")]
-		public void GetFromName_InvalidArgument_Throws(string name)
+		[Fact]
+		public void GetStation_UppercaseQueryStationExists_ReturnsStation()
 		{
-			Assert.Throws<ArgumentException>(() => Stations.GetFromName(name));
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Station station = new Station { Name = "St. Stephen's Green", Abbreviation = "STS" };
+			loader.AddStations(station);
+
+			Stations stations = new Stations(loader);
+
+			Assert.Equal(station, stations.GetStation(station.Abbreviation));
 		}
 
-
-		[Theory]
-		[InlineData("Sandyford", "SAN")]
-		[InlineData("The Point", "TPT")]
-		[InlineData("Abbey Street", "ABB")]
-		[InlineData("SAN", "SAN")]
-		[InlineData("san", "SAN")]
-		[InlineData("TPT", "TPT")]
-		public void GetFromNameOrAbbreviation_ValidEverything_ReturnsCorrect(string input, string abbreviation)
+		[Fact]
+		public void GetStation_LowercaseQueryStationExists_ReturnsStation()
 		{
-			Assert.NotNull(Stations.GetFromNameOrAbbreviation(input));
-			Assert.Equal(typeof(Station), Stations.GetFromNameOrAbbreviation(input).GetType());
-			Assert.Equal(abbreviation.ToUpperInvariant(), Stations.GetFromNameOrAbbreviation(input).Abbreviation);
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Station station = new Station { Name = "St. Stephen's Green", Abbreviation = "STS" };
+			loader.AddStations(station);
+
+			Stations stations = new Stations(loader);
+
+			Assert.Equal(station, stations.GetStation(station.Abbreviation.ToLowerInvariant()));
 		}
 
-
-		[Theory]
-		[InlineData("s")]
-		[InlineData("S")]
-		[InlineData("NOt a Station")]
-		public void GetFromNameOrAbbreviation_ValidArgument_InvalidValue_ReturnsNull(string input)
+		[Fact]
+		public void GetStation_MoreThanOneStationAvailable_ReturnsCorrectStation()
 		{
-			Assert.Null(Stations.GetFromNameOrAbbreviation(input));
-		}
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
 
+			Station alternativeStation = new Station { Name = "Harcourt", Abbreviation = "HAR" };
+			Station stationToQuery = new Station { Name = "St. Stephen's Green", Abbreviation = "STS" };
+			loader.AddStations(alternativeStation, sstationToQuery);
 
-		[Theory]
-		[InlineData(null)]
-		[InlineData("")]
-		public void GetFromNameOrAbbreviation_InvalidArgument_Throws(string input)
-		{
-			Assert.Throws<ArgumentException>(() => Stations.GetFromNameOrAbbreviation(input));
+			Stations stations = new Stations(loader);
+
+			Assert.Equal(stationToQuery, stations.GetStation(stationToQuery.Abbreviation));
 		}
 	}
 }

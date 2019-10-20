@@ -1,9 +1,0 @@
-﻿<stopInfo created="2018-04-03T20:55:05" stop="Tallaght" stopAbv="TAL">
-	<message>No service between Red Cow &amp; Tallaght/Saggart</message>
-	<direction name="Inbound">
-		<tram destination="See news for information" dueMins="" />
-	</direction>
-	<direction name="Outbound">
-		<tram destination="See news for information" dueMins="" />
-	</direction>
-</stopInfo>

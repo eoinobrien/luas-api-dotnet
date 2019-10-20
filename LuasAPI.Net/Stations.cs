@@ -1,87 +1,74 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
 using System.Linq;
+using LuasAPI.NET.Models;
 
 namespace LuasAPI.NET
 {
-	public static class Stations
+	public class Stations
 	{
-		static Stations()
+		public Stations(IStationInformationLoader stationInformationLoader)
 		{
-			try
-			{
-				using (Stream fileStream = typeof(Station).Assembly.GetManifestResourceStream(stationsDataFile))
-				using (StreamReader file = new StreamReader(fileStream))
-				{
-					JsonSerializer serializer = new JsonSerializer();
-					StationsList = (List<Station>)serializer.Deserialize(file, typeof(List<Station>));
-					Loaded = true;
-				}
-			}
-			catch (Exception e)
-			{
-				// TODO
-			}
-
-			StationsList.ForEach(station => station.ConvertStringsToStations());
+			stations = stationInformationLoader.Load();
 		}
 
-		public static List<Station> StationsList { get; private set; }
+		private Dictionary<string, Station> stations { get; set; }
 
-		public static readonly bool Loaded;
+		public List<Station> GetAllStations()
+		{
+			return stations.Values.ToList();
+		}
 
-		public static Station GetFromAbbreviation(string abbreviation)
+		public Station GetStation(string abbreviation)
 		{
 			if (string.IsNullOrWhiteSpace(abbreviation))
 			{
 				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(abbreviation), CultureInfo.InvariantCulture));
 			}
 
-			if (!Loaded)
+			Station station;
+			stations.TryGetValue(abbreviation.ToUpperInvariant(), out station);
+
+			if(station == null)
 			{
-				throw new InvalidOperationException("Stations have not been loaded successfully.");
+				throw new StationNotFoundException(string.Format("Station Abbreviation '{0}' was not found in list of stations", abbreviation, CultureInfo.InvariantCulture));
 			}
 
-			return StationsList.FirstOrDefault(
-				st => st.Abbreviation.ToUpperInvariant() == abbreviation.ToUpperInvariant());
+			return station;
 		}
 
-		public static Station GetFromName(string name)
-		{
-			if (string.IsNullOrWhiteSpace(name))
-			{
-				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(name), CultureInfo.InvariantCulture));
-			}
+		//public static Station GetFromName(string name)
+		//{
+		//	if (string.IsNullOrWhiteSpace(name))
+		//	{
+		//		throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(name), CultureInfo.InvariantCulture));
+		//	}
 
-			if (!Loaded)
-			{
-				throw new InvalidOperationException("Stations have not been loaded successfully.");
-			}
+		//	if (!Loaded)
+		//	{
+		//		throw new InvalidOperationException("Stations have not been loaded successfully.");
+		//	}
 
-			return StationsList.FirstOrDefault(
-				st => st.Name.ToUpperInvariant() == name.ToUpperInvariant());
-		}
+		//	return StationsList.FirstOrDefault(
+		//		st => st.Name.ToUpperInvariant() == name.ToUpperInvariant());
+		//}
 
-		public static Station GetFromNameOrAbbreviation(string input)
-		{
-			if (string.IsNullOrWhiteSpace(input))
-			{
-				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(input), CultureInfo.InvariantCulture));
-			}
+		//public static Station GetFromNameOrAbbreviation(string input)
+		//{
+		//	if (string.IsNullOrWhiteSpace(input))
+		//	{
+		//		throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(input), CultureInfo.InvariantCulture));
+		//	}
 
-			if (!Loaded)
-			{
-				throw new InvalidOperationException("Stations have not been loaded successfully.");
-			}
+		//	if (!Loaded)
+		//	{
+		//		throw new InvalidOperationException("Stations have not been loaded successfully.");
+		//	}
 
-			return StationsList.FirstOrDefault(
-				st => st.Name.ToUpperInvariant() == input.ToUpperInvariant() ||
-				st.Abbreviation.ToUpperInvariant() == input.ToUpperInvariant());
-		}
-
-		private const string stationsDataFile = "LuasAPI.NET.StationsData.json";
+		//	return StationsList.FirstOrDefault(
+		//		st => st.Name.ToUpperInvariant() == input.ToUpperInvariant() ||
+		//		st.Abbreviation.ToUpperInvariant() == input.ToUpperInvariant());
+		//}
 	}
 }

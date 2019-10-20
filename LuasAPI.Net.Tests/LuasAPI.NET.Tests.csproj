@@ -75,37 +75,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forecast\TramTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StationTests.cs" />
     <Compile Include="StationsTests.cs" />
+    <Compile Include="UnitTestStationInformationLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LuasAPI.Net\LuasAPI.NET.csproj">
-      <Project>{D45DFD53-036E-43DD-9A8E-5007928C8FC0}</Project>
+      <Project>{3269B343-8B6B-445F-AF02-BE9AFD7B55EC}</Project>
       <Name>LuasAPI.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Forecast\Examples\TPT_NoTramsForecast_BothDirections.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Forecast\Examples\TPT_NoTramsInbound_2TramsOutbound.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Forecast\Examples\TPT_NoTramsInbound_2TramsOutboundOneDue.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Forecast\Examples\RAN_3InboundDiffDest_2OutboundToBRI.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Forecast\Examples\TAL_SeeNews_NoTrams.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />

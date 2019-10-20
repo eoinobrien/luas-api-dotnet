@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace LuasAPI.NET.Forecasts.XmlAPI
+namespace LuasAPI.NET.Models.RpaApiXml
 {
 	[XmlRoot(ElementName = "tram")]
 	public class TramXml

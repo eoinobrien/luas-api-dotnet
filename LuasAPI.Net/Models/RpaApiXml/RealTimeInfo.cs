@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace LuasAPI.NET.Forecasts.XmlAPI
+namespace LuasAPI.NET.Models.RpaApiXml
 {
 	[XmlRoot(ElementName = "stopInfo")]
 	public class RealTimeInfo

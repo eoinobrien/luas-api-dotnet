@@ -1,0 +1,3 @@
+<message>Green Line services operating with delays</message>
+<message>Red Line services operating normally</message>
+<message>Green Line services operating normally</message>
