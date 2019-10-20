@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml.Serialization;
 
 namespace LuasAPI.NET.Models.RpaApiXml
@@ -25,5 +26,15 @@ namespace LuasAPI.NET.Models.RpaApiXml
 
 		[XmlAttribute(AttributeName = "stopAbv")]
 		public string StopAbbreviation { get; set; }
+
+		public RealTimeInfo()
+		{
+		}
+
+		public static RealTimeInfo CreateFromStream(Stream stream)
+		{
+			XmlSerializer serializer = new XmlSerializer(typeof(RealTimeInfo));
+			return (RealTimeInfo)serializer.Deserialize(stream);
+		}
 	}
 }

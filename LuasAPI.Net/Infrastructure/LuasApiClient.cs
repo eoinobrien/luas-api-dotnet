@@ -28,8 +28,7 @@ namespace LuasAPI.NET.Infrastructure
 			using (HttpContent content = response.Content)
 			using (Stream stream = content.ReadAsStreamAsync().Result)
 			{
-				XmlSerializer serializer = new XmlSerializer(typeof(RealTimeInfo));
-				return (StationForcast)(RealTimeInfo)serializer.Deserialize(stream);
+				return (StationForcast)RealTimeInfo.CreateFromStream(stream);
 			}
 		}
 	}
