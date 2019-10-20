@@ -15,9 +15,9 @@ namespace LuasAPI.NET
 
 		private Dictionary<string, Station> stations { get; set; }
 
-		public List<Station> GetAllStations()
+		public List<Station> GetAllStations(bool returnOnlyStationsInUse = true)
 		{
-			return stations.Values.ToList();
+			return stations.Values.Where(s => s.IsInUse || !returnOnlyStationsInUse).ToList();
 		}
 
 		public Station GetStation(string abbreviation)
