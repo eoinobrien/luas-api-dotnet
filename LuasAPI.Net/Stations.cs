@@ -38,6 +38,24 @@ namespace LuasAPI.NET
 			return station;
 		}
 
+		public Station GetStationFromName(string name)
+		{
+			if (string.IsNullOrWhiteSpace(name))
+			{
+				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(name), CultureInfo.InvariantCulture));
+			}
+
+			string uppercaseName = name.ToUpperInvariant();
+			Station station = stations.Values.FirstOrDefault(s => s.Name.ToUpperInvariant() == uppercaseName);
+
+			if (station == null)
+			{
+				throw new StationNotFoundException(string.Format("Station Name '{0}' was not found in list of stations", name, CultureInfo.InvariantCulture));
+			}
+
+			return station;
+		}
+
 		//public static Station GetFromName(string name)
 		//{
 		//	if (string.IsNullOrWhiteSpace(name))

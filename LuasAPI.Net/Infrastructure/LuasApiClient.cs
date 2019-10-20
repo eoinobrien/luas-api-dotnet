@@ -29,7 +29,7 @@ namespace LuasAPI.NET.Infrastructure
 			using (Stream stream = content.ReadAsStreamAsync().Result)
 			{
 				XmlSerializer serializer = new XmlSerializer(typeof(RealTimeInfo));
-				return (StationForcast)serializer.Deserialize(stream);
+				return (StationForcast)(RealTimeInfo)serializer.Deserialize(stream);
 			}
 		}
 	}

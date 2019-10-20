@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using LuasAPI.NET.Infrastructure;
 using LuasAPI.NET.Models;
 using Newtonsoft.Json;
 
@@ -14,14 +16,24 @@ namespace LuasAPI.NET
 			stations = new Stations(stationInformationLoader);
 		}
 
-		public string GetAllStations()
+		public List<Station> GetAllStations()
 		{
-			return JsonConvert.SerializeObject(stations.GetAllStations());
+			return stations.GetAllStations();
 		}
 
-		public string GetStation(string abbreviation)
+		public Station GetStation(string abbreviation)
 		{
-			return JsonConvert.SerializeObject(stations.GetStation(abbreviation));
+			return stations.GetStation(abbreviation);
+		}
+
+		public StationForcast GetForcast(Station station)
+		{
+			LuasApiClient client = new LuasApiClient();
+			StationForcast forcast = client.GetRealTimeInfo(station);
+
+			Console.WriteLine(forcast.InboundTrams[0].Minutes);
+
+			return forcast;
 		}
 	}
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LuasAPI.NET.Models;
+using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 
 namespace LuasAPI.NET.Example
@@ -14,7 +16,11 @@ namespace LuasAPI.NET.Example
 
 			LuasApi api = new LuasApi();
 
-			Console.WriteLine(api.GetStation(input));
+			Station station = api.GetStation(input);
+
+			Console.WriteLine(JsonConvert.SerializeObject(station));
+
+			api.GetForcast(station);
 		}
 	}
 }
