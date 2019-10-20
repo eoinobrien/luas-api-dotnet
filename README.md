@@ -34,7 +34,6 @@ api.GetStation("STS");
 ```
 
 
-
 ## How to Use
 API:
 	Station
