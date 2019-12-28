@@ -47,7 +47,7 @@ namespace LuasAPI.NET.Tests.Models
 
 			RealTimeInfo realTimeInfo = RealTimeInfo.CreateFromStream(stream);
 
-			Assert.Equal(typeof(RealTimeInfo), realTimeInfo.GetType());
+			Assert.IsType<RealTimeInfo>(realTimeInfo.GetType());
 		}
 	}
 }
