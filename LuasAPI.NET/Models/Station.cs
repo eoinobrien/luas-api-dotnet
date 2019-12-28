@@ -1,8 +1,5 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LuasAPI.NET.Models
 {
@@ -25,11 +22,11 @@ namespace LuasAPI.NET.Models
 
 		public double Longitude { get; set; }
 
-		public List<string> inboundStations { get; set; }
+		public List<string> InboundStations { get; set; }
 
-		public List<string> outboundStations { get; set; }
+		public List<string> OutboundStations { get; set; }
 
-		public List<string> walkingTransfer { get; set; }
+		public List<string> WalkingTransfer { get; set; }
 
 		public bool IsInUse { get; set; }
 	}

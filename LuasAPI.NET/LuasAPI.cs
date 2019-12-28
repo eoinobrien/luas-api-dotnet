@@ -7,7 +7,7 @@ namespace LuasAPI.NET
 {
 	public class LuasApi
 	{
-		private Stations stations;
+		private readonly Stations stations;
 
 		public LuasApi()
 		{

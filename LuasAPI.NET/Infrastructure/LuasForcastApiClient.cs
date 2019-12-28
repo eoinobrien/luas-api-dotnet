@@ -14,8 +14,8 @@ namespace LuasAPI.NET.Infrastructure
 			this.stations = stations;
 		}
 
-		private HttpClient httpClient;
-		private Stations stations;
+		private readonly HttpClient httpClient;
+		private readonly Stations stations;
 		private const string luasApiUrl = "http://luasforecasts.rpa.ie/xml/get.ashx?action=forecast&stop={0}&encrypt=false";
 
 		public async Task<StationForcast> GetRealTimeInfoAsync(string stationAbbreviation)

@@ -10,14 +10,14 @@ namespace LuasAPI.NET
 	{
 		public Stations(IStationInformationLoader stationInformationLoader)
 		{
-			stations = stationInformationLoader.Load();
+			StationsDictionary = stationInformationLoader.Load();
 		}
 
-		private Dictionary<string, Station> stations { get; set; }
+		private Dictionary<string, Station> StationsDictionary { get; set; }
 
 		public List<Station> GetAllStations(bool returnOnlyStationsInUse = true)
 		{
-			return stations.Values.Where(s => s.IsInUse || !returnOnlyStationsInUse).ToList();
+			return StationsDictionary.Values.Where(s => s.IsInUse || !returnOnlyStationsInUse).ToList();
 		}
 
 		public Station GetStation(string abbreviation)
@@ -27,10 +27,9 @@ namespace LuasAPI.NET
 				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(abbreviation), CultureInfo.InvariantCulture));
 			}
 
-			Station station;
-			stations.TryGetValue(abbreviation.ToUpperInvariant(), out station);
+			StationsDictionary.TryGetValue(abbreviation.ToUpperInvariant(), out Station station);
 
-			if(station == null)
+			if (station == null)
 			{
 				throw new StationNotFoundException(string.Format("Station Abbreviation '{0}' was not found in list of stations", abbreviation, CultureInfo.InvariantCulture));
 			}
@@ -46,7 +45,7 @@ namespace LuasAPI.NET
 			}
 
 			string uppercaseName = name.ToUpperInvariant();
-			Station station = stations.Values.FirstOrDefault(s => s.Name.ToUpperInvariant() == uppercaseName);
+			Station station = StationsDictionary.Values.FirstOrDefault(s => s.Name.ToUpperInvariant() == uppercaseName);
 
 			if (station == null)
 			{

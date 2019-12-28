@@ -19,8 +19,7 @@ namespace LuasAPI.NET.Models
 				return null;
 			}
 
-			int dueMinutes;
-			if (!int.TryParse(tramXml.DueMins, out dueMinutes))
+			if (!int.TryParse(tramXml.DueMins, out int dueMinutes))
 			{
 				dueMinutes = 0;
 			}
