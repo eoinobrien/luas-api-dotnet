@@ -37,5 +37,17 @@ namespace LuasAPI.NET.Tests.Models
 
 			Assert.Throws<InvalidOperationException>(() => RealTimeInfo.CreateFromStream(stream));
 		}
+
+
+		[Fact]
+		public void CreateFromStream_CorrectXmlSchema_ReturnsObject()
+		{
+			string xml = "<stopInfo created=\"2019-12-28T12:06:00\" stop=\"St. Stephen's Green\" stopAbv=\"STS\"><message>Green Line Service Disruption See News</message><direction name=\"Inbound\"><tram destination=\"See news for information\" dueMins=\"\" /></direction><direction name=\"Outbound\"><tram dueMins=\"6\" destination=\"Sandyford\" /></direction></stopInfo>";
+			Stream stream = ConvertStringToStream(xml);
+
+			RealTimeInfo realTimeInfo = RealTimeInfo.CreateFromStream(stream);
+
+			Assert.Equal(typeof(RealTimeInfo), realTimeInfo.GetType());
+		}
 	}
 }
