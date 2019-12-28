@@ -37,6 +37,17 @@
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "test",
+                "${workspaceFolder}/LuasAPI.NET.Tests/LuasAPI.NET.Tests.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }

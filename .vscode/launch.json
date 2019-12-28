@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/LuasAPI.NET.Example/bin/Debug/netcoreapp2.2/LuasAPI.NET.Example.dll",
+            "program": "${workspaceFolder}/LuasAPI.NET.Example/bin/Debug/netcoreapp3.1/LuasAPI.NET.Example.dll",
             "args": [],
             "cwd": "${workspaceFolder}/LuasAPI.NET.Example",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
