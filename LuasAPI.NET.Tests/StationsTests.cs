@@ -1,4 +1,5 @@
 ﻿using LuasAPI.NET.Models;
+using LuasAPI.NET.Tests.StationInformation;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;

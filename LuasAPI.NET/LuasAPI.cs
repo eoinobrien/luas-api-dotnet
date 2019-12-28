@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using LuasAPI.NET.Infrastructure;
 using LuasAPI.NET.Models;
-using Newtonsoft.Json;
 
 namespace LuasAPI.NET
 {
@@ -26,14 +25,30 @@ namespace LuasAPI.NET
 			return stations.GetStation(abbreviation);
 		}
 
-		public StationForcast GetForcast(Station station)
+		public StationForcast GetForcast(string stationAbbreviation)
 		{
-			LuasApiClient client = new LuasApiClient();
-			StationForcast forcast = client.GetRealTimeInfo(station);
-
-			Console.WriteLine(forcast.InboundTrams[0].Minutes);
+			IForcastClient client = new LuasForcastApiClient(stations);
+			StationForcast forcast = client.GetRealTimeInfo(stationAbbreviation);
 
 			return forcast;
+		}
+
+		public async Task<StationForcast> GetForcastAsync(string stationAbbreviation)
+		{
+			IForcastClient client = new LuasForcastApiClient(stations);
+			StationForcast forcast = await client.GetRealTimeInfoAsync(stationAbbreviation);
+
+			return forcast;
+		}
+
+		public StationForcast GetForcast(Station station)
+		{
+			return GetForcast(station.Abbreviation);
+		}
+
+		public async Task<StationForcast> GetForcastAsync(Station station)
+		{
+			return await GetForcastAsync(station.Abbreviation);
 		}
 	}
 }

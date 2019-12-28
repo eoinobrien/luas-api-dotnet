@@ -55,38 +55,5 @@ namespace LuasAPI.NET
 
 			return station;
 		}
-
-		//public static Station GetFromName(string name)
-		//{
-		//	if (string.IsNullOrWhiteSpace(name))
-		//	{
-		//		throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(name), CultureInfo.InvariantCulture));
-		//	}
-
-		//	if (!Loaded)
-		//	{
-		//		throw new InvalidOperationException("Stations have not been loaded successfully.");
-		//	}
-
-		//	return StationsList.FirstOrDefault(
-		//		st => st.Name.ToUpperInvariant() == name.ToUpperInvariant());
-		//}
-
-		//public static Station GetFromNameOrAbbreviation(string input)
-		//{
-		//	if (string.IsNullOrWhiteSpace(input))
-		//	{
-		//		throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(input), CultureInfo.InvariantCulture));
-		//	}
-
-		//	if (!Loaded)
-		//	{
-		//		throw new InvalidOperationException("Stations have not been loaded successfully.");
-		//	}
-
-		//	return StationsList.FirstOrDefault(
-		//		st => st.Name.ToUpperInvariant() == input.ToUpperInvariant() ||
-		//		st.Abbreviation.ToUpperInvariant() == input.ToUpperInvariant());
-		//}
 	}
 }

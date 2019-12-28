@@ -5,14 +5,14 @@ namespace LuasAPI.NET.Models
 {
 	public class TramForcast
 	{
-		public string DestinationStationName { get; private set; }
+		public Station DestinationStation { get; private set; }
 
 		public bool IsDue { get; private set; }
 
 		public int Minutes { get; private set; }
 
 		
-		public static explicit operator TramForcast(TramXml tramXml)
+		public static TramForcast CreateTramForcastFromRTramXml(TramXml tramXml, Stations stations)
 		{
 			if (tramXml.Destination == "No trams forecast" && tramXml.Destination == string.Empty)
 			{
@@ -25,14 +25,25 @@ namespace LuasAPI.NET.Models
 				dueMinutes = 0;
 			}
 
-			TramForcast tramForcast = new TramForcast
+			try
 			{
-				DestinationStationName = tramXml.Destination,
-				Minutes = dueMinutes,
-				IsDue = dueMinutes == 0
-			};
+				Station destinationStation = stations.GetStationFromName(tramXml.Destination);
 
-			return tramForcast;
+				TramForcast tramForcast = new TramForcast
+				{
+					DestinationStation = destinationStation,
+					Minutes = dueMinutes,
+					IsDue = dueMinutes == 0
+				};
+
+				return tramForcast;
+			}
+			catch (StationNotFoundException ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
+
+			return null;
 		}
 	}
 }

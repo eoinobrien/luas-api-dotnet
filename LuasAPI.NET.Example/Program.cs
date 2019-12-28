@@ -1,7 +1,7 @@
 ﻿using LuasAPI.NET.Models;
 using Newtonsoft.Json;
 using System;
-using System.Net.Http;
+using System.Diagnostics;
 
 namespace LuasAPI.NET.Example
 {
@@ -9,18 +9,13 @@ namespace LuasAPI.NET.Example
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello to the LuasAPI.NET Example Console App.");
-			Console.Write("Enter station Abbreviation: ");
-
-			string input = Console.ReadLine();
-
 			LuasApi api = new LuasApi();
 
-			Station station = api.GetStation(input);
+			var s = api.GetStation("STS");
 
-			Console.WriteLine(JsonConvert.SerializeObject(station));
+			Console.WriteLine(JsonConvert.SerializeObject(s));
 
-			api.GetForcast(station);
+			Console.WriteLine(JsonConvert.SerializeObject(api.GetForcast(s)));
 		}
 	}
 }

@@ -1,7 +1,7 @@
 ﻿using LuasAPI.NET.Models;
 using System.Collections.Generic;
 
-namespace LuasAPI.NET.Tests
+namespace LuasAPI.NET.Tests.StationInformation
 {
 	class UnitTestStationInformationLoader : IStationInformationLoader
 	{
