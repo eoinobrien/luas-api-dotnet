@@ -10,6 +10,12 @@ namespace LuasAPI.NET.Tests
 	public class StationsTests
 	{
 		[Fact]
+		public void StationsConstructor_StationInformationLoaderIsNull_ThrowsArgumentExceptions()
+		{
+			Assert.Throws<ArgumentException>(() => new Stations(null));
+		}
+
+		[Fact]
 		public void GetAllStations_NoStations_ReturnsEmptyList()
 		{
 			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();

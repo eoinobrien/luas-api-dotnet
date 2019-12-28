@@ -10,6 +10,11 @@ namespace LuasAPI.NET
 	{
 		public Stations(IStationInformationLoader stationInformationLoader)
 		{
+			if (stationInformationLoader == null)
+			{
+				throw new ArgumentException(string.Format("Argument '{0}' is null.", nameof(stationInformationLoader), CultureInfo.InvariantCulture));
+			}
+
 			StationsDictionary = stationInformationLoader.Load();
 		}
 
