@@ -12,7 +12,7 @@ namespace LuasAPI.NET.Models
 		public int Minutes { get; private set; }
 
 		
-		public static TramForcast CreateTramForcastFromRTramXml(TramXml tramXml, Stations stations)
+		public static TramForcast CreateTramForcastFromTramXml(TramXml tramXml, Stations stations)
 		{
 			if (tramXml.Destination == "No trams forecast" && tramXml.Destination == string.Empty)
 			{
