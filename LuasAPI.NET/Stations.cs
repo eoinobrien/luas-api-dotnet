@@ -50,7 +50,7 @@ namespace LuasAPI.NET
 			}
 
 			string uppercaseName = name.ToUpperInvariant();
-			Station station = StationsDictionary.Values.FirstOrDefault(s => s.Name.ToUpperInvariant() == uppercaseName);
+			Station station = StationsDictionary.Values.FirstOrDefault(s => s.Name?.ToUpperInvariant() == uppercaseName);
 
 			if (station == null)
 			{
