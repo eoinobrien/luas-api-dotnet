@@ -160,5 +160,75 @@ namespace LuasAPI.NET.Tests
 
 			Assert.Equal(stationToQuery, stations.GetStation(stationToQuery.Abbreviation));
 		}
+
+		[Fact]
+		public void GetStationFromName_WhiteSpaceAbbreviation_ThrowsArgumentException()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.Throws<ArgumentException>(() => stations.GetStationFromName(string.Empty));
+		}
+
+		[Fact]
+		public void GetStationFromName_NullAbbreviation_ThrowsArgumentException()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.Throws<ArgumentException>(() => stations.GetStationFromName(null));
+		}
+
+		[Fact]
+		public void GetStationFromName_StationNotFound_ThrowsException()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Stations stations = new Stations(loader);
+
+			Assert.Throws<StationNotFoundException>(() => stations.GetStationFromName("St. Stephen's Green"));
+		}
+
+		[Fact]
+		public void GetStationFromName_UppercaseQueryStationExists_ReturnsStation()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Station station = new Station { Name = "St. Stephen's Green", Abbreviation = "STS" };
+			loader.AddStations(station);
+
+			Stations stations = new Stations(loader);
+
+			Assert.Equal(station, stations.GetStationFromName(station.Name.ToUpperInvariant()));
+		}
+
+		[Fact]
+		public void GetStationFromName_LowercaseQueryStationExists_ReturnsStation()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Station station = new Station { Name = "St. Stephen's Green", Abbreviation = "STS" };
+			loader.AddStations(station);
+
+			Stations stations = new Stations(loader);
+
+			Assert.Equal(station, stations.GetStationFromName(station.Name.ToLowerInvariant()));
+		}
+
+		[Fact]
+		public void GetStationFromName_MoreThanOneStationAvailable_ReturnsCorrectStation()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+
+			Station alternativeStation = new Station { Name = "Harcourt", Abbreviation = "HAR" };
+			Station stationToQuery = new Station { Name = "St. Stephen's Green", Abbreviation = "STS" };
+			loader.AddStations(alternativeStation, stationToQuery);
+
+			Stations stations = new Stations(loader);
+
+			Assert.Equal(stationToQuery, stations.GetStationFromName(stationToQuery.Name));
+		}
 	}
 }
