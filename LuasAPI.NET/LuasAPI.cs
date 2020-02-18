@@ -27,16 +27,15 @@ namespace LuasAPI.NET
 
 		public StationForcast GetForcast(string stationAbbreviation)
 		{
-			IForcastClient client = new LuasForcastApiClient(stations);
-			StationForcast forcast = client.GetRealTimeInfo(stationAbbreviation);
-
-			return forcast;
+			return GetForcastAsync(stationAbbreviation).Result;
 		}
 
 		public async Task<StationForcast> GetForcastAsync(string stationAbbreviation)
 		{
+			Station station = GetStation(stationAbbreviation);
+
 			IForcastClient client = new LuasForcastApiClient(stations);
-			StationForcast forcast = await client.GetRealTimeInfoAsync(stationAbbreviation);
+			StationForcast forcast = await client.GetRealTimeInfoAsync(station.Abbreviation);
 
 			return forcast;
 		}
