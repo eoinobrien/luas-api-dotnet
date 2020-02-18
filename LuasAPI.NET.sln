@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET.Example", "Luas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET", "LuasAPI.NET\LuasAPI.NET.csproj", "{92129F06-30FE-40A1-B509-B20BF72867ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuasAPI.AzureFunction", "LuasAPI.AzureFunction\LuasAPI.AzureFunction.csproj", "{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{92129F06-30FE-40A1-B509-B20BF72867ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92129F06-30FE-40A1-B509-B20BF72867ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92129F06-30FE-40A1-B509-B20BF72867ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
