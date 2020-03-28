@@ -12,28 +12,28 @@ using Xunit;
 
 namespace LuasAPI.NET.Tests.Models
 {
-	public class StationForcastTests
+	public class StationForecastTests
 	{
 		[Fact]
-		public void CreateStationForcastFromRealTimeInfo_RealTimeInfoIsNull_ThrowsArgumentException()
+		public void CreateStationForecastFromRealTimeInfo_RealTimeInfoIsNull_ThrowsArgumentException()
 		{
 			RealTimeInfo realTimeInfoXml = null;
 			Stations stations = new Stations(new UnitTestStationInformationLoader());
 
-			Assert.Throws<ArgumentException>(() => StationForcast.CreateStationForcastFromRealTimeInfo(realTimeInfoXml, stations));
+			Assert.Throws<ArgumentException>(() => StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfoXml, stations));
 		}
 
 		[Fact]
-		public void CreateStationForcastFromRealTimeInfo_StationsIsNull_ThrowsArgumentException()
+		public void CreateStationForecastFromRealTimeInfo_StationsIsNull_ThrowsArgumentException()
 		{
 			RealTimeInfo realTimeInfoXml = new RealTimeInfo();
 			Stations stations = null;
 
-			Assert.Throws<ArgumentException>(() => StationForcast.CreateStationForcastFromRealTimeInfo(realTimeInfoXml, stations));
+			Assert.Throws<ArgumentException>(() => StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfoXml, stations));
 		}
 
 		[Fact]
-		public void CreateStationForcastFromRealTimeInfo_()
+		public void CreateStationForecastFromRealTimeInfo_()
 		{
 			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
 			loader.AddStations(new Station() { Abbreviation = "STS", Name = "St. Stephen's Green", IsInUse = true });
@@ -44,11 +44,11 @@ namespace LuasAPI.NET.Tests.Models
 
 			RealTimeInfo realTimeInfo = CreateRealTimeInfoFromXml("<stopInfo created=\"2019-12-31T12:00:00\" stop=\"St. Stephen's Green\" stopAbv=\"STS\"><message>Green Line services operating normally</message><direction name=\"Inbound\"><tram destination=\"Parnell\" dueMins=\"1\" /></direction><direction name=\"Outbound\"><tram dueMins=\"6\" destination=\"Sandyford\" /></direction></stopInfo>");
 
-			StationForcast forcast = StationForcast.CreateStationForcastFromRealTimeInfo(realTimeInfo, stations);
+			StationForecast forecast = StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfo, stations);
 
-			Assert.Equal(realTimeInfo.Stop, forcast.Station.Name);
-			Assert.Single(forcast.InboundTrams);
-			Assert.Single(forcast.OutboundTrams);
+			Assert.Equal(realTimeInfo.Stop, forecast.Station.Name);
+			Assert.Single(forecast.InboundTrams);
+			Assert.Single(forecast.OutboundTrams);
 		}
 
 		private RealTimeInfo CreateRealTimeInfoFromXml(string xml)

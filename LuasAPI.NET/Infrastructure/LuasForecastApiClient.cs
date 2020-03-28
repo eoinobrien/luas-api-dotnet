@@ -6,9 +6,9 @@ using LuasAPI.NET.Models.RpaApiXml;
 
 namespace LuasAPI.NET.Infrastructure
 {
-	public class LuasForcastApiClient : IForcastClient
+	public class LuasForecastApiClient : IForecastClient
 	{
-		public LuasForcastApiClient(Stations stations)
+		public LuasForecastApiClient(Stations stations)
 		{
 			httpClient = new HttpClient();
 			this.stations = stations;
@@ -18,7 +18,7 @@ namespace LuasAPI.NET.Infrastructure
 		private readonly Stations stations;
 		private const string luasApiUrl = "http://luasforecasts.rpa.ie/xml/get.ashx?action=forecast&stop={0}&encrypt=false";
 
-		public async Task<StationForcast> GetRealTimeInfoAsync(string stationAbbreviation)
+		public async Task<StationForecast> GetRealTimeInfoAsync(string stationAbbreviation)
 		{
 			string url = string.Format(luasApiUrl, stationAbbreviation);
 
@@ -27,11 +27,11 @@ namespace LuasAPI.NET.Infrastructure
 			using (HttpContent content = response.Content)
 			using (Stream stream = await content.ReadAsStreamAsync())
 			{
-				return StationForcast.CreateStationForcastFromRealTimeInfo(RealTimeInfo.CreateFromStream(stream), stations);
+				return StationForecast.CreateStationForecastFromRealTimeInfo(RealTimeInfo.CreateFromStream(stream), stations);
 			}
 		}
 
-		public StationForcast GetRealTimeInfo(string stationAbbreviation)
+		public StationForecast GetRealTimeInfo(string stationAbbreviation)
 		{
 			return GetRealTimeInfoAsync(stationAbbreviation).Result;
 		}

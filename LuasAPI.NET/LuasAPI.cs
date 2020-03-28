@@ -25,29 +25,29 @@ namespace LuasAPI.NET
 			return stations.GetStation(abbreviation);
 		}
 
-		public StationForcast GetForcast(string stationAbbreviation)
+		public StationForecast GetForecast(string stationAbbreviation)
 		{
-			return GetForcastAsync(stationAbbreviation).Result;
+			return GetForecastAsync(stationAbbreviation).Result;
 		}
 
-		public async Task<StationForcast> GetForcastAsync(string stationAbbreviation)
+		public async Task<StationForecast> GetForecastAsync(string stationAbbreviation)
 		{
 			Station station = GetStation(stationAbbreviation);
 
-			IForcastClient client = new LuasForcastApiClient(stations);
-			StationForcast forcast = await client.GetRealTimeInfoAsync(station.Abbreviation);
+			IForecastClient client = new LuasForecastApiClient(stations);
+			StationForecast forecast = await client.GetRealTimeInfoAsync(station.Abbreviation);
 
-			return forcast;
+			return forecast;
 		}
 
-		public StationForcast GetForcast(Station station)
+		public StationForecast GetForecast(Station station)
 		{
-			return GetForcast(station.Abbreviation);
+			return GetForecast(station.Abbreviation);
 		}
 
-		public async Task<StationForcast> GetForcastAsync(Station station)
+		public async Task<StationForecast> GetForecastAsync(Station station)
 		{
-			return await GetForcastAsync(station.Abbreviation);
+			return await GetForecastAsync(station.Abbreviation);
 		}
 	}
 }

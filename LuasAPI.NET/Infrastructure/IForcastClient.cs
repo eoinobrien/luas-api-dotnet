@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 namespace LuasAPI.NET.Infrastructure
 {
-	public interface IForcastClient
+	public interface IForecastClient
 	{
-		StationForcast GetRealTimeInfo(string stationAbbreviation);
-		Task<StationForcast> GetRealTimeInfoAsync(string stationAbbreviation);
+		StationForecast GetRealTimeInfo(string stationAbbreviation);
+		Task<StationForecast> GetRealTimeInfoAsync(string stationAbbreviation);
 	}
 }

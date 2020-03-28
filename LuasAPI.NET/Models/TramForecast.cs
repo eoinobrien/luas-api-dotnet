@@ -3,7 +3,7 @@ using System;
 
 namespace LuasAPI.NET.Models
 {
-	public class TramForcast
+	public class TramForecast
 	{
 		public Station DestinationStation { get; private set; }
 
@@ -11,8 +11,8 @@ namespace LuasAPI.NET.Models
 
 		public int Minutes { get; private set; }
 
-		
-		public static TramForcast CreateTramForcastFromTramXml(TramXml tramXml, Stations stations)
+
+		public static TramForecast CreateTramForecastFromTramXml(TramXml tramXml, Stations stations)
 		{
 			if (tramXml.Destination == "No trams forecast" && tramXml.Destination == string.Empty)
 			{
@@ -28,14 +28,14 @@ namespace LuasAPI.NET.Models
 			{
 				Station destinationStation = stations.GetStationFromName(tramXml.Destination);
 
-				TramForcast tramForcast = new TramForcast
+				TramForecast tramForecast = new TramForecast
 				{
 					DestinationStation = destinationStation,
 					Minutes = dueMinutes,
 					IsDue = dueMinutes == 0
 				};
 
-				return tramForcast;
+				return tramForecast;
 			}
 			catch (StationNotFoundException ex)
 			{

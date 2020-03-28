@@ -2,16 +2,16 @@
 C# Wrapper around the Luas API.
 
 ## Features
-One API to rule the LUAS World.  
-**Work in Progress.**  
+One API to rule the LUAS World.
+**Work in Progress.**
 
 * Thorough station information
-* Luas Real Time Forcast
+* Luas Real Time Forecast
 * JSON Response
 
 ### Get all stations' information
 
-The libary contains comprehensive station information, including the latitude, longitude, and parking information.  
+The libary contains comprehensive station information, including the latitude, longitude, and parking information.
 
 ```cs
 LuasApi api = new LuasApi();
@@ -133,14 +133,14 @@ api.GetStation("STS");
 }
 ```
 
-### Get a forcast
+### Get a forecast
 There are a number of ways the real-time information for a station
 ```cs
 LuasApi api = new LuasApi();
-api.GetForcast("ABB");
+api.GetForecast("ABB");
 //or
 Station abbeyStreet = api.GetStation("ABB");
-api.GetForcast(abbeyStreet);
+api.GetForecast(abbeyStreet);
 ```
 
 ```json

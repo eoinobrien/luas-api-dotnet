@@ -13,7 +13,7 @@ namespace LuasAPI.NET.Example
 			//Console.WriteLine(JsonConvert.SerializeObject(api.GetAllStations()));
 			//Console.WriteLine();
 
-			Console.WriteLine(JsonConvert.SerializeObject(api.GetForcast(s)));
+			Console.WriteLine(JsonConvert.SerializeObject(api.GetForecast(s)));
 		}
 	}
 }

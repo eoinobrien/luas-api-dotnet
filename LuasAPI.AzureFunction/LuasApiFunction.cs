@@ -51,29 +51,29 @@ namespace LuasAPI.AzureFunction
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
         }
 
-        [FunctionName("GetStationForcast")]
-        public static async Task<IActionResult> GetStationForcast(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/{stationAbbreviation}/forcast")] HttpRequest req,
+        [FunctionName("GetStationForecast")]
+        public static async Task<IActionResult> GetStationForecast(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/{stationAbbreviation}/forecast")] HttpRequest req,
             string stationAbbreviation,
             ILogger log)
         {
-            log.LogInformation($"Get station forcast for {stationAbbreviation}");
+            log.LogInformation($"Get station forecast for {stationAbbreviation}");
 
             LuasApi api = new LuasApi();
 
             try
             {
-                var forcast = await api.GetForcastAsync(stationAbbreviation);
-                return new OkObjectResult(forcast);
+                var forecast = await api.GetForecastAsync(stationAbbreviation);
+                return new OkObjectResult(forecast);
             }
             catch (StationNotFoundException)
             {
                 log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'");
-                return new NotFoundObjectResult($"Unable to find forcast for: '{stationAbbreviation}'");
+                return new NotFoundObjectResult($"Unable to find forecast for: '{stationAbbreviation}'");
             }
             catch (Exception ex)
             {
-                log.LogError($"Exception thrown in GetStationForcast", ex);
+                log.LogError($"Exception thrown in GetStationForecast", ex);
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
         }

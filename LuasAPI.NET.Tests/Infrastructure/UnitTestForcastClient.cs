@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace LuasAPI.NET.Tests.Infrastructure
 {
-	public class UnitTestForcastClient : IForcastClient
+	public class UnitTestForecastClient : IForecastClient
 	{
-		public StationForcast GetRealTimeInfo(string stationAbbreviation)
+		public StationForecast GetRealTimeInfo(string stationAbbreviation)
 		{
 			throw new NotImplementedException();
 		}
 
-		public Task<StationForcast> GetRealTimeInfoAsync(string stationAbbreviation)
+		public Task<StationForecast> GetRealTimeInfoAsync(string stationAbbreviation)
 		{
 			throw new NotImplementedException();
 		}
