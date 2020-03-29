@@ -2,6 +2,7 @@
 	"DEP": {
 		"abbreviation": "DEP",
 		"name": "Depot",
+		"irishName" : "Depot",
 		"pronunciation": "depot",
 		"line": "Depot",
 		"hasParking": false,
@@ -16,6 +17,7 @@
 	"TPT": {
 		"abbreviation": "TPT",
 		"name": "The Point",
+		"irishName" : "Iosta na Rinne",
 		"pronunciation": "the point",
 		"line": "Red",
 		"hasParking": false,
@@ -61,6 +63,7 @@
 	"SDK": {
 		"abbreviation": "SDK",
 		"name": "Spencer Dock",
+		"irishName" : "Duga Spencer",
 		"pronunciation": "spencer dock",
 		"line": "Red",
 		"hasParking": false,
@@ -107,6 +110,7 @@
 	"MYS": {
 		"abbreviation": "MYS",
 		"name": "Mayor Square - NCI",
+		"irishName" : "Cearnóg an Mhéara - CNÉ",
 		"pronunciation": "mayor square - <say-as interpret-as=\"spell-out\">nci</say-as>",
 		"line": "Red",
 		"hasParking": false,
@@ -153,6 +157,7 @@
 	"GDK": {
 		"abbreviation": "GDK",
 		"name": "George's Dock",
+		"irishName" : "Duga Sheoirse",
 		"pronunciation": "george's dock",
 		"line": "Red",
 		"hasParking": false,
@@ -199,6 +204,7 @@
 	"CON": {
 		"abbreviation": "CON",
 		"name": "Connolly",
+		"irishName" : "Conghaile",
 		"pronunciation": "connolly",
 		"line": "Red",
 		"hasParking": false,
@@ -243,6 +249,7 @@
 	"BUS": {
 		"abbreviation": "BUS",
 		"name": "Busáras",
+		"irishName" : "Busáras",
 		"pronunciation": "<phoneme alphabet=\"ipa\" ph=\"bʌsˠˌɑːɾˠəsˠ\">busaras</phoneme>",
 		"line": "Red",
 		"hasParking": false,
@@ -292,6 +299,7 @@
 	"ABB": {
 		"abbreviation": "ABB",
 		"name": "Abbey Street",
+		"irishName" : "Sráid na Mainistreach",
 		"pronunciation": "abbey street",
 		"line": "Red",
 		"hasParking": false,
@@ -342,6 +350,7 @@
 	"JER": {
 		"abbreviation": "JER",
 		"name": "Jervis",
+		"irishName" : "Jervis",
 		"pronunciation": "jervis",
 		"line": "Red",
 		"hasParking": false,
@@ -389,6 +398,7 @@
 	"FOU": {
 		"abbreviation": "FOU",
 		"name": "Four Courts",
+		"irishName" : "Na Ceithre Cúirteanna",
 		"pronunciation": "four courts",
 		"line": "Red",
 		"hasParking": false,
@@ -436,6 +446,7 @@
 	"SMI": {
 		"abbreviation": "SMI",
 		"name": "Smithfield",
+		"irishName" : "Margadh na Feirme",
 		"pronunciation": "smithfield",
 		"line": "Red",
 		"hasParking": false,
@@ -483,6 +494,7 @@
 	"MUS": {
 		"abbreviation": "MUS",
 		"name": "Museum",
+		"irishName" : "Ard-Mhúsaem",
 		"pronunciation": "museum",
 		"line": "Red",
 		"hasParking": false,
@@ -530,6 +542,7 @@
 	"HEU": {
 		"abbreviation": "HEU",
 		"name": "Heuston",
+		"irishName" : "Heuston",
 		"pronunciation": "heuston",
 		"line": "Red",
 		"hasParking": false,
@@ -577,6 +590,7 @@
 	"JAM": {
 		"abbreviation": "JAM",
 		"name": "James's",
+		"irishName" : "Ospidéal San Séamas",
 		"pronunciation": "james's",
 		"line": "Red",
 		"hasParking": false,
@@ -624,6 +638,7 @@
 	"FAT": {
 		"abbreviation": "FAT",
 		"name": "Fatima",
+		"irishName" : "Fatima",
 		"pronunciation": "fatima",
 		"line": "Red",
 		"hasParking": false,
@@ -671,6 +686,7 @@
 	"RIA": {
 		"abbreviation": "RIA",
 		"name": "Rialto",
+		"irishName" : "Rialto",
 		"pronunciation": "rialto",
 		"line": "Red",
 		"hasParking": false,
@@ -718,6 +734,7 @@
 	"SUI": {
 		"abbreviation": "SUI",
 		"name": "Suir Road",
+		"irishName" : "Bóthar na Siúire",
 		"pronunciation": "suir road",
 		"line": "Red",
 		"hasParking": false,
@@ -765,6 +782,7 @@
 	"GOL": {
 		"abbreviation": "GOL",
 		"name": "Goldenbridge",
+		"irishName" : "An Droichead Órga",
 		"pronunciation": "goldenbridge",
 		"line": "Red",
 		"hasParking": false,
@@ -812,6 +830,7 @@
 	"DRI": {
 		"abbreviation": "DRI",
 		"name": "Drimnagh",
+		"irishName" : "Droimeanach",
 		"pronunciation": "drimnagh",
 		"line": "Red",
 		"hasParking": false,
@@ -859,6 +878,7 @@
 	"BLA": {
 		"abbreviation": "BLA",
 		"name": "Blackhorse",
+		"irishName" : "An Capall Dubh",
 		"pronunciation": "blackhorse",
 		"line": "Red",
 		"hasParking": false,
@@ -906,6 +926,7 @@
 	"BLU": {
 		"abbreviation": "BLU",
 		"name": "Bluebell",
+		"irishName" : "An Cloigín Gorm",
 		"pronunciation": "bluebell",
 		"line": "Red",
 		"hasParking": false,
@@ -953,6 +974,7 @@
 	"KYL": {
 		"abbreviation": "KYL",
 		"name": "Kylemore",
+		"irishName" : "An Chill Mhór",
 		"pronunciation": "kylemore",
 		"line": "Red",
 		"hasParking": false,
@@ -1000,6 +1022,7 @@
 	"RED": {
 		"abbreviation": "RED",
 		"name": "Red Cow",
+		"irishName" : "An Bhó Dhearg",
 		"pronunciation": "red cow",
 		"line": "Red",
 		"hasParking": true,
@@ -1047,6 +1070,7 @@
 	"KIN": {
 		"abbreviation": "KIN",
 		"name": "Kingswood",
+		"irishName" : "Coill an Rí",
 		"pronunciation": "kingswood",
 		"line": "Red",
 		"hasParking": false,
@@ -1094,6 +1118,7 @@
 	"BEL": {
 		"abbreviation": "BEL",
 		"name": "Belgard",
+		"irishName" : "Belgard",
 		"pronunciation": "belgard",
 		"line": "Red",
 		"hasParking": false,
@@ -1125,6 +1150,7 @@
 	"COO": {
 		"abbreviation": "COO",
 		"name": "Cookstown",
+		"irishName" : "Baile an Chócaigh",
 		"pronunciation": "cookstown",
 		"line": "Red",
 		"hasParking": false,
@@ -1167,6 +1193,7 @@
 	"HOS": {
 		"abbreviation": "HOS",
 		"name": "Hospital",
+		"irishName" : "Ospidéal Thamhlachta",
 		"pronunciation": "hospital",
 		"line": "Red",
 		"hasParking": false,
@@ -1209,6 +1236,7 @@
 	"TAL": {
 		"abbreviation": "TAL",
 		"name": "Tallaght",
+		"irishName" : "Tamhlacht",
 		"pronunciation": "tallaght",
 		"line": "Red",
 		"hasParking": true,
@@ -1250,6 +1278,7 @@
 	"FET": {
 		"abbreviation": "FET",
 		"name": "Fettercairn",
+		"irishName" : "Fothair Chardain",
 		"pronunciation": "fettercairn",
 		"line": "Red",
 		"hasParking": false,
@@ -1294,6 +1323,7 @@
 	"CVN": {
 		"abbreviation": "CVN",
 		"name": "Cheeverstown",
+		"irishName" : "Baile an tSíbhrigh",
 		"pronunciation": "cheeverstown",
 		"line": "Red",
 		"hasParking": true,
@@ -1338,6 +1368,7 @@
 	"CIT": {
 		"abbreviation": "CIT",
 		"name": "Citywest Campus",
+		"irishName" : "Campas Gnó Iarthar na Cathrach",
 		"pronunciation": "citywest campus",
 		"line": "Red",
 		"hasParking": false,
@@ -1382,6 +1413,7 @@
 	"FOR": {
 		"abbreviation": "FOR",
 		"name": "Fortunestown",
+		"irishName" : "Baile Uí Fhoirtcheirn",
 		"pronunciation": "fortunestown",
 		"line": "Red",
 		"hasParking": false,
@@ -1426,6 +1458,7 @@
 	"SAG": {
 		"abbreviation": "SAG",
 		"name": "Saggart",
+		"irishName" : "Teach Sagard",
 		"pronunciation": "saggart",
 		"line": "Red",
 		"hasParking": false,
@@ -1469,6 +1502,7 @@
 	"BRO": {
 		"abbreviation": "BRO",
 		"name": "Broombridge",
+		"irishName" : "Droichead Brrome",
 		"pronunciation": "broombridge",
 		"line": "Green",
 		"hasParking": false,
@@ -1517,6 +1551,7 @@
 	"CAB": {
 		"abbreviation": "CAB",
 		"name": "Cabra",
+		"irishName" : "Cabrach",
 		"pronunciation": "cabra",
 		"line": "Green",
 		"hasParking": false,
@@ -1566,6 +1601,7 @@
 	"PHI": {
 		"abbreviation": "PHI",
 		"name": "Phibsborough",
+		"irishName" : "Baile Phib",
 		"pronunciation": "phibsborough",
 		"line": "Green",
 		"hasParking": false,
@@ -1615,6 +1651,7 @@
 	"GRA": {
 		"abbreviation": "GRA",
 		"name": "Grangegorman",
+		"irishName" : "Gráinseach Ghormáin",
 		"pronunciation": "grangegorman",
 		"line": "Green",
 		"hasParking": false,
@@ -1664,6 +1701,7 @@
 	"BRD": {
 		"abbreviation": "BRD",
 		"name": "Broadstone - DIT",
+		"irishName" : "An Chloch Leathan - ITBhÁC",
 		"pronunciation": "broadstone - <say-as interpret-as=\"spell-out\">dit</say-as>",
 		"line": "Green",
 		"hasParking": false,
@@ -1713,6 +1751,7 @@
 	"DOM": {
 		"abbreviation": "DOM",
 		"name": "Dominick",
+		"irishName" : "Doiminic",
 		"pronunciation": "dominick",
 		"line": "Green",
 		"hasParking": false,
@@ -1762,6 +1801,7 @@
 	"PAR": {
 		"abbreviation": "PAR",
 		"name": "Parnell",
+		"irishName" : "Parnell",
 		"pronunciation": "parnell",
 		"line": "Green",
 		"hasParking": false,
@@ -1804,6 +1844,7 @@
 	"MAR": {
 		"abbreviation": "MAR",
 		"name": "Marlborough",
+		"irishName" : "Maoilbhríde",
 		"pronunciation": "marlborough",
 		"line": "Green",
 		"hasParking": false,
@@ -1847,6 +1888,7 @@
 	"TRY": {
 		"abbreviation": "TRY",
 		"name": "Trinity",
+		"irishName" : "Tríonóid",
 		"pronunciation": "trinity",
 		"line": "Green",
 		"hasParking": false,
@@ -1889,6 +1931,7 @@
 	"OUP": {
 		"abbreviation": "OUP",
 		"name": "O'Connell - Upper",
+		"irishName" : "Ó Conaill Uachtarach",
 		"pronunciation": "o'connell - upper",
 		"line": "Green",
 		"hasParking": false,
@@ -1910,6 +1953,7 @@
 	"OGP": {
 		"abbreviation": "OGP",
 		"name": "O'Connell - GPO",
+		"irishName" : "Ó Conaill - AOP",
 		"pronunciation": "o'connell - <say-as interpret-as=\"spell-out\">gpo</say-as>",
 		"line": "Green",
 		"hasParking": false,
@@ -1934,6 +1978,7 @@
 	"WES": {
 		"abbreviation": "WES",
 		"name": "Westmoreland",
+		"irishName" : "",
 		"pronunciation": "westmoreland",
 		"line": "Green",
 		"hasParking": false,
@@ -1959,6 +2004,7 @@
 	"DAW": {
 		"abbreviation": "DAW",
 		"name": "Dawson",
+		"irishName" : "",
 		"pronunciation": "dawson",
 		"line": "Green",
 		"hasParking": false,
@@ -2009,6 +2055,7 @@
 	"STS": {
 		"abbreviation": "STS",
 		"name": "St. Stephen's Green",
+		"irishName" : "Faiche Stiabhna",
 		"pronunciation": "st. stephen's green",
 		"line": "Green",
 		"hasParking": false,
@@ -2059,6 +2106,7 @@
 	"HAR": {
 		"abbreviation": "HAR",
 		"name": "Harcourt",
+		"irishName" : "Sráid Fhearchair",
 		"pronunciation": "harcourt",
 		"line": "Green",
 		"hasParking": false,
@@ -2109,6 +2157,7 @@
 	"CHA": {
 		"abbreviation": "CHA",
 		"name": "Charlemont",
+		"irishName" : "Charlemont",
 		"pronunciation": "charlemont",
 		"line": "Green",
 		"hasParking": false,
@@ -2159,6 +2208,7 @@
 	"RAN": {
 		"abbreviation": "RAN",
 		"name": "Ranelagh",
+		"irishName" : "Raghnallach",
 		"pronunciation": "ranelagh",
 		"line": "Green",
 		"hasParking": false,
@@ -2209,6 +2259,7 @@
 	"BEE": {
 		"abbreviation": "BEE",
 		"name": "Beechwood",
+		"irishName" : "Coill na Feá",
 		"pronunciation": "beechwood",
 		"line": "Green",
 		"hasParking": false,
@@ -2259,6 +2310,7 @@
 	"COW": {
 		"abbreviation": "COW",
 		"name": "Cowper",
+		"irishName" : "Cowper",
 		"pronunciation": "cowper",
 		"line": "Green",
 		"hasParking": false,
@@ -2309,6 +2361,7 @@
 	"MIL": {
 		"abbreviation": "MIL",
 		"name": "Milltown",
+		"irishName" : "Baile an Mhuilinn",
 		"pronunciation": "milltown",
 		"line": "Green",
 		"hasParking": false,
@@ -2359,6 +2412,7 @@
 	"WIN": {
 		"abbreviation": "WIN",
 		"name": "Windy Arbour",
+		"irishName" : "Na Glasáin",
 		"pronunciation": "windy arbour",
 		"line": "Green",
 		"hasParking": false,
@@ -2410,6 +2464,7 @@
 	"DUN": {
 		"abbreviation": "DUN",
 		"name": "Dundrum",
+		"irishName" : "Dún Droma",
 		"pronunciation": "dundrum",
 		"line": "Green",
 		"hasParking": false,
@@ -2447,6 +2502,7 @@
 	"BAL": {
 		"abbreviation": "BAL",
 		"name": "Balally",
+		"irishName" : "Baile Amhlaoibh",
 		"pronunciation": "balally",
 		"line": "Green",
 		"hasParking": true,
@@ -2497,6 +2553,7 @@
 	"KIL": {
 		"abbreviation": "KIL",
 		"name": "Kilmacud",
+		"irishName" : "Cill Mochuda",
 		"pronunciation": "kilmacud",
 		"line": "Green",
 		"hasParking": false,
@@ -2547,6 +2604,7 @@
 	"STI": {
 		"abbreviation": "STI",
 		"name": "Stillorgan",
+		"irishName" : "Stigh Lorgan",
 		"pronunciation": "stillorgan",
 		"line": "Green",
 		"hasParking": true,
@@ -2597,6 +2655,7 @@
 	"SAN": {
 		"abbreviation": "SAN",
 		"name": "Sandyford",
+		"irishName" : "Áth an Ghainimh",
 		"pronunciation": "sandyford",
 		"line": "Green",
 		"hasParking": true,
@@ -2647,6 +2706,7 @@
 	"CPK": {
 		"abbreviation": "CPK",
 		"name": "Central Park",
+		"irishName" : "An Pháirc Láir",
 		"pronunciation": "central park",
 		"line": "Green",
 		"hasParking": false,
@@ -2697,6 +2757,7 @@
 	"GLE": {
 		"abbreviation": "GLE",
 		"name": "Glencairn",
+		"irishName" : "Gleann an Chairn",
 		"pronunciation": "glencairn",
 		"line": "Green",
 		"hasParking": false,
@@ -2747,6 +2808,7 @@
 	"GAL": {
 		"abbreviation": "GAL",
 		"name": "The Gallops",
+		"irishName" : "An Eachrais",
 		"pronunciation": "the gallops",
 		"line": "Green",
 		"hasParking": false,
@@ -2797,6 +2859,7 @@
 	"LEO": {
 		"abbreviation": "LEO",
 		"name": "Leopardstown Valley",
+		"irishName" : "Gleann Bhaile na Lobhar",
 		"pronunciation": "leopardstown valley",
 		"line": "Green",
 		"hasParking": false,
@@ -2826,6 +2889,7 @@
 	"BAW": {
 		"abbreviation": "BAW",
 		"name": "Ballyogan Wood",
+		"irishName" : "Coill Bhaile Uí Ógáin",
 		"pronunciation": "ballyogan wood",
 		"line": "Green",
 		"hasParking": false,
@@ -2876,6 +2940,7 @@
 	"RCC": {
 		"abbreviation": "RCC",
 		"name": "Racecourse",
+		"irishName" : "An Ráschúrsa",
 		"pronunciation": "racecourse",
 		"line": "Green",
 		"hasParking": false,
@@ -2927,6 +2992,7 @@
 	"CCK": {
 		"abbreviation": "CCK",
 		"name": "Carrickmines",
+		"irishName" : "Carraig Mhaighin",
 		"pronunciation": "carrickmines",
 		"line": "Green",
 		"hasParking": false,
@@ -2977,6 +3043,7 @@
 	"BRE": {
 		"abbreviation": "BRE",
 		"name": "Brennanstown",
+		"irishName" : "Baile Uí Bhraonáin",
 		"pronunciation": "brennanstown",
 		"line": "Green",
 		"hasParking": false,
@@ -3027,6 +3094,7 @@
 	"LAU": {
 		"abbreviation": "LAU",
 		"name": "Laughanstown",
+		"irishName" : "Baile an Locháin",
 		"pronunciation": "laughanstown",
 		"line": "Green",
 		"hasParking": false,
@@ -3077,6 +3145,7 @@
 	"CHE": {
 		"abbreviation": "CHE",
 		"name": "Cherrywood",
+		"irishName" : "Coill na Silíní",
 		"pronunciation": "cherrywood",
 		"line": "Green",
 		"hasParking": false,
@@ -3127,6 +3196,7 @@
 	"BRI": {
 		"abbreviation": "BRI",
 		"name": "Bride's Glen",
+		"irishName" : "Gleann Bhríde",
 		"pronunciation": "bride's glen",
 		"line": "Green",
 		"hasParking": false,

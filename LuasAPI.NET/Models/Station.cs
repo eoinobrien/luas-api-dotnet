@@ -8,6 +8,8 @@ namespace LuasAPI.NET.Models
 	{
 		public string Name { get; set; }
 
+		public string IrishName { get; set; }
+
 		public string Pronunciation { get; set; }
 
 		public string Abbreviation { get; set; }
