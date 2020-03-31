@@ -2,7 +2,7 @@
 	"DEP": {
 		"abbreviation": "DEP",
 		"name": "Depot",
-		"irishName" : "Depot",
+		"irishName": "Depot",
 		"pronunciation": "depot",
 		"line": "Depot",
 		"hasParking": false,
@@ -12,12 +12,17 @@
 		"walkingTransfer": [],
 		"inboundStations": [],
 		"outboundStations": [],
-		"isInUse": false
+		"isInUse": false,
+		"operatingHours": {
+			"weekdays": { },
+			"saturday": { },
+			"sunday": { }
+		}
 	},
 	"TPT": {
 		"abbreviation": "TPT",
 		"name": "The Point",
-		"irishName" : "Iosta na Rinne",
+		"irishName": "Iosta na Rinne",
 		"pronunciation": "the point",
 		"line": "Red",
 		"hasParking": false,
@@ -58,12 +63,32 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+							"outbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:30"
+				}
+			},
+			"saturday": {
+							"outbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:30"
+				}
+			},
+			"sunday": {
+							"outbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:30"
+				}
+			}
+		}
 	},
 	"SDK": {
 		"abbreviation": "SDK",
 		"name": "Spencer Dock",
-		"irishName" : "Duga Spencer",
+		"irishName": "Duga Spencer",
 		"pronunciation": "spencer dock",
 		"line": "Red",
 		"hasParking": false,
@@ -105,12 +130,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "06:01",
+					"lastTram": "00:45"
+				},
+				"outbound": {
+					"firstTram": "05:32",
+					"lastTram": "00:32"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:41",
+					"lastTram": "00:45"
+				},
+				"outbound": {
+					"firstTram": "06:32",
+					"lastTram": "00:32"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:31",
+					"lastTram": "23:45"
+				},
+				"outbound": {
+					"firstTram": "07:02",
+					"lastTram": "23:32"
+				}
+			}
+		}
 	},
 	"MYS": {
 		"abbreviation": "MYS",
 		"name": "Mayor Square - NCI",
-		"irishName" : "Cearnóg an Mhéara - CNÉ",
+		"irishName": "Cearnóg an Mhéara - CNÉ",
 		"pronunciation": "mayor square - <say-as interpret-as=\"spell-out\">nci</say-as>",
 		"line": "Red",
 		"hasParking": false,
@@ -152,12 +209,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "06:00",
+					"lastTram": "00:44"
+				},
+				"outbound": {
+					"firstTram": "05:34",
+					"lastTram": "00:34"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:44"
+				},
+				"outbound": {
+					"firstTram": "06:34",
+					"lastTram": "00:34"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:30",
+					"lastTram": "23:44"
+				},
+				"outbound": {
+					"firstTram": "07:04",
+					"lastTram": "23:34"
+				}
+			}
+		}
 	},
 	"GDK": {
 		"abbreviation": "GDK",
 		"name": "George's Dock",
-		"irishName" : "Duga Sheoirse",
+		"irishName": "Duga Sheoirse",
 		"pronunciation": "george's dock",
 		"line": "Red",
 		"hasParking": false,
@@ -199,12 +288,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:59",
+					"lastTram": "00:43"
+				},
+				"outbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:36"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:39",
+					"lastTram": "00:43"
+				},
+				"outbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:36"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:29",
+					"lastTram": "23:43"
+				},
+				"outbound": {
+					"firstTram": "07:05",
+					"lastTram": "23:35"
+				}
+			}
+		}
 	},
 	"CON": {
 		"abbreviation": "CON",
 		"name": "Connolly",
-		"irishName" : "Conghaile",
+		"irishName": "Conghaile",
 		"pronunciation": "connolly",
 		"line": "Red",
 		"hasParking": false,
@@ -244,12 +365,32 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+							"outbound": {
+					"firstTram": "07:10",
+					"lastTram": "19:31"
+				}
+			},
+			"saturday": {
+							"outbound": {
+					"firstTram": "09:14",
+					"lastTram": "19:31"
+				}
+			},
+			"sunday": {
+							"outbound": {
+					"firstTram": "15:12",
+					"lastTram": "19:03"
+				}
+			}
+		}
 	},
 	"BUS": {
 		"abbreviation": "BUS",
 		"name": "Busáras",
-		"irishName" : "Busáras",
+		"irishName": "Busáras",
 		"pronunciation": "<phoneme alphabet=\"ipa\" ph=\"bʌsˠˌɑːɾˠəsˠ\">busaras</phoneme>",
 		"line": "Red",
 		"hasParking": false,
@@ -294,12 +435,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:57",
+					"lastTram": "00:41"
+				},
+				"outbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:38"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:41"
+				},
+				"outbound": {
+					"firstTram": "06:38",
+					"lastTram": "00:38"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:27",
+					"lastTram": "23:41"
+				},
+				"outbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:36"
+				}
+			}
+		}
 	},
 	"ABB": {
 		"abbreviation": "ABB",
 		"name": "Abbey Street",
-		"irishName" : "Sráid na Mainistreach",
+		"irishName": "Sráid na Mainistreach",
 		"pronunciation": "abbey street",
 		"line": "Red",
 		"hasParking": false,
@@ -345,12 +518,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:55",
+					"lastTram": "00:39"
+				},
+				"outbound": {
+					"firstTram": "05:40",
+					"lastTram": "00:40"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:35",
+					"lastTram": "00:39"
+				},
+				"outbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:40"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:25",
+					"lastTram": "23:39"
+				},
+				"outbound": {
+					"firstTram": "07:10",
+					"lastTram": "23:40"
+				}
+			}
+		}
 	},
 	"JER": {
 		"abbreviation": "JER",
 		"name": "Jervis",
-		"irishName" : "Jervis",
+		"irishName": "Jervis",
 		"pronunciation": "jervis",
 		"line": "Red",
 		"hasParking": false,
@@ -393,12 +598,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:54",
+					"lastTram": "00:36"
+				},
+				"outbound": {
+					"firstTram": "05:41",
+					"lastTram": "00:41"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:36"
+				},
+				"outbound": {
+					"firstTram": "06:42",
+					"lastTram": "00:41"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:36"
+				},
+				"outbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:42"
+				}
+			}
+		}
 	},
 	"FOU": {
 		"abbreviation": "FOU",
 		"name": "Four Courts",
-		"irishName" : "Na Ceithre Cúirteanna",
+		"irishName": "Na Ceithre Cúirteanna",
 		"pronunciation": "four courts",
 		"line": "Red",
 		"hasParking": false,
@@ -441,12 +678,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:53",
+					"lastTram": "00:34"
+				},
+				"outbound": {
+					"firstTram": "05:43",
+					"lastTram": "00:43"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:34"
+				},
+				"outbound": {
+					"firstTram": "06:44",
+					"lastTram": "00:43"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:20",
+					"lastTram": "23:34"
+				},
+				"outbound": {
+					"firstTram": "07:14",
+					"lastTram": "23:44"
+				}
+			}
+		}
 	},
 	"SMI": {
 		"abbreviation": "SMI",
 		"name": "Smithfield",
-		"irishName" : "Margadh na Feirme",
+		"irishName": "Margadh na Feirme",
 		"pronunciation": "smithfield",
 		"line": "Red",
 		"hasParking": false,
@@ -489,12 +758,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:50",
+					"lastTram": "00:33"
+				},
+				"outbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:45"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:33"
+				},
+				"outbound": {
+					"firstTram": "06:46",
+					"lastTram": "00:45"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:19",
+					"lastTram": "23:33"
+				},
+				"outbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:45"
+				}
+			}
+		}
 	},
 	"MUS": {
 		"abbreviation": "MUS",
 		"name": "Museum",
-		"irishName" : "Ard-Mhúsaem",
+		"irishName": "Ard-Mhúsaem",
 		"pronunciation": "museum",
 		"line": "Red",
 		"hasParking": false,
@@ -537,12 +838,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:48",
+					"lastTram": "00:30"
+				},
+				"outbound": {
+					"firstTram": "05:47",
+					"lastTram": "00:47"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:28",
+					"lastTram": "00:30"
+				},
+				"outbound": {
+					"firstTram": "06:48",
+					"lastTram": "00:47"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:16",
+					"lastTram": "23:30"
+				},
+				"outbound": {
+					"firstTram": "07:17",
+					"lastTram": "23:47"
+				}
+			}
+		}
 	},
 	"HEU": {
 		"abbreviation": "HEU",
 		"name": "Heuston",
-		"irishName" : "Heuston",
+		"irishName": "Heuston",
 		"pronunciation": "heuston",
 		"line": "Red",
 		"hasParking": false,
@@ -585,12 +918,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:28"
+				},
+				"outbound": {
+					"firstTram": "05:49",
+					"lastTram": "00:49"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:25",
+					"lastTram": "00:28"
+				},
+				"outbound": {
+					"firstTram": "06:50",
+					"lastTram": "00:49"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:29"
+				},
+				"outbound": {
+					"firstTram": "07:20",
+					"lastTram": "23:50"
+				}
+			}
+		}
 	},
 	"JAM": {
 		"abbreviation": "JAM",
 		"name": "James's",
-		"irishName" : "Ospidéal San Séamas",
+		"irishName": "Ospidéal San Séamas",
 		"pronunciation": "james's",
 		"line": "Red",
 		"hasParking": false,
@@ -633,12 +998,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:43",
+					"lastTram": "00:26"
+				},
+				"outbound": {
+					"firstTram": "05:50",
+					"lastTram": "00:50"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:23",
+					"lastTram": "00:26"
+				},
+				"outbound": {
+					"firstTram": "06:51",
+					"lastTram": "00:50"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:13",
+					"lastTram": "23:27"
+				},
+				"outbound": {
+					"firstTram": "07:21",
+					"lastTram": "23:52"
+				}
+			}
+		}
 	},
 	"FAT": {
 		"abbreviation": "FAT",
 		"name": "Fatima",
-		"irishName" : "Fatima",
+		"irishName": "Fatima",
 		"pronunciation": "fatima",
 		"line": "Red",
 		"hasParking": false,
@@ -681,12 +1078,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:25"
+				},
+				"outbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:52"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:22",
+					"lastTram": "00:25"
+				},
+				"outbound": {
+					"firstTram": "06:53",
+					"lastTram": "00:52"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:26"
+				},
+				"outbound": {
+					"firstTram": "07:24",
+					"lastTram": "23:53"
+				}
+			}
+		}
 	},
 	"RIA": {
 		"abbreviation": "RIA",
 		"name": "Rialto",
-		"irishName" : "Rialto",
+		"irishName": "Rialto",
 		"pronunciation": "rialto",
 		"line": "Red",
 		"hasParking": false,
@@ -729,12 +1158,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:41",
+					"lastTram": "00:24"
+				},
+				"outbound": {
+					"firstTram": "05:54",
+					"lastTram": "00:54"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:21",
+					"lastTram": "00:24"
+				},
+				"outbound": {
+					"firstTram": "06:55",
+					"lastTram": "00:54"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:11",
+					"lastTram": "23:25"
+				},
+				"outbound": {
+					"firstTram": "07:25",
+					"lastTram": "23:54"
+				}
+			}
+		}
 	},
 	"SUI": {
 		"abbreviation": "SUI",
 		"name": "Suir Road",
-		"irishName" : "Bóthar na Siúire",
+		"irishName": "Bóthar na Siúire",
 		"pronunciation": "suir road",
 		"line": "Red",
 		"hasParking": false,
@@ -777,12 +1238,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:22"
+				},
+				"outbound": {
+					"firstTram": "05:56",
+					"lastTram": "00:56"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:19",
+					"lastTram": "00:22"
+				},
+				"outbound": {
+					"firstTram": "06:57",
+					"lastTram": "00:56"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:09",
+					"lastTram": "23:23"
+				},
+				"outbound": {
+					"firstTram": "07:26",
+					"lastTram": "23:56"
+				}
+			}
+		}
 	},
 	"GOL": {
 		"abbreviation": "GOL",
 		"name": "Goldenbridge",
-		"irishName" : "An Droichead Órga",
+		"irishName": "An Droichead Órga",
 		"pronunciation": "goldenbridge",
 		"line": "Red",
 		"hasParking": false,
@@ -825,12 +1318,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:21"
+				},
+				"outbound": {
+					"firstTram": "05:58",
+					"lastTram": "00:58"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:18",
+					"lastTram": "00:21"
+				},
+				"outbound": {
+					"firstTram": "06:59",
+					"lastTram": "00:58"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:22"
+				},
+				"outbound": {
+					"firstTram": "07:28",
+					"lastTram": "23:57"
+				}
+			}
+		}
 	},
 	"DRI": {
 		"abbreviation": "DRI",
 		"name": "Drimnagh",
-		"irishName" : "Droimeanach",
+		"irishName": "Droimeanach",
 		"pronunciation": "drimnagh",
 		"line": "Red",
 		"hasParking": false,
@@ -873,12 +1398,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:21"
+				},
+				"outbound": {
+					"firstTram": "06:00",
+					"lastTram": "00:59"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:17",
+					"lastTram": "00:21"
+				},
+				"outbound": {
+					"firstTram": "07:00",
+					"lastTram": "00:59"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:21"
+				},
+				"outbound": {
+					"firstTram": "07:29",
+					"lastTram": "23:58"
+				}
+			}
+		}
 	},
 	"BLA": {
 		"abbreviation": "BLA",
 		"name": "Blackhorse",
-		"irishName" : "An Capall Dubh",
+		"irishName": "An Capall Dubh",
 		"pronunciation": "blackhorse",
 		"line": "Red",
 		"hasParking": false,
@@ -921,12 +1478,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:19"
+				},
+				"outbound": {
+					"firstTram": "06:02",
+					"lastTram": "01:01"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:16",
+					"lastTram": "00:19"
+				},
+				"outbound": {
+					"firstTram": "07:02",
+					"lastTram": "01:01"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:20"
+				},
+				"outbound": {
+					"firstTram": "07:30",
+					"lastTram": "23:59"
+				}
+			}
+		}
 	},
 	"BLU": {
 		"abbreviation": "BLU",
 		"name": "Bluebell",
-		"irishName" : "An Cloigín Gorm",
+		"irishName": "An Cloigín Gorm",
 		"pronunciation": "bluebell",
 		"line": "Red",
 		"hasParking": false,
@@ -969,12 +1558,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:34",
+					"lastTram": "00:17"
+				},
+				"outbound": {
+					"firstTram": "06:04",
+					"lastTram": "01:03"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:14",
+					"lastTram": "00:17"
+				},
+				"outbound": {
+					"firstTram": "07:04",
+					"lastTram": "01:03"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:04",
+					"lastTram": "23:18"
+				},
+				"outbound": {
+					"firstTram": "07:31",
+					"lastTram": "00:01"
+				}
+			}
+		}
 	},
 	"KYL": {
 		"abbreviation": "KYL",
 		"name": "Kylemore",
-		"irishName" : "An Chill Mhór",
+		"irishName": "An Chill Mhór",
 		"pronunciation": "kylemore",
 		"line": "Red",
 		"hasParking": false,
@@ -1017,12 +1638,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:16"
+				},
+				"outbound": {
+					"firstTram": "06:06",
+					"lastTram": "01:05"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:12",
+					"lastTram": "00:16"
+				},
+				"outbound": {
+					"firstTram": "07:06",
+					"lastTram": "01:05"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:02",
+					"lastTram": "23:16"
+				},
+				"outbound": {
+					"firstTram": "07:33",
+					"lastTram": "00:03"
+				}
+			}
+		}
 	},
 	"RED": {
 		"abbreviation": "RED",
 		"name": "Red Cow",
-		"irishName" : "An Bhó Dhearg",
+		"irishName": "An Bhó Dhearg",
 		"pronunciation": "red cow",
 		"line": "Red",
 		"hasParking": true,
@@ -1065,12 +1718,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:28",
+					"lastTram": "00:11"
+				},
+				"outbound": {
+					"firstTram": "06:08",
+					"lastTram": "01:07"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:07",
+					"lastTram": "00:11"
+				},
+				"outbound": {
+					"firstTram": "07:08",
+					"lastTram": "01:07"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "06:57",
+					"lastTram": "23:11"
+				},
+				"outbound": {
+					"firstTram": "07:38",
+					"lastTram": "00:08"
+				}
+			}
+		}
 	},
 	"KIN": {
 		"abbreviation": "KIN",
 		"name": "Kingswood",
-		"irishName" : "Coill an Rí",
+		"irishName": "Coill an Rí",
 		"pronunciation": "kingswood",
 		"line": "Red",
 		"hasParking": false,
@@ -1113,12 +1798,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:37",
+					"lastTram": "00:07"
+				},
+				"outbound": {
+					"firstTram": "05:32",
+					"lastTram": "01:09"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:07"
+				},
+				"outbound": {
+					"firstTram": "06:33",
+					"lastTram": "01:09"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:07"
+				},
+				"outbound": {
+					"firstTram": "07:08",
+					"lastTram": "00:10"
+				}
+			}
+		}
 	},
 	"BEL": {
 		"abbreviation": "BEL",
 		"name": "Belgard",
-		"irishName" : "Belgard",
+		"irishName": "Belgard",
 		"pronunciation": "belgard",
 		"line": "Red",
 		"hasParking": false,
@@ -1145,12 +1862,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:06"
+				},
+				"outbound": {
+					"firstTram": "05:33",
+					"lastTram": "01:12"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:06"
+				},
+				"outbound": {
+					"firstTram": "06:34",
+					"lastTram": "01:12"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:06"
+				},
+				"outbound": {
+					"firstTram": "07:09",
+					"lastTram": "00:13"
+				}
+			}
+		}
 	},
 	"COO": {
 		"abbreviation": "COO",
 		"name": "Cookstown",
-		"irishName" : "Baile an Chócaigh",
+		"irishName": "Baile an Chócaigh",
 		"pronunciation": "cookstown",
 		"line": "Red",
 		"hasParking": false,
@@ -1188,12 +1937,44 @@
 			"HOS",
 			"TAL"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:32",
+					"lastTram": "00:02"
+				},
+				"outbound": {
+					"firstTram": "05:35",
+					"lastTram": "01:14"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:32",
+					"lastTram": "00:02"
+				},
+				"outbound": {
+					"firstTram": "06:36",
+					"lastTram": "01:14"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:02",
+					"lastTram": "23:02"
+				},
+				"outbound": {
+					"firstTram": "07:12",
+					"lastTram": "00:16"
+				}
+			}
+		}
 	},
 	"HOS": {
 		"abbreviation": "HOS",
 		"name": "Hospital",
-		"irishName" : "Ospidéal Thamhlachta",
+		"irishName": "Ospidéal Thamhlachta",
 		"pronunciation": "hospital",
 		"line": "Red",
 		"hasParking": false,
@@ -1231,12 +2012,44 @@
 		"outboundStations": [
 			"TAL"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:31",
+					"lastTram": "00:01"
+				},
+				"outbound": {
+					"firstTram": "05:37",
+					"lastTram": "01:16"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:31",
+					"lastTram": "00:01"
+				},
+				"outbound": {
+					"firstTram": "06:38",
+					"lastTram": "01:16"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:01",
+					"lastTram": "23:01"
+				},
+				"outbound": {
+					"firstTram": "07:13",
+					"lastTram": "00:17"
+				}
+			}
+		}
 	},
 	"TAL": {
 		"abbreviation": "TAL",
 		"name": "Tallaght",
-		"irishName" : "Tamhlacht",
+		"irishName": "Tamhlacht",
 		"pronunciation": "tallaght",
 		"line": "Red",
 		"hasParking": true,
@@ -1273,12 +2086,32 @@
 			"TPT"
 		],
 		"outboundStations": [],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:00"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:00"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:00"
+				}
+			}
+		}
 	},
 	"FET": {
 		"abbreviation": "FET",
 		"name": "Fettercairn",
-		"irishName" : "Fothair Chardain",
+		"irishName": "Fothair Chardain",
 		"pronunciation": "fettercairn",
 		"line": "Red",
 		"hasParking": false,
@@ -1318,12 +2151,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:02"
+				},
+				"outbound": {
+					"firstTram": "05:48",
+					"lastTram": "00:49"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:52",
+					"lastTram": "00:02"
+				},
+				"outbound": {
+					"firstTram": "06:47",
+					"lastTram": "00:49"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:01"
+				},
+				"outbound": {
+					"firstTram": "07:17",
+					"lastTram": "23:50"
+				}
+			}
+		}
 	},
 	"CVN": {
 		"abbreviation": "CVN",
 		"name": "Cheeverstown",
-		"irishName" : "Baile an tSíbhrigh",
+		"irishName": "Baile an tSíbhrigh",
 		"pronunciation": "cheeverstown",
 		"line": "Red",
 		"hasParking": true,
@@ -1363,12 +2228,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:49",
+					"lastTram": "23:59"
+				},
+				"outbound": {
+					"firstTram": "05:50",
+					"lastTram": "00:51"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:49",
+					"lastTram": "23:59"
+				},
+				"outbound": {
+					"firstTram": "06:49",
+					"lastTram": "00:51"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:19",
+					"lastTram": "22:58"
+				},
+				"outbound": {
+					"firstTram": "07:19",
+					"lastTram": "23:52"
+				}
+			}
+		}
 	},
 	"CIT": {
 		"abbreviation": "CIT",
 		"name": "Citywest Campus",
-		"irishName" : "Campas Gnó Iarthar na Cathrach",
+		"irishName": "Campas Gnó Iarthar na Cathrach",
 		"pronunciation": "citywest campus",
 		"line": "Red",
 		"hasParking": false,
@@ -1408,12 +2305,44 @@
 			"FOR",
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:46",
+					"lastTram": "23:56"
+				},
+				"outbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:53"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:46",
+					"lastTram": "23:56"
+				},
+				"outbound": {
+					"firstTram": "06:51",
+					"lastTram": "00:53"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:16",
+					"lastTram": "22:55"
+				},
+				"outbound": {
+					"firstTram": "07:21",
+					"lastTram": "23:54"
+				}
+			}
+		}
 	},
 	"FOR": {
 		"abbreviation": "FOR",
 		"name": "Fortunestown",
-		"irishName" : "Baile Uí Fhoirtcheirn",
+		"irishName": "Baile Uí Fhoirtcheirn",
 		"pronunciation": "fortunestown",
 		"line": "Red",
 		"hasParking": false,
@@ -1453,12 +2382,44 @@
 		"outboundStations": [
 			"SAG"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "23:54"
+				},
+				"outbound": {
+					"firstTram": "05:54",
+					"lastTram": "00:55"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:44",
+					"lastTram": "23:54"
+				},
+				"outbound": {
+					"firstTram": "06:53",
+					"lastTram": "00:55"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:14",
+					"lastTram": "22:53"
+				},
+				"outbound": {
+					"firstTram": "07:23",
+					"lastTram": "23:56"
+				}
+			}
+		}
 	},
 	"SAG": {
 		"abbreviation": "SAG",
 		"name": "Saggart",
-		"irishName" : "Teach Sagard",
+		"irishName": "Teach Sagard",
 		"pronunciation": "saggart",
 		"line": "Red",
 		"hasParking": false,
@@ -1497,12 +2458,32 @@
 			"TPT"
 		],
 		"outboundStations": [],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "23:52"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "23:52"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "22:51"
+				}
+			}
+		}
 	},
 	"BRO": {
 		"abbreviation": "BRO",
 		"name": "Broombridge",
-		"irishName" : "Droichead Brrome",
+		"irishName": "Droichead Brrome",
 		"pronunciation": "broombridge",
 		"line": "Green",
 		"hasParking": false,
@@ -1546,12 +2527,32 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+							"outbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:17"
+				}
+			},
+			"saturday": {
+							"outbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:17"
+				}
+			},
+			"sunday": {
+							"outbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:17"
+				}
+			}
+		}
 	},
 	"CAB": {
 		"abbreviation": "CAB",
 		"name": "Cabra",
-		"irishName" : "Cabrach",
+		"irishName": "Cabrach",
 		"pronunciation": "cabra",
 		"line": "Green",
 		"hasParking": false,
@@ -1596,12 +2597,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:48",
+					"lastTram": "01:01"
+				},
+				"outbound": {
+					"firstTram": "05:32",
+					"lastTram": "00:19"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "01:01"
+				},
+				"outbound": {
+					"firstTram": "06:32",
+					"lastTram": "00:19"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "00:01"
+				},
+				"outbound": {
+					"firstTram": "07:02",
+					"lastTram": "23:19"
+				}
+			}
+		}
 	},
 	"PHI": {
 		"abbreviation": "PHI",
 		"name": "Phibsborough",
-		"irishName" : "Baile Phib",
+		"irishName": "Baile Phib",
 		"pronunciation": "phibsborough",
 		"line": "Green",
 		"hasParking": false,
@@ -1646,12 +2679,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:46",
+					"lastTram": "00:59"
+				},
+				"outbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:20"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:59"
+				},
+				"outbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:20"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:10",
+					"lastTram": "23:59"
+				},
+				"outbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:20"
+				}
+			}
+		}
 	},
 	"GRA": {
 		"abbreviation": "GRA",
 		"name": "Grangegorman",
-		"irishName" : "Gráinseach Ghormáin",
+		"irishName": "Gráinseach Ghormáin",
 		"pronunciation": "grangegorman",
 		"line": "Green",
 		"hasParking": false,
@@ -1696,12 +2761,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "00:58"
+				},
+				"outbound": {
+					"firstTram": "05:35",
+					"lastTram": "00:22"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:38",
+					"lastTram": "00:58"
+				},
+				"outbound": {
+					"firstTram": "06:35",
+					"lastTram": "00:22"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:58"
+				},
+				"outbound": {
+					"firstTram": "07:05",
+					"lastTram": "23:22"
+				}
+			}
+		}
 	},
 	"BRD": {
 		"abbreviation": "BRD",
 		"name": "Broadstone - DIT",
-		"irishName" : "An Chloch Leathan - ITBhÁC",
+		"irishName": "An Chloch Leathan - ITBhÁC",
 		"pronunciation": "broadstone - <say-as interpret-as=\"spell-out\">dit</say-as>",
 		"line": "Green",
 		"hasParking": false,
@@ -1746,12 +2843,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:56"
+				},
+				"outbound": {
+					"firstTram": "05:37",
+					"lastTram": "00:24"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:56"
+				},
+				"outbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:24"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:56"
+				},
+				"outbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:24"
+				}
+			}
+		}
 	},
 	"DOM": {
 		"abbreviation": "DOM",
 		"name": "Dominick",
-		"irishName" : "Doiminic",
+		"irishName": "Doiminic",
 		"pronunciation": "dominick",
 		"line": "Green",
 		"hasParking": false,
@@ -1796,12 +2925,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:52"
+				},
+				"outbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:26"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:52"
+				},
+				"outbound": {
+					"firstTram": "06:39",
+					"lastTram": "00:26"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:52"
+				},
+				"outbound": {
+					"firstTram": "07:09",
+					"lastTram": "23:26"
+				}
+			}
+		}
 	},
 	"PAR": {
 		"abbreviation": "PAR",
 		"name": "Parnell",
-		"irishName" : "Parnell",
+		"irishName": "Parnell",
 		"pronunciation": "parnell",
 		"line": "Green",
 		"hasParking": false,
@@ -1839,12 +3000,32 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+							"outbound": {
+					"firstTram": "05:43",
+					"lastTram": "00:29"
+				}
+			},
+			"saturday": {
+							"outbound": {
+					"firstTram": "06:43",
+					"lastTram": "00:29"
+				}
+			},
+			"sunday": {
+							"outbound": {
+					"firstTram": "07:13",
+					"lastTram": "23:30"
+				}
+			}
+		}
 	},
 	"MAR": {
 		"abbreviation": "MAR",
 		"name": "Marlborough",
-		"irishName" : "Maoilbhríde",
+		"irishName": "Maoilbhríde",
 		"pronunciation": "marlborough",
 		"line": "Green",
 		"hasParking": false,
@@ -1883,12 +3064,32 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+							"outbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:31"
+				}
+			},
+			"saturday": {
+							"outbound": {
+					"firstTram": "06:45",
+					"lastTram": "00:31"
+				}
+			},
+			"sunday": {
+							"outbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:32"
+				}
+			}
+		}
 	},
 	"TRY": {
 		"abbreviation": "TRY",
 		"name": "Trinity",
-		"irishName" : "Tríonóid",
+		"irishName": "Tríonóid",
 		"pronunciation": "trinity",
 		"line": "Green",
 		"hasParking": false,
@@ -1926,12 +3127,32 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+							"outbound": {
+					"firstTram": "05:49",
+					"lastTram": "00:35"
+				}
+			},
+			"saturday": {
+							"outbound": {
+					"firstTram": "06:49",
+					"lastTram": "00:35"
+				}
+			},
+			"sunday": {
+							"outbound": {
+					"firstTram": "07:19",
+					"lastTram": "23:36"
+				}
+			}
+		}
 	},
 	"OUP": {
 		"abbreviation": "OUP",
 		"name": "O'Connell - Upper",
-		"irishName" : "Ó Conaill Uachtarach",
+		"irishName": "Ó Conaill Uachtarach",
 		"pronunciation": "o'connell - upper",
 		"line": "Green",
 		"hasParking": false,
@@ -1948,12 +3169,32 @@
 			"BRO"
 		],
 		"outboundStations": [],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:50"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:50"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:50"
+				}
+			}
+		}
 	},
 	"OGP": {
 		"abbreviation": "OGP",
 		"name": "O'Connell - GPO",
-		"irishName" : "Ó Conaill - AOP",
+		"irishName": "Ó Conaill - AOP",
 		"pronunciation": "o'connell - <say-as interpret-as=\"spell-out\">gpo</say-as>",
 		"line": "Green",
 		"hasParking": false,
@@ -1973,12 +3214,32 @@
 			"BRO"
 		],
 		"outboundStations": [],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:59",
+					"lastTram": "00:47"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:59",
+					"lastTram": "00:47"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:29",
+					"lastTram": "23:47"
+				}
+			}
+		}
 	},
 	"WES": {
 		"abbreviation": "WES",
 		"name": "Westmoreland",
-		"irishName" : "",
+		"irishName": "",
 		"pronunciation": "westmoreland",
 		"line": "Green",
 		"hasParking": false,
@@ -1999,12 +3260,32 @@
 			"BRO"
 		],
 		"outboundStations": [],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:56",
+					"lastTram": "00:44"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:56",
+					"lastTram": "00:44"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:26",
+					"lastTram": "23:44"
+				}
+			}
+		}
 	},
 	"DAW": {
 		"abbreviation": "DAW",
 		"name": "Dawson",
-		"irishName" : "",
+		"irishName": "",
 		"pronunciation": "dawson",
 		"line": "Green",
 		"hasParking": false,
@@ -2050,12 +3331,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:56",
+					"lastTram": "00:44"
+				},
+				"outbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:38"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:56",
+					"lastTram": "00:44"
+				},
+				"outbound": {
+					"firstTram": "06:52",
+					"lastTram": "00:38"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:26",
+					"lastTram": "23:44"
+				},
+				"outbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:39"
+				}
+			}
+		}
 	},
 	"STS": {
 		"abbreviation": "STS",
 		"name": "St. Stephen's Green",
-		"irishName" : "Faiche Stiabhna",
+		"irishName": "Faiche Stiabhna",
 		"pronunciation": "st. stephen's green",
 		"line": "Green",
 		"hasParking": false,
@@ -2101,12 +3414,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:40"
+				},
+				"outbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:41"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:52",
+					"lastTram": "00:40"
+				},
+				"outbound": {
+					"firstTram": "06:54",
+					"lastTram": "00:41"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:40"
+				},
+				"outbound": {
+					"firstTram": "07:24",
+					"lastTram": "23:41"
+				}
+			}
+		}
 	},
 	"HAR": {
 		"abbreviation": "HAR",
 		"name": "Harcourt",
-		"irishName" : "Sráid Fhearchair",
+		"irishName": "Sráid Fhearchair",
 		"pronunciation": "harcourt",
 		"line": "Green",
 		"hasParking": false,
@@ -2152,12 +3497,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:49",
+					"lastTram": "00:37"
+				},
+				"outbound": {
+					"firstTram": "05:32",
+					"lastTram": "00:43"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:49",
+					"lastTram": "00:37"
+				},
+				"outbound": {
+					"firstTram": "06:56",
+					"lastTram": "00:43"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:19",
+					"lastTram": "23:37"
+				},
+				"outbound": {
+					"firstTram": "07:26",
+					"lastTram": "23:43"
+				}
+			}
+		}
 	},
 	"CHA": {
 		"abbreviation": "CHA",
 		"name": "Charlemont",
-		"irishName" : "Charlemont",
+		"irishName": "Charlemont",
 		"pronunciation": "charlemont",
 		"line": "Green",
 		"hasParking": false,
@@ -2203,12 +3580,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:48",
+					"lastTram": "00:36"
+				},
+				"outbound": {
+					"firstTram": "05:34",
+					"lastTram": "00:45"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:48",
+					"lastTram": "00:36"
+				},
+				"outbound": {
+					"firstTram": "06:58",
+					"lastTram": "00:45"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:18",
+					"lastTram": "23:36"
+				},
+				"outbound": {
+					"firstTram": "07:28",
+					"lastTram": "23:45"
+				}
+			}
+		}
 	},
 	"RAN": {
 		"abbreviation": "RAN",
 		"name": "Ranelagh",
-		"irishName" : "Raghnallach",
+		"irishName": "Raghnallach",
 		"pronunciation": "ranelagh",
 		"line": "Green",
 		"hasParking": false,
@@ -2254,12 +3663,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:46",
+					"lastTram": "00:34"
+				},
+				"outbound": {
+					"firstTram": "05:35",
+					"lastTram": "00:46"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:46",
+					"lastTram": "00:34"
+				},
+				"outbound": {
+					"firstTram": "06:59",
+					"lastTram": "00:46"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:16",
+					"lastTram": "23:34"
+				},
+				"outbound": {
+					"firstTram": "07:29",
+					"lastTram": "23:46"
+				}
+			}
+		}
 	},
 	"BEE": {
 		"abbreviation": "BEE",
 		"name": "Beechwood",
-		"irishName" : "Coill na Feá",
+		"irishName": "Coill na Feá",
 		"pronunciation": "beechwood",
 		"line": "Green",
 		"hasParking": false,
@@ -2305,12 +3746,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "00:32"
+				},
+				"outbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:49"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:44",
+					"lastTram": "00:32"
+				},
+				"outbound": {
+					"firstTram": "06:38",
+					"lastTram": "00:49"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:14",
+					"lastTram": "23:32"
+				},
+				"outbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:49"
+				}
+			}
+		}
 	},
 	"COW": {
 		"abbreviation": "COW",
 		"name": "Cowper",
-		"irishName" : "Cowper",
+		"irishName": "Cowper",
 		"pronunciation": "cowper",
 		"line": "Green",
 		"hasParking": false,
@@ -2356,12 +3829,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:30"
+				},
+				"outbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:50"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "00:30"
+				},
+				"outbound": {
+					"firstTram": "06:39",
+					"lastTram": "00:50"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:30"
+				},
+				"outbound": {
+					"firstTram": "07:09",
+					"lastTram": "00:01"
+				}
+			}
+		}
 	},
 	"MIL": {
 		"abbreviation": "MIL",
 		"name": "Milltown",
-		"irishName" : "Baile an Mhuilinn",
+		"irishName": "Baile an Mhuilinn",
 		"pronunciation": "milltown",
 		"line": "Green",
 		"hasParking": false,
@@ -2407,12 +3912,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:41",
+					"lastTram": "00:29"
+				},
+				"outbound": {
+					"firstTram": "05:40",
+					"lastTram": "00:51"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:41",
+					"lastTram": "00:29"
+				},
+				"outbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:51"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:11",
+					"lastTram": "23:29"
+				},
+				"outbound": {
+					"firstTram": "07:10",
+					"lastTram": "00:01"
+				}
+			}
+		}
 	},
 	"WIN": {
 		"abbreviation": "WIN",
 		"name": "Windy Arbour",
-		"irishName" : "Na Glasáin",
+		"irishName": "Na Glasáin",
 		"pronunciation": "windy arbour",
 		"line": "Green",
 		"hasParking": false,
@@ -2459,12 +3996,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:27"
+				},
+				"outbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:53"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:39",
+					"lastTram": "00:27"
+				},
+				"outbound": {
+					"firstTram": "06:42",
+					"lastTram": "00:53"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:09",
+					"lastTram": "23:27"
+				},
+				"outbound": {
+					"firstTram": "07:12",
+					"lastTram": "00:02"
+				}
+			}
+		}
 	},
 	"DUN": {
 		"abbreviation": "DUN",
 		"name": "Dundrum",
-		"irishName" : "Dún Droma",
+		"irishName": "Dún Droma",
 		"pronunciation": "dundrum",
 		"line": "Green",
 		"hasParking": false,
@@ -2497,12 +4066,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:37",
+					"lastTram": "00:25"
+				},
+				"outbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:56"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:25"
+				},
+				"outbound": {
+					"firstTram": "06:45",
+					"lastTram": "00:56"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:25"
+				},
+				"outbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:56"
+				}
+			}
+		}
 	},
 	"BAL": {
 		"abbreviation": "BAL",
 		"name": "Balally",
-		"irishName" : "Baile Amhlaoibh",
+		"irishName": "Baile Amhlaoibh",
 		"pronunciation": "balally",
 		"line": "Green",
 		"hasParking": true,
@@ -2548,12 +4149,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:35",
+					"lastTram": "00:23"
+				},
+				"outbound": {
+					"firstTram": "05:46",
+					"lastTram": "00:57"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:35",
+					"lastTram": "00:23"
+				},
+				"outbound": {
+					"firstTram": "06:46",
+					"lastTram": "00:57"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:05",
+					"lastTram": "23:23"
+				},
+				"outbound": {
+					"firstTram": "07:16",
+					"lastTram": "23:57"
+				}
+			}
+		}
 	},
 	"KIL": {
 		"abbreviation": "KIL",
 		"name": "Kilmacud",
-		"irishName" : "Cill Mochuda",
+		"irishName": "Cill Mochuda",
 		"pronunciation": "kilmacud",
 		"line": "Green",
 		"hasParking": false,
@@ -2599,12 +4232,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:21"
+				},
+				"outbound": {
+					"firstTram": "05:48",
+					"lastTram": "00:59"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:21"
+				},
+				"outbound": {
+					"firstTram": "06:48",
+					"lastTram": "00:59"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:21"
+				},
+				"outbound": {
+					"firstTram": "07:18",
+					"lastTram": "23:59"
+				}
+			}
+		}
 	},
 	"STI": {
 		"abbreviation": "STI",
 		"name": "Stillorgan",
-		"irishName" : "Stigh Lorgan",
+		"irishName": "Stigh Lorgan",
 		"pronunciation": "stillorgan",
 		"line": "Green",
 		"hasParking": true,
@@ -2650,12 +4315,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:18"
+				},
+				"outbound": {
+					"firstTram": "05:50",
+					"lastTram": "01:01"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:18"
+				},
+				"outbound": {
+					"firstTram": "06:50",
+					"lastTram": "01:01"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:18"
+				},
+				"outbound": {
+					"firstTram": "07:20",
+					"lastTram": "00:02"
+				}
+			}
+		}
 	},
 	"SAN": {
 		"abbreviation": "SAN",
 		"name": "Sandyford",
-		"irishName" : "Áth an Ghainimh",
+		"irishName": "Áth an Ghainimh",
 		"pronunciation": "sandyford",
 		"line": "Green",
 		"hasParking": true,
@@ -2701,12 +4398,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:18"
+				},
+				"outbound": {
+					"firstTram": "05:27",
+					"lastTram": "01:02"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:18"
+				},
+				"outbound": {
+					"firstTram": "06:27",
+					"lastTram": "01:02"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:18"
+				},
+				"outbound": {
+					"firstTram": "06:55",
+					"lastTram": "00:02"
+				}
+			}
+		}
 	},
 	"CPK": {
 		"abbreviation": "CPK",
 		"name": "Central Park",
-		"irishName" : "An Pháirc Láir",
+		"irishName": "An Pháirc Láir",
 		"pronunciation": "central park",
 		"line": "Green",
 		"hasParking": false,
@@ -2752,12 +4481,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:15"
+				},
+				"outbound": {
+					"firstTram": "05:29",
+					"lastTram": "01:04"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:45",
+					"lastTram": "00:15"
+				},
+				"outbound": {
+					"firstTram": "06:29",
+					"lastTram": "01:04"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:15"
+				},
+				"outbound": {
+					"firstTram": "06:57",
+					"lastTram": "00:06"
+				}
+			}
+		}
 	},
 	"GLE": {
 		"abbreviation": "GLE",
 		"name": "Glencairn",
-		"irishName" : "Gleann an Chairn",
+		"irishName": "Gleann an Chairn",
 		"pronunciation": "glencairn",
 		"line": "Green",
 		"hasParking": false,
@@ -2803,12 +4564,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "00:14"
+				},
+				"outbound": {
+					"firstTram": "05:30",
+					"lastTram": "01:05"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:44",
+					"lastTram": "00:14"
+				},
+				"outbound": {
+					"firstTram": "06:30",
+					"lastTram": "01:05"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:14",
+					"lastTram": "23:14"
+				},
+				"outbound": {
+					"firstTram": "06:58",
+					"lastTram": "00:01"
+				}
+			}
+		}
 	},
 	"GAL": {
 		"abbreviation": "GAL",
 		"name": "The Gallops",
-		"irishName" : "An Eachrais",
+		"irishName": "An Eachrais",
 		"pronunciation": "the gallops",
 		"line": "Green",
 		"hasParking": false,
@@ -2854,12 +4647,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:12"
+				},
+				"outbound": {
+					"firstTram": "05:32",
+					"lastTram": "01:07"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "00:12"
+				},
+				"outbound": {
+					"firstTram": "06:32",
+					"lastTram": "01:07"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:12"
+				},
+				"outbound": {
+					"firstTram": "07:00",
+					"lastTram": "00:01"
+				}
+			}
+		}
 	},
 	"LEO": {
 		"abbreviation": "LEO",
 		"name": "Leopardstown Valley",
-		"irishName" : "Gleann Bhaile na Lobhar",
+		"irishName": "Gleann Bhaile na Lobhar",
 		"pronunciation": "leopardstown valley",
 		"line": "Green",
 		"hasParking": false,
@@ -2884,12 +4709,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:40",
+					"lastTram": "00:10"
+				},
+				"outbound": {
+					"firstTram": "05:34",
+					"lastTram": "01:09"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:10"
+				},
+				"outbound": {
+					"firstTram": "06:34",
+					"lastTram": "01:09"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:10",
+					"lastTram": "23:10"
+				},
+				"outbound": {
+					"firstTram": "07:02",
+					"lastTram": "00:01"
+				}
+			}
+		}
 	},
 	"BAW": {
 		"abbreviation": "BAW",
 		"name": "Ballyogan Wood",
-		"irishName" : "Coill Bhaile Uí Ógáin",
+		"irishName": "Coill Bhaile Uí Ógáin",
 		"pronunciation": "ballyogan wood",
 		"line": "Green",
 		"hasParking": false,
@@ -2935,12 +4792,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:08"
+				},
+				"outbound": {
+					"firstTram": "05:36",
+					"lastTram": "01:11"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:38",
+					"lastTram": "00:08"
+				},
+				"outbound": {
+					"firstTram": "06:36",
+					"lastTram": "01:11"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:08"
+				},
+				"outbound": {
+					"firstTram": "07:04",
+					"lastTram": "00:02"
+				}
+			}
+		}
 	},
 	"RCC": {
 		"abbreviation": "RCC",
 		"name": "Racecourse",
-		"irishName" : "An Ráschúrsa",
+		"irishName": "An Ráschúrsa",
 		"pronunciation": "racecourse",
 		"line": "Green",
 		"hasParking": false,
@@ -2987,12 +4876,17 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": false
+		"isInUse": false,
+		"operatingHours": {
+			"weekdays": {},
+			"saturday": {},
+			"sunday": {}
+		}
 	},
 	"CCK": {
 		"abbreviation": "CCK",
 		"name": "Carrickmines",
-		"irishName" : "Carraig Mhaighin",
+		"irishName": "Carraig Mhaighin",
 		"pronunciation": "carrickmines",
 		"line": "Green",
 		"hasParking": false,
@@ -3038,12 +4932,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:06"
+				},
+				"outbound": {
+					"firstTram": "05:39",
+					"lastTram": "01:14"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:06"
+				},
+				"outbound": {
+					"firstTram": "06:39",
+					"lastTram": "01:14"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:06"
+				},
+				"outbound": {
+					"firstTram": "07:07",
+					"lastTram": "00:14"
+				}
+			}
+		}
 	},
 	"BRE": {
 		"abbreviation": "BRE",
 		"name": "Brennanstown",
-		"irishName" : "Baile Uí Bhraonáin",
+		"irishName": "Baile Uí Bhraonáin",
 		"pronunciation": "brennanstown",
 		"line": "Green",
 		"hasParking": false,
@@ -3089,12 +5015,17 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": false
+		"isInUse": false,
+		"operatingHours": {
+			"weekdays": {},
+			"saturday": {},
+			"sunday": {}
+		}
 	},
 	"LAU": {
 		"abbreviation": "LAU",
 		"name": "Laughanstown",
-		"irishName" : "Baile an Locháin",
+		"irishName": "Baile an Locháin",
 		"pronunciation": "laughanstown",
 		"line": "Green",
 		"hasParking": false,
@@ -3140,12 +5071,44 @@
 			"CHE",
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:03"
+				},
+				"outbound": {
+					"firstTram": "05:41",
+					"lastTram": "01:16"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:03"
+				},
+				"outbound": {
+					"firstTram": "06:41",
+					"lastTram": "01:16"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:03"
+				},
+				"outbound": {
+					"firstTram": "07:09",
+					"lastTram": "00:16"
+				}
+			}
+		}
 	},
 	"CHE": {
 		"abbreviation": "CHE",
 		"name": "Cherrywood",
-		"irishName" : "Coill na Silíní",
+		"irishName": "Coill na Silíní",
 		"pronunciation": "cherrywood",
 		"line": "Green",
 		"hasParking": false,
@@ -3191,12 +5154,44 @@
 		"outboundStations": [
 			"BRI"
 		],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:31",
+					"lastTram": "00:01"
+				},
+				"outbound": {
+					"firstTram": "05:43",
+					"lastTram": "01:18"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:31",
+					"lastTram": "00:01"
+				},
+				"outbound": {
+					"firstTram": "06:43",
+					"lastTram": "01:18"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:01",
+					"lastTram": "23:01"
+				},
+				"outbound": {
+					"firstTram": "07:11",
+					"lastTram": "00:18"
+				}
+			}
+		}
 	},
 	"BRI": {
 		"abbreviation": "BRI",
 		"name": "Bride's Glen",
-		"irishName" : "Gleann Bhríde",
+		"irishName": "Gleann Bhríde",
 		"pronunciation": "bride's glen",
 		"line": "Green",
 		"hasParking": false,
@@ -3241,6 +5236,26 @@
 			"BRO"
 		],
 		"outboundStations": [],
-		"isInUse": true
+		"isInUse": true,
+		"operatingHours": {
+			"weekdays": {
+				"inbound": {
+					"firstTram": "05:45",
+					"lastTram": "01:20"
+				}
+			},
+			"saturday": {
+				"inbound": {
+					"firstTram": "06:45",
+					"lastTram": "01:20"
+				}
+			},
+			"sunday": {
+				"inbound": {
+					"firstTram": "07:13",
+					"lastTram": "00:20"
+				}
+			}
+		}
 	}
 }

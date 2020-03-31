@@ -16,7 +16,7 @@ namespace LuasAPI.NET.Models
 
 		public Line Line { get; set; }
 
-		public bool HasParking { get;  set; }
+		public bool HasParking { get; set; }
 
 		public bool HasCycleParking { get; set; }
 
@@ -31,5 +31,7 @@ namespace LuasAPI.NET.Models
 		public List<string> WalkingTransfer { get; set; }
 
 		public bool IsInUse { get; set; }
+
+		public OperatingHours OperatingHours { get; set; }
 	}
 }
