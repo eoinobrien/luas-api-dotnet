@@ -22,11 +22,11 @@ namespace LuasAPI.NET.Models
 		{
 			if (realTimeInfo == null)
 			{
-				throw new ArgumentException(string.Format("Argument '{0}' is null.", nameof(realTimeInfo), CultureInfo.InvariantCulture));
+				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is null.", nameof(realTimeInfo)));
 			}
 			if (stations == null)
 			{
-				throw new ArgumentException(string.Format("Argument '{0}' is null.", nameof(stations), CultureInfo.InvariantCulture));
+				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is null.", nameof(stations)));
 			}
 
 			List<TramXml> inboundForecasts = realTimeInfo.Directions.FirstOrDefault(d => d.DirectionName == "Inbound").Trams;

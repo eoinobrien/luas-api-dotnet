@@ -12,7 +12,7 @@ namespace LuasAPI.NET
 		{
 			if (stationInformationLoader == null)
 			{
-				throw new ArgumentException(string.Format("Argument '{0}' is null.", nameof(stationInformationLoader), CultureInfo.InvariantCulture));
+				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is null.", nameof(stationInformationLoader)));
 			}
 
 			StationsDictionary = stationInformationLoader.Load();
@@ -29,14 +29,14 @@ namespace LuasAPI.NET
 		{
 			if (string.IsNullOrWhiteSpace(abbreviation))
 			{
-				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(abbreviation), CultureInfo.InvariantCulture));
+				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is either null or whitespace.", nameof(abbreviation)));
 			}
 
 			StationsDictionary.TryGetValue(abbreviation.ToUpperInvariant(), out Station station);
 
 			if (station == null)
 			{
-				throw new StationNotFoundException(string.Format("Station Abbreviation '{0}' was not found in list of stations", abbreviation, CultureInfo.InvariantCulture));
+				throw new StationNotFoundException(string.Format(CultureInfo.InvariantCulture, "Station Abbreviation '{0}' was not found in list of stations", abbreviation));
 			}
 
 			return station;
@@ -46,7 +46,7 @@ namespace LuasAPI.NET
 		{
 			if (string.IsNullOrWhiteSpace(name))
 			{
-				throw new ArgumentException(string.Format("Argument '{0}' is either null or whitespace.", nameof(name), CultureInfo.InvariantCulture));
+				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is either null or whitespace.", nameof(name)));
 			}
 
 			string uppercaseName = name.ToUpperInvariant();
@@ -54,7 +54,7 @@ namespace LuasAPI.NET
 
 			if (station == null)
 			{
-				throw new StationNotFoundException(string.Format("Station Name '{0}' was not found in list of stations", name, CultureInfo.InvariantCulture));
+				throw new StationNotFoundException(string.Format(CultureInfo.InvariantCulture, "Station Name '{0}' was not found in list of stations", name));
 			}
 
 			return station;

@@ -12,5 +12,8 @@ namespace LuasAPI.NET
 
 		public StationNotFoundException(string message) : base(message)
 		{ }
+
+		public StationNotFoundException(string message, Exception innerException) : base(message, innerException)
+		{ }
 	}
 }
