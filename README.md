@@ -3,9 +3,9 @@ C# Wrapper around the Luas API.
 
 ## Features
 One API to rule the LUAS World.
-**Work in Progress.**
 
 * Thorough station information
+* Station operation hours (first and last trams)
 * Luas Real Time Forecast
 * JSON Response
 
@@ -20,8 +20,8 @@ api.GetAllStations();
 
 ```json
 [
-	 {
-    	"Name": "St. Stephen's Green",
+    {
+        "Name": "St. Stephen's Green",
         "Pronunciation": "st. stephen's green",
         "Abbreviation": "STS",
         "Line": "Green",
@@ -70,7 +70,7 @@ api.GetAllStations();
         "WalkingTransfer": [],
         "IsInUse": true
     },
-	...
+    ...
 ]
 ```
 
@@ -81,7 +81,7 @@ api.GetStation("STS");
 ```
 
 ```json
- {
+{
     "Name": "St. Stephen's Green",
     "Pronunciation": "st. stephen's green",
     "Abbreviation": "STS",
@@ -93,43 +93,47 @@ api.GetStation("STS");
     "InboundStations": [
         "DAW",
         "WES",
-        "OGP",
-        "OUP",
-        "PAR",
-        "DOM",
-        "BRD",
-        "GRA",
-        "PHI",
-        "CAB",
-        "BRO"
+        "<snipped>"
     ],
     "OutboundStations": [
         "HAR",
         "CHA",
-        "RAN",
-        "BEE",
-        "COW",
-        "MIL",
-        "WIN",
-        "DUN",
-        "BAL",
-        "KIL",
-        "STI",
-        "SAN",
-        "CPK",
-        "GLE",
-        "GAL",
-        "LEO",
-        "BAW",
-        "RCC",
-        "CCK",
-        "BRE",
-        "LAU",
-        "CHE",
-        "BRI"
+        "<snipped>"
     ],
     "WalkingTransfer": [],
-    "IsInUse": true
+    "IsInUse": true,
+    "operatingHours": {
+        "weekdays": {
+            "inbound": {
+                "firstTram": "05:52",
+                "lastTram": "00:40"
+            },
+            "outbound": {
+                "firstTram": "05:30",
+                "lastTram": "00:41"
+            }
+        },
+        "saturday": {
+            "inbound": {
+                "firstTram": "06:52",
+                "lastTram": "00:40"
+            },
+            "outbound": {
+                "firstTram": "06:54",
+                "lastTram": "00:41"
+            }
+        },
+        "sunday": {
+            "inbound": {
+                "firstTram": "07:22",
+                "lastTram": "23:40"
+            },
+            "outbound": {
+                "firstTram": "07:24",
+                "lastTram": "23:41"
+            }
+        }
+    }
 }
 ```
 
@@ -157,43 +161,23 @@ api.GetForecast(abbeyStreet);
         "InboundStations": [
             "BUS",
             "CON",
-            "GDK",
-            "MYS",
-            "SDK",
-            "TPT"
+            "<snipped>"
         ],
         "OutboundStations": [
             "JER",
             "FOU",
-            "SMI",
-            "MUS",
-            "HEU",
-            "JAM",
-            "FAT",
-            "RIA",
-            "SUI",
-            "GOL",
-            "DRI",
-            "BLA",
-            "BLU",
-            "KYL",
-            "RED",
-            "KIN",
-            "BEL",
-            "COO",
-            "HOS",
-            "TAL",
-            "FET",
-            "CVN",
-            "CIT",
-            "FOR",
-            "SAG"
+            "<snipped>"
         ],
         "WalkingTransfer": [
             "OPG",
             "MAR"
         ],
-        "IsInUse": true
+        "IsInUse": true,
+        "operatingHours": {
+            "weekdays": "<snipped>",
+            "saturday": "<snipped>",
+            "sunday": "<snipped>",
+        }
     },
     "InboundTrams": [
         {
@@ -210,34 +194,7 @@ api.GetForecast(abbeyStreet);
                 "OutboundStations": [
                     "SDK",
                     "MYS",
-                    "GDK",
-                    "BUS",
-                    "ABB",
-                    "JER",
-                    "FOU",
-                    "SMI",
-                    "MUS",
-                    "HEU",
-                    "JAM",
-                    "FAT",
-                    "RIA",
-                    "SUI",
-                    "GOL",
-                    "DRI",
-                    "BLA",
-                    "BLU",
-                    "KYL",
-                    "RED",
-                    "KIN",
-                    "BEL",
-                    "COO",
-                    "HOS",
-                    "TAL",
-                    "FET",
-                    "CVN",
-                    "CIT",
-                    "FOR",
-                    "SAG"
+                    "<snipped>"
                 ],
                 "WalkingTransfer": [],
                 "IsInUse": true
@@ -248,7 +205,7 @@ api.GetForecast(abbeyStreet);
         {
             "DestinationStation": {
                 "Name": "The Point",
-                <snipped>
+                "<snipped>": "<snipped>"
             },
             "IsDue": false,
             "Minutes": 18
@@ -268,30 +225,7 @@ api.GetForecast(abbeyStreet);
                 "InboundStations": [
                     "HOS",
                     "COO",
-                    "BEL",
-                    "KIN",
-                    "RED",
-                    "KYL",
-                    "BLU",
-                    "BLA",
-                    "DRI",
-                    "GOL",
-                    "SUI",
-                    "RIA",
-                    "FAT",
-                    "JAM",
-                    "HEU",
-                    "MUS",
-                    "SMI",
-                    "FOU",
-                    "JER",
-                    "ABB",
-                    "BUS",
-                    "CON",
-                    "GDK",
-                    "MYS",
-                    "SDK",
-                    "TPT"
+                    "<snipped>"
                 ],
                 "OutboundStations": [],
                 "WalkingTransfer": [],
@@ -303,7 +237,7 @@ api.GetForecast(abbeyStreet);
         {
             "DestinationStation": {
                 "Name": "Tallaght",
-                <snipped>
+                "<snipped>": "<snipped>"
             },
             "IsDue": false,
             "Minutes": 15
