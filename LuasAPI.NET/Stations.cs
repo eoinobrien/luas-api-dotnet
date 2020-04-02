@@ -29,7 +29,7 @@ namespace LuasAPI.NET
 		{
 			if (string.IsNullOrWhiteSpace(abbreviation))
 			{
-				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is either null or whitespace.", nameof(abbreviation)));
+				throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "Argument '{0}' is either null or whitespace.", nameof(abbreviation)), nameof(abbreviation));
 			}
 
 			StationsDictionary.TryGetValue(abbreviation.ToUpperInvariant(), out Station station);

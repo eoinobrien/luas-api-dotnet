@@ -3239,7 +3239,7 @@
 	"WES": {
 		"abbreviation": "WES",
 		"name": "Westmoreland",
-		"irishName": "",
+		"irishName": "Westmoreland",
 		"pronunciation": "westmoreland",
 		"line": "Green",
 		"hasParking": false,
@@ -3285,7 +3285,7 @@
 	"DAW": {
 		"abbreviation": "DAW",
 		"name": "Dawson",
-		"irishName": "",
+		"irishName": "Dásain",
 		"pronunciation": "dawson",
 		"line": "Green",
 		"hasParking": false,
