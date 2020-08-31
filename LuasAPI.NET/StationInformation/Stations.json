@@ -66,19 +66,19 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "05:30",
 					"lastTram": "00:30"
 				}
 			},
 			"saturday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "06:30",
 					"lastTram": "00:30"
 				}
 			},
 			"sunday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "07:00",
 					"lastTram": "23:30"
 				}
@@ -133,33 +133,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "06:01",
-					"lastTram": "00:45"
-				},
 				"outbound": {
 					"firstTram": "05:32",
 					"lastTram": "00:32"
+				},
+				"inbound": {
+					"firstTram": "06:01",
+					"lastTram": "00:45"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:41",
-					"lastTram": "00:45"
-				},
 				"outbound": {
 					"firstTram": "06:32",
 					"lastTram": "00:32"
+				},
+				"inbound": {
+					"firstTram": "06:41",
+					"lastTram": "00:45"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:31",
-					"lastTram": "23:45"
-				},
 				"outbound": {
 					"firstTram": "07:02",
 					"lastTram": "23:32"
+				},
+				"inbound": {
+					"firstTram": "07:31",
+					"lastTram": "23:45"
 				}
 			}
 		}
@@ -212,33 +212,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "06:00",
-					"lastTram": "00:44"
-				},
 				"outbound": {
 					"firstTram": "05:34",
 					"lastTram": "00:34"
+				},
+				"inbound": {
+					"firstTram": "06:00",
+					"lastTram": "00:44"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:40",
-					"lastTram": "00:44"
-				},
 				"outbound": {
 					"firstTram": "06:34",
 					"lastTram": "00:34"
+				},
+				"inbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:44"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:30",
-					"lastTram": "23:44"
-				},
 				"outbound": {
 					"firstTram": "07:04",
 					"lastTram": "23:34"
+				},
+				"inbound": {
+					"firstTram": "07:30",
+					"lastTram": "23:44"
 				}
 			}
 		}
@@ -291,33 +291,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:59",
-					"lastTram": "00:43"
-				},
 				"outbound": {
 					"firstTram": "05:36",
 					"lastTram": "00:36"
+				},
+				"inbound": {
+					"firstTram": "05:59",
+					"lastTram": "00:43"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:39",
-					"lastTram": "00:43"
-				},
 				"outbound": {
 					"firstTram": "06:36",
 					"lastTram": "00:36"
+				},
+				"inbound": {
+					"firstTram": "06:39",
+					"lastTram": "00:43"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:29",
-					"lastTram": "23:43"
-				},
 				"outbound": {
 					"firstTram": "07:05",
 					"lastTram": "23:35"
+				},
+				"inbound": {
+					"firstTram": "07:29",
+					"lastTram": "23:43"
 				}
 			}
 		}
@@ -368,19 +368,19 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "07:10",
 					"lastTram": "19:31"
 				}
 			},
 			"saturday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "09:14",
 					"lastTram": "19:31"
 				}
 			},
 			"sunday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "15:12",
 					"lastTram": "19:03"
 				}
@@ -438,33 +438,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:57",
-					"lastTram": "00:41"
-				},
 				"outbound": {
 					"firstTram": "05:38",
 					"lastTram": "00:38"
+				},
+				"inbound": {
+					"firstTram": "05:57",
+					"lastTram": "00:41"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:37",
-					"lastTram": "00:41"
-				},
 				"outbound": {
 					"firstTram": "06:38",
 					"lastTram": "00:38"
+				},
+				"inbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:41"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:27",
-					"lastTram": "23:41"
-				},
 				"outbound": {
 					"firstTram": "07:06",
 					"lastTram": "23:36"
+				},
+				"inbound": {
+					"firstTram": "07:27",
+					"lastTram": "23:41"
 				}
 			}
 		}
@@ -521,33 +521,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:55",
-					"lastTram": "00:39"
-				},
 				"outbound": {
 					"firstTram": "05:40",
 					"lastTram": "00:40"
+				},
+				"inbound": {
+					"firstTram": "05:55",
+					"lastTram": "00:39"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:35",
-					"lastTram": "00:39"
-				},
 				"outbound": {
 					"firstTram": "06:40",
 					"lastTram": "00:40"
+				},
+				"inbound": {
+					"firstTram": "06:35",
+					"lastTram": "00:39"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:25",
-					"lastTram": "23:39"
-				},
 				"outbound": {
 					"firstTram": "07:10",
 					"lastTram": "23:40"
+				},
+				"inbound": {
+					"firstTram": "07:25",
+					"lastTram": "23:39"
 				}
 			}
 		}
@@ -601,33 +601,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:54",
-					"lastTram": "00:36"
-				},
 				"outbound": {
 					"firstTram": "05:41",
 					"lastTram": "00:41"
+				},
+				"inbound": {
+					"firstTram": "05:54",
+					"lastTram": "00:36"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:33",
-					"lastTram": "00:36"
-				},
 				"outbound": {
 					"firstTram": "06:42",
 					"lastTram": "00:41"
+				},
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:36"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:22",
-					"lastTram": "23:36"
-				},
 				"outbound": {
 					"firstTram": "07:12",
 					"lastTram": "23:42"
+				},
+				"inbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:36"
 				}
 			}
 		}
@@ -681,33 +681,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:53",
-					"lastTram": "00:34"
-				},
 				"outbound": {
 					"firstTram": "05:43",
 					"lastTram": "00:43"
+				},
+				"inbound": {
+					"firstTram": "05:53",
+					"lastTram": "00:34"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:33",
-					"lastTram": "00:34"
-				},
 				"outbound": {
 					"firstTram": "06:44",
 					"lastTram": "00:43"
+				},
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:34"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:20",
-					"lastTram": "23:34"
-				},
 				"outbound": {
 					"firstTram": "07:14",
 					"lastTram": "23:44"
+				},
+				"inbound": {
+					"firstTram": "07:20",
+					"lastTram": "23:34"
 				}
 			}
 		}
@@ -761,33 +761,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:50",
-					"lastTram": "00:33"
-				},
 				"outbound": {
 					"firstTram": "05:45",
 					"lastTram": "00:45"
+				},
+				"inbound": {
+					"firstTram": "05:50",
+					"lastTram": "00:33"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:30",
-					"lastTram": "00:33"
-				},
 				"outbound": {
 					"firstTram": "06:46",
 					"lastTram": "00:45"
+				},
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:33"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:19",
-					"lastTram": "23:33"
-				},
 				"outbound": {
 					"firstTram": "07:15",
 					"lastTram": "23:45"
+				},
+				"inbound": {
+					"firstTram": "07:19",
+					"lastTram": "23:33"
 				}
 			}
 		}
@@ -841,33 +841,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:48",
-					"lastTram": "00:30"
-				},
 				"outbound": {
 					"firstTram": "05:47",
 					"lastTram": "00:47"
+				},
+				"inbound": {
+					"firstTram": "05:48",
+					"lastTram": "00:30"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:28",
-					"lastTram": "00:30"
-				},
 				"outbound": {
 					"firstTram": "06:48",
 					"lastTram": "00:47"
+				},
+				"inbound": {
+					"firstTram": "06:28",
+					"lastTram": "00:30"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:16",
-					"lastTram": "23:30"
-				},
 				"outbound": {
 					"firstTram": "07:17",
 					"lastTram": "23:47"
+				},
+				"inbound": {
+					"firstTram": "07:16",
+					"lastTram": "23:30"
 				}
 			}
 		}
@@ -921,33 +921,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:45",
-					"lastTram": "00:28"
-				},
 				"outbound": {
 					"firstTram": "05:49",
 					"lastTram": "00:49"
+				},
+				"inbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:28"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:25",
-					"lastTram": "00:28"
-				},
 				"outbound": {
 					"firstTram": "06:50",
 					"lastTram": "00:49"
+				},
+				"inbound": {
+					"firstTram": "06:25",
+					"lastTram": "00:28"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:15",
-					"lastTram": "23:29"
-				},
 				"outbound": {
 					"firstTram": "07:20",
 					"lastTram": "23:50"
+				},
+				"inbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:29"
 				}
 			}
 		}
@@ -1001,33 +1001,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:43",
-					"lastTram": "00:26"
-				},
 				"outbound": {
 					"firstTram": "05:50",
 					"lastTram": "00:50"
+				},
+				"inbound": {
+					"firstTram": "05:43",
+					"lastTram": "00:26"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:23",
-					"lastTram": "00:26"
-				},
 				"outbound": {
 					"firstTram": "06:51",
 					"lastTram": "00:50"
+				},
+				"inbound": {
+					"firstTram": "06:23",
+					"lastTram": "00:26"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:13",
-					"lastTram": "23:27"
-				},
 				"outbound": {
 					"firstTram": "07:21",
 					"lastTram": "23:52"
+				},
+				"inbound": {
+					"firstTram": "07:13",
+					"lastTram": "23:27"
 				}
 			}
 		}
@@ -1081,33 +1081,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:42",
-					"lastTram": "00:25"
-				},
 				"outbound": {
 					"firstTram": "05:52",
 					"lastTram": "00:52"
+				},
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:25"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:22",
-					"lastTram": "00:25"
-				},
 				"outbound": {
 					"firstTram": "06:53",
 					"lastTram": "00:52"
+				},
+				"inbound": {
+					"firstTram": "06:22",
+					"lastTram": "00:25"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:12",
-					"lastTram": "23:26"
-				},
 				"outbound": {
 					"firstTram": "07:24",
 					"lastTram": "23:53"
+				},
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:26"
 				}
 			}
 		}
@@ -1161,33 +1161,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:41",
-					"lastTram": "00:24"
-				},
 				"outbound": {
 					"firstTram": "05:54",
 					"lastTram": "00:54"
+				},
+				"inbound": {
+					"firstTram": "05:41",
+					"lastTram": "00:24"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:21",
-					"lastTram": "00:24"
-				},
 				"outbound": {
 					"firstTram": "06:55",
 					"lastTram": "00:54"
+				},
+				"inbound": {
+					"firstTram": "06:21",
+					"lastTram": "00:24"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:11",
-					"lastTram": "23:25"
-				},
 				"outbound": {
 					"firstTram": "07:25",
 					"lastTram": "23:54"
+				},
+				"inbound": {
+					"firstTram": "07:11",
+					"lastTram": "23:25"
 				}
 			}
 		}
@@ -1241,33 +1241,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:39",
-					"lastTram": "00:22"
-				},
 				"outbound": {
 					"firstTram": "05:56",
 					"lastTram": "00:56"
+				},
+				"inbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:22"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:19",
-					"lastTram": "00:22"
-				},
 				"outbound": {
 					"firstTram": "06:57",
 					"lastTram": "00:56"
+				},
+				"inbound": {
+					"firstTram": "06:19",
+					"lastTram": "00:22"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:09",
-					"lastTram": "23:23"
-				},
 				"outbound": {
 					"firstTram": "07:26",
 					"lastTram": "23:56"
+				},
+				"inbound": {
+					"firstTram": "07:09",
+					"lastTram": "23:23"
 				}
 			}
 		}
@@ -1321,33 +1321,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:38",
-					"lastTram": "00:21"
-				},
 				"outbound": {
 					"firstTram": "05:58",
 					"lastTram": "00:58"
+				},
+				"inbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:21"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:18",
-					"lastTram": "00:21"
-				},
 				"outbound": {
 					"firstTram": "06:59",
 					"lastTram": "00:58"
+				},
+				"inbound": {
+					"firstTram": "06:18",
+					"lastTram": "00:21"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:08",
-					"lastTram": "23:22"
-				},
 				"outbound": {
 					"firstTram": "07:28",
 					"lastTram": "23:57"
+				},
+				"inbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:22"
 				}
 			}
 		}
@@ -1401,33 +1401,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:38",
-					"lastTram": "00:21"
-				},
 				"outbound": {
 					"firstTram": "06:00",
 					"lastTram": "00:59"
+				},
+				"inbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:21"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:17",
-					"lastTram": "00:21"
-				},
 				"outbound": {
 					"firstTram": "07:00",
 					"lastTram": "00:59"
+				},
+				"inbound": {
+					"firstTram": "06:17",
+					"lastTram": "00:21"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:07",
-					"lastTram": "23:21"
-				},
 				"outbound": {
 					"firstTram": "07:29",
 					"lastTram": "23:58"
+				},
+				"inbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:21"
 				}
 			}
 		}
@@ -1481,33 +1481,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:36",
-					"lastTram": "00:19"
-				},
 				"outbound": {
 					"firstTram": "06:02",
 					"lastTram": "01:01"
+				},
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:19"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:16",
-					"lastTram": "00:19"
-				},
 				"outbound": {
 					"firstTram": "07:02",
 					"lastTram": "01:01"
+				},
+				"inbound": {
+					"firstTram": "06:16",
+					"lastTram": "00:19"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:06",
-					"lastTram": "23:20"
-				},
 				"outbound": {
 					"firstTram": "07:30",
 					"lastTram": "23:59"
+				},
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:20"
 				}
 			}
 		}
@@ -1561,33 +1561,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:34",
-					"lastTram": "00:17"
-				},
 				"outbound": {
 					"firstTram": "06:04",
 					"lastTram": "01:03"
+				},
+				"inbound": {
+					"firstTram": "05:34",
+					"lastTram": "00:17"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:14",
-					"lastTram": "00:17"
-				},
 				"outbound": {
 					"firstTram": "07:04",
 					"lastTram": "01:03"
+				},
+				"inbound": {
+					"firstTram": "06:14",
+					"lastTram": "00:17"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:04",
-					"lastTram": "23:18"
-				},
 				"outbound": {
 					"firstTram": "07:31",
 					"lastTram": "00:01"
+				},
+				"inbound": {
+					"firstTram": "07:04",
+					"lastTram": "23:18"
 				}
 			}
 		}
@@ -1641,33 +1641,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:33",
-					"lastTram": "00:16"
-				},
 				"outbound": {
 					"firstTram": "06:06",
 					"lastTram": "01:05"
+				},
+				"inbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:16"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:12",
-					"lastTram": "00:16"
-				},
 				"outbound": {
 					"firstTram": "07:06",
 					"lastTram": "01:05"
+				},
+				"inbound": {
+					"firstTram": "06:12",
+					"lastTram": "00:16"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:02",
-					"lastTram": "23:16"
-				},
 				"outbound": {
 					"firstTram": "07:33",
 					"lastTram": "00:03"
+				},
+				"inbound": {
+					"firstTram": "07:02",
+					"lastTram": "23:16"
 				}
 			}
 		}
@@ -1721,33 +1721,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:28",
-					"lastTram": "00:11"
-				},
 				"outbound": {
 					"firstTram": "06:08",
 					"lastTram": "01:07"
+				},
+				"inbound": {
+					"firstTram": "05:28",
+					"lastTram": "00:11"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:07",
-					"lastTram": "00:11"
-				},
 				"outbound": {
 					"firstTram": "07:08",
 					"lastTram": "01:07"
+				},
+				"inbound": {
+					"firstTram": "06:07",
+					"lastTram": "00:11"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "06:57",
-					"lastTram": "23:11"
-				},
 				"outbound": {
 					"firstTram": "07:38",
 					"lastTram": "00:08"
+				},
+				"inbound": {
+					"firstTram": "06:57",
+					"lastTram": "23:11"
 				}
 			}
 		}
@@ -1801,33 +1801,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:37",
-					"lastTram": "00:07"
-				},
 				"outbound": {
 					"firstTram": "05:32",
 					"lastTram": "01:09"
+				},
+				"inbound": {
+					"firstTram": "05:37",
+					"lastTram": "00:07"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:37",
-					"lastTram": "00:07"
-				},
 				"outbound": {
 					"firstTram": "06:33",
 					"lastTram": "01:09"
+				},
+				"inbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:07"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:07",
-					"lastTram": "23:07"
-				},
 				"outbound": {
 					"firstTram": "07:08",
 					"lastTram": "00:10"
+				},
+				"inbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:07"
 				}
 			}
 		}
@@ -1865,33 +1865,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:36",
-					"lastTram": "00:06"
-				},
 				"outbound": {
 					"firstTram": "05:33",
 					"lastTram": "01:12"
+				},
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:06"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:36",
-					"lastTram": "00:06"
-				},
 				"outbound": {
 					"firstTram": "06:34",
 					"lastTram": "01:12"
+				},
+				"inbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:06"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:06",
-					"lastTram": "23:06"
-				},
 				"outbound": {
 					"firstTram": "07:09",
 					"lastTram": "00:13"
+				},
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:06"
 				}
 			}
 		}
@@ -1940,33 +1940,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:32",
-					"lastTram": "00:02"
-				},
 				"outbound": {
 					"firstTram": "05:35",
 					"lastTram": "01:14"
+				},
+				"inbound": {
+					"firstTram": "05:32",
+					"lastTram": "00:02"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:32",
-					"lastTram": "00:02"
-				},
 				"outbound": {
 					"firstTram": "06:36",
 					"lastTram": "01:14"
+				},
+				"inbound": {
+					"firstTram": "06:32",
+					"lastTram": "00:02"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:02",
-					"lastTram": "23:02"
-				},
 				"outbound": {
 					"firstTram": "07:12",
 					"lastTram": "00:16"
+				},
+				"inbound": {
+					"firstTram": "07:02",
+					"lastTram": "23:02"
 				}
 			}
 		}
@@ -2015,33 +2015,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:31",
-					"lastTram": "00:01"
-				},
 				"outbound": {
 					"firstTram": "05:37",
 					"lastTram": "01:16"
+				},
+				"inbound": {
+					"firstTram": "05:31",
+					"lastTram": "00:01"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:31",
-					"lastTram": "00:01"
-				},
 				"outbound": {
 					"firstTram": "06:38",
 					"lastTram": "01:16"
+				},
+				"inbound": {
+					"firstTram": "06:31",
+					"lastTram": "00:01"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:01",
-					"lastTram": "23:01"
-				},
 				"outbound": {
 					"firstTram": "07:13",
 					"lastTram": "00:17"
+				},
+				"inbound": {
+					"firstTram": "07:01",
+					"lastTram": "23:01"
 				}
 			}
 		}
@@ -2154,33 +2154,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:52",
-					"lastTram": "00:02"
-				},
 				"outbound": {
 					"firstTram": "05:48",
 					"lastTram": "00:49"
+				},
+				"inbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:02"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:52",
-					"lastTram": "00:02"
-				},
 				"outbound": {
 					"firstTram": "06:47",
 					"lastTram": "00:49"
+				},
+				"inbound": {
+					"firstTram": "06:52",
+					"lastTram": "00:02"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:22",
-					"lastTram": "23:01"
-				},
 				"outbound": {
 					"firstTram": "07:17",
 					"lastTram": "23:50"
+				},
+				"inbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:01"
 				}
 			}
 		}
@@ -2231,33 +2231,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:49",
-					"lastTram": "23:59"
-				},
 				"outbound": {
 					"firstTram": "05:50",
 					"lastTram": "00:51"
+				},
+				"inbound": {
+					"firstTram": "05:49",
+					"lastTram": "23:59"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:49",
-					"lastTram": "23:59"
-				},
 				"outbound": {
 					"firstTram": "06:49",
 					"lastTram": "00:51"
+				},
+				"inbound": {
+					"firstTram": "06:49",
+					"lastTram": "23:59"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:19",
-					"lastTram": "22:58"
-				},
 				"outbound": {
 					"firstTram": "07:19",
 					"lastTram": "23:52"
+				},
+				"inbound": {
+					"firstTram": "07:19",
+					"lastTram": "22:58"
 				}
 			}
 		}
@@ -2308,33 +2308,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:46",
-					"lastTram": "23:56"
-				},
 				"outbound": {
 					"firstTram": "05:52",
 					"lastTram": "00:53"
+				},
+				"inbound": {
+					"firstTram": "05:46",
+					"lastTram": "23:56"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:46",
-					"lastTram": "23:56"
-				},
 				"outbound": {
 					"firstTram": "06:51",
 					"lastTram": "00:53"
+				},
+				"inbound": {
+					"firstTram": "06:46",
+					"lastTram": "23:56"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:16",
-					"lastTram": "22:55"
-				},
 				"outbound": {
 					"firstTram": "07:21",
 					"lastTram": "23:54"
+				},
+				"inbound": {
+					"firstTram": "07:16",
+					"lastTram": "22:55"
 				}
 			}
 		}
@@ -2385,33 +2385,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:44",
-					"lastTram": "23:54"
-				},
 				"outbound": {
 					"firstTram": "05:54",
 					"lastTram": "00:55"
+				},
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "23:54"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:44",
-					"lastTram": "23:54"
-				},
 				"outbound": {
 					"firstTram": "06:53",
 					"lastTram": "00:55"
+				},
+				"inbound": {
+					"firstTram": "06:44",
+					"lastTram": "23:54"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:14",
-					"lastTram": "22:53"
-				},
 				"outbound": {
 					"firstTram": "07:23",
 					"lastTram": "23:56"
+				},
+				"inbound": {
+					"firstTram": "07:14",
+					"lastTram": "22:53"
 				}
 			}
 		}
@@ -2530,19 +2530,19 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "05:30",
 					"lastTram": "00:17"
 				}
 			},
 			"saturday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "06:30",
 					"lastTram": "00:17"
 				}
 			},
 			"sunday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "07:00",
 					"lastTram": "23:17"
 				}
@@ -2600,33 +2600,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:48",
-					"lastTram": "01:01"
-				},
 				"outbound": {
 					"firstTram": "05:32",
 					"lastTram": "00:19"
+				},
+				"inbound": {
+					"firstTram": "05:48",
+					"lastTram": "01:01"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:42",
-					"lastTram": "01:01"
-				},
 				"outbound": {
 					"firstTram": "06:32",
 					"lastTram": "00:19"
+				},
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "01:01"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:12",
-					"lastTram": "00:01"
-				},
 				"outbound": {
 					"firstTram": "07:02",
 					"lastTram": "23:19"
+				},
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "00:01"
 				}
 			}
 		}
@@ -2682,33 +2682,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:46",
-					"lastTram": "00:59"
-				},
 				"outbound": {
 					"firstTram": "05:33",
 					"lastTram": "00:20"
+				},
+				"inbound": {
+					"firstTram": "05:46",
+					"lastTram": "00:59"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:40",
-					"lastTram": "00:59"
-				},
 				"outbound": {
 					"firstTram": "06:33",
 					"lastTram": "00:20"
+				},
+				"inbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:59"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:10",
-					"lastTram": "23:59"
-				},
 				"outbound": {
 					"firstTram": "07:03",
 					"lastTram": "23:20"
+				},
+				"inbound": {
+					"firstTram": "07:10",
+					"lastTram": "23:59"
 				}
 			}
 		}
@@ -2764,33 +2764,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:44",
-					"lastTram": "00:58"
-				},
 				"outbound": {
 					"firstTram": "05:35",
 					"lastTram": "00:22"
+				},
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "00:58"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:38",
-					"lastTram": "00:58"
-				},
 				"outbound": {
 					"firstTram": "06:35",
 					"lastTram": "00:22"
+				},
+				"inbound": {
+					"firstTram": "06:38",
+					"lastTram": "00:58"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:08",
-					"lastTram": "23:58"
-				},
 				"outbound": {
 					"firstTram": "07:05",
 					"lastTram": "23:22"
+				},
+				"inbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:58"
 				}
 			}
 		}
@@ -2846,33 +2846,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:42",
-					"lastTram": "00:56"
-				},
 				"outbound": {
 					"firstTram": "05:37",
 					"lastTram": "00:24"
+				},
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:56"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:36",
-					"lastTram": "00:56"
-				},
 				"outbound": {
 					"firstTram": "06:37",
 					"lastTram": "00:24"
+				},
+				"inbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:56"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:06",
-					"lastTram": "23:56"
-				},
 				"outbound": {
 					"firstTram": "07:07",
 					"lastTram": "23:24"
+				},
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:56"
 				}
 			}
 		}
@@ -2928,33 +2928,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:39",
-					"lastTram": "00:52"
-				},
 				"outbound": {
 					"firstTram": "05:39",
 					"lastTram": "00:26"
+				},
+				"inbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:52"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:33",
-					"lastTram": "00:52"
-				},
 				"outbound": {
 					"firstTram": "06:39",
 					"lastTram": "00:26"
+				},
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:52"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:03",
-					"lastTram": "23:52"
-				},
 				"outbound": {
 					"firstTram": "07:09",
 					"lastTram": "23:26"
+				},
+				"inbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:52"
 				}
 			}
 		}
@@ -3003,19 +3003,19 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "05:43",
 					"lastTram": "00:29"
 				}
 			},
 			"saturday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "06:43",
 					"lastTram": "00:29"
 				}
 			},
 			"sunday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "07:13",
 					"lastTram": "23:30"
 				}
@@ -3067,19 +3067,19 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "05:45",
 					"lastTram": "00:31"
 				}
 			},
 			"saturday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "06:45",
 					"lastTram": "00:31"
 				}
 			},
 			"sunday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "07:15",
 					"lastTram": "23:32"
 				}
@@ -3130,19 +3130,19 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "05:49",
 					"lastTram": "00:35"
 				}
 			},
 			"saturday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "06:49",
 					"lastTram": "00:35"
 				}
 			},
 			"sunday": {
-							"outbound": {
+				"outbound": {
 					"firstTram": "07:19",
 					"lastTram": "23:36"
 				}
@@ -3334,33 +3334,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:56",
-					"lastTram": "00:44"
-				},
 				"outbound": {
 					"firstTram": "05:52",
 					"lastTram": "00:38"
+				},
+				"inbound": {
+					"firstTram": "05:56",
+					"lastTram": "00:44"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:56",
-					"lastTram": "00:44"
-				},
 				"outbound": {
 					"firstTram": "06:52",
 					"lastTram": "00:38"
+				},
+				"inbound": {
+					"firstTram": "06:56",
+					"lastTram": "00:44"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:26",
-					"lastTram": "23:44"
-				},
 				"outbound": {
 					"firstTram": "07:22",
 					"lastTram": "23:39"
+				},
+				"inbound": {
+					"firstTram": "07:26",
+					"lastTram": "23:44"
 				}
 			}
 		}
@@ -3417,33 +3417,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:52",
-					"lastTram": "00:40"
-				},
 				"outbound": {
 					"firstTram": "05:30",
 					"lastTram": "00:41"
+				},
+				"inbound": {
+					"firstTram": "05:52",
+					"lastTram": "00:40"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:52",
-					"lastTram": "00:40"
-				},
 				"outbound": {
 					"firstTram": "06:54",
 					"lastTram": "00:41"
+				},
+				"inbound": {
+					"firstTram": "06:52",
+					"lastTram": "00:40"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:22",
-					"lastTram": "23:40"
-				},
 				"outbound": {
 					"firstTram": "07:24",
 					"lastTram": "23:41"
+				},
+				"inbound": {
+					"firstTram": "07:22",
+					"lastTram": "23:40"
 				}
 			}
 		}
@@ -3500,33 +3500,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:49",
-					"lastTram": "00:37"
-				},
 				"outbound": {
 					"firstTram": "05:32",
 					"lastTram": "00:43"
+				},
+				"inbound": {
+					"firstTram": "05:49",
+					"lastTram": "00:37"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:49",
-					"lastTram": "00:37"
-				},
 				"outbound": {
 					"firstTram": "06:56",
 					"lastTram": "00:43"
+				},
+				"inbound": {
+					"firstTram": "06:49",
+					"lastTram": "00:37"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:19",
-					"lastTram": "23:37"
-				},
 				"outbound": {
 					"firstTram": "07:26",
 					"lastTram": "23:43"
+				},
+				"inbound": {
+					"firstTram": "07:19",
+					"lastTram": "23:37"
 				}
 			}
 		}
@@ -3583,33 +3583,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:48",
-					"lastTram": "00:36"
-				},
 				"outbound": {
 					"firstTram": "05:34",
 					"lastTram": "00:45"
+				},
+				"inbound": {
+					"firstTram": "05:48",
+					"lastTram": "00:36"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:48",
-					"lastTram": "00:36"
-				},
 				"outbound": {
 					"firstTram": "06:58",
 					"lastTram": "00:45"
+				},
+				"inbound": {
+					"firstTram": "06:48",
+					"lastTram": "00:36"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:18",
-					"lastTram": "23:36"
-				},
 				"outbound": {
 					"firstTram": "07:28",
 					"lastTram": "23:45"
+				},
+				"inbound": {
+					"firstTram": "07:18",
+					"lastTram": "23:36"
 				}
 			}
 		}
@@ -3666,33 +3666,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:46",
-					"lastTram": "00:34"
-				},
 				"outbound": {
 					"firstTram": "05:35",
 					"lastTram": "00:46"
+				},
+				"inbound": {
+					"firstTram": "05:46",
+					"lastTram": "00:34"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:46",
-					"lastTram": "00:34"
-				},
 				"outbound": {
 					"firstTram": "06:59",
 					"lastTram": "00:46"
+				},
+				"inbound": {
+					"firstTram": "06:46",
+					"lastTram": "00:34"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:16",
-					"lastTram": "23:34"
-				},
 				"outbound": {
 					"firstTram": "07:29",
 					"lastTram": "23:46"
+				},
+				"inbound": {
+					"firstTram": "07:16",
+					"lastTram": "23:34"
 				}
 			}
 		}
@@ -3749,33 +3749,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:44",
-					"lastTram": "00:32"
-				},
 				"outbound": {
 					"firstTram": "05:38",
 					"lastTram": "00:49"
+				},
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "00:32"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:44",
-					"lastTram": "00:32"
-				},
 				"outbound": {
 					"firstTram": "06:38",
 					"lastTram": "00:49"
+				},
+				"inbound": {
+					"firstTram": "06:44",
+					"lastTram": "00:32"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:14",
-					"lastTram": "23:32"
-				},
 				"outbound": {
 					"firstTram": "07:08",
 					"lastTram": "23:49"
+				},
+				"inbound": {
+					"firstTram": "07:14",
+					"lastTram": "23:32"
 				}
 			}
 		}
@@ -3832,33 +3832,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:42",
-					"lastTram": "00:30"
-				},
 				"outbound": {
 					"firstTram": "05:39",
 					"lastTram": "00:50"
+				},
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:30"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:42",
-					"lastTram": "00:30"
-				},
 				"outbound": {
 					"firstTram": "06:39",
 					"lastTram": "00:50"
+				},
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "00:30"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:12",
-					"lastTram": "23:30"
-				},
 				"outbound": {
 					"firstTram": "07:09",
 					"lastTram": "00:01"
+				},
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:30"
 				}
 			}
 		}
@@ -3915,33 +3915,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:41",
-					"lastTram": "00:29"
-				},
 				"outbound": {
 					"firstTram": "05:40",
 					"lastTram": "00:51"
+				},
+				"inbound": {
+					"firstTram": "05:41",
+					"lastTram": "00:29"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:41",
-					"lastTram": "00:29"
-				},
 				"outbound": {
 					"firstTram": "06:40",
 					"lastTram": "00:51"
+				},
+				"inbound": {
+					"firstTram": "06:41",
+					"lastTram": "00:29"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:11",
-					"lastTram": "23:29"
-				},
 				"outbound": {
 					"firstTram": "07:10",
 					"lastTram": "00:01"
+				},
+				"inbound": {
+					"firstTram": "07:11",
+					"lastTram": "23:29"
 				}
 			}
 		}
@@ -3999,33 +3999,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:39",
-					"lastTram": "00:27"
-				},
 				"outbound": {
 					"firstTram": "05:42",
 					"lastTram": "00:53"
+				},
+				"inbound": {
+					"firstTram": "05:39",
+					"lastTram": "00:27"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:39",
-					"lastTram": "00:27"
-				},
 				"outbound": {
 					"firstTram": "06:42",
 					"lastTram": "00:53"
+				},
+				"inbound": {
+					"firstTram": "06:39",
+					"lastTram": "00:27"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:09",
-					"lastTram": "23:27"
-				},
 				"outbound": {
 					"firstTram": "07:12",
 					"lastTram": "00:02"
+				},
+				"inbound": {
+					"firstTram": "07:09",
+					"lastTram": "23:27"
 				}
 			}
 		}
@@ -4069,33 +4069,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:37",
-					"lastTram": "00:25"
-				},
 				"outbound": {
 					"firstTram": "05:45",
 					"lastTram": "00:56"
+				},
+				"inbound": {
+					"firstTram": "05:37",
+					"lastTram": "00:25"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:37",
-					"lastTram": "00:25"
-				},
 				"outbound": {
 					"firstTram": "06:45",
 					"lastTram": "00:56"
+				},
+				"inbound": {
+					"firstTram": "06:37",
+					"lastTram": "00:25"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:07",
-					"lastTram": "23:25"
-				},
 				"outbound": {
 					"firstTram": "07:15",
 					"lastTram": "23:56"
+				},
+				"inbound": {
+					"firstTram": "07:07",
+					"lastTram": "23:25"
 				}
 			}
 		}
@@ -4152,33 +4152,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:35",
-					"lastTram": "00:23"
-				},
 				"outbound": {
 					"firstTram": "05:46",
 					"lastTram": "00:57"
+				},
+				"inbound": {
+					"firstTram": "05:35",
+					"lastTram": "00:23"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:35",
-					"lastTram": "00:23"
-				},
 				"outbound": {
 					"firstTram": "06:46",
 					"lastTram": "00:57"
+				},
+				"inbound": {
+					"firstTram": "06:35",
+					"lastTram": "00:23"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:05",
-					"lastTram": "23:23"
-				},
 				"outbound": {
 					"firstTram": "07:16",
 					"lastTram": "23:57"
+				},
+				"inbound": {
+					"firstTram": "07:05",
+					"lastTram": "23:23"
 				}
 			}
 		}
@@ -4235,33 +4235,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:33",
-					"lastTram": "00:21"
-				},
 				"outbound": {
 					"firstTram": "05:48",
 					"lastTram": "00:59"
+				},
+				"inbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:21"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:33",
-					"lastTram": "00:21"
-				},
 				"outbound": {
 					"firstTram": "06:48",
 					"lastTram": "00:59"
+				},
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:21"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:03",
-					"lastTram": "23:21"
-				},
 				"outbound": {
 					"firstTram": "07:18",
 					"lastTram": "23:59"
+				},
+				"inbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:21"
 				}
 			}
 		}
@@ -4318,33 +4318,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:30",
-					"lastTram": "00:18"
-				},
 				"outbound": {
 					"firstTram": "05:50",
 					"lastTram": "01:01"
+				},
+				"inbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:18"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:30",
-					"lastTram": "00:18"
-				},
 				"outbound": {
 					"firstTram": "06:50",
 					"lastTram": "01:01"
+				},
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:18"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:00",
-					"lastTram": "23:18"
-				},
 				"outbound": {
 					"firstTram": "07:20",
 					"lastTram": "00:02"
+				},
+				"inbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:18"
 				}
 			}
 		}
@@ -4401,33 +4401,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:30",
-					"lastTram": "00:18"
-				},
 				"outbound": {
 					"firstTram": "05:27",
 					"lastTram": "01:02"
+				},
+				"inbound": {
+					"firstTram": "05:30",
+					"lastTram": "00:18"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:30",
-					"lastTram": "00:18"
-				},
 				"outbound": {
 					"firstTram": "06:27",
 					"lastTram": "01:02"
+				},
+				"inbound": {
+					"firstTram": "06:30",
+					"lastTram": "00:18"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:00",
-					"lastTram": "23:18"
-				},
 				"outbound": {
 					"firstTram": "06:55",
 					"lastTram": "00:02"
+				},
+				"inbound": {
+					"firstTram": "07:00",
+					"lastTram": "23:18"
 				}
 			}
 		}
@@ -4484,33 +4484,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:45",
-					"lastTram": "00:15"
-				},
 				"outbound": {
 					"firstTram": "05:29",
 					"lastTram": "01:04"
+				},
+				"inbound": {
+					"firstTram": "05:45",
+					"lastTram": "00:15"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:45",
-					"lastTram": "00:15"
-				},
 				"outbound": {
 					"firstTram": "06:29",
 					"lastTram": "01:04"
+				},
+				"inbound": {
+					"firstTram": "06:45",
+					"lastTram": "00:15"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:15",
-					"lastTram": "23:15"
-				},
 				"outbound": {
 					"firstTram": "06:57",
 					"lastTram": "00:06"
+				},
+				"inbound": {
+					"firstTram": "07:15",
+					"lastTram": "23:15"
 				}
 			}
 		}
@@ -4567,33 +4567,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:44",
-					"lastTram": "00:14"
-				},
 				"outbound": {
 					"firstTram": "05:30",
 					"lastTram": "01:05"
+				},
+				"inbound": {
+					"firstTram": "05:44",
+					"lastTram": "00:14"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:44",
-					"lastTram": "00:14"
-				},
 				"outbound": {
 					"firstTram": "06:30",
 					"lastTram": "01:05"
+				},
+				"inbound": {
+					"firstTram": "06:44",
+					"lastTram": "00:14"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:14",
-					"lastTram": "23:14"
-				},
 				"outbound": {
 					"firstTram": "06:58",
 					"lastTram": "00:01"
+				},
+				"inbound": {
+					"firstTram": "07:14",
+					"lastTram": "23:14"
 				}
 			}
 		}
@@ -4650,33 +4650,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:42",
-					"lastTram": "00:12"
-				},
 				"outbound": {
 					"firstTram": "05:32",
 					"lastTram": "01:07"
+				},
+				"inbound": {
+					"firstTram": "05:42",
+					"lastTram": "00:12"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:42",
-					"lastTram": "00:12"
-				},
 				"outbound": {
 					"firstTram": "06:32",
 					"lastTram": "01:07"
+				},
+				"inbound": {
+					"firstTram": "06:42",
+					"lastTram": "00:12"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:12",
-					"lastTram": "23:12"
-				},
 				"outbound": {
 					"firstTram": "07:00",
 					"lastTram": "00:01"
+				},
+				"inbound": {
+					"firstTram": "07:12",
+					"lastTram": "23:12"
 				}
 			}
 		}
@@ -4712,33 +4712,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:40",
-					"lastTram": "00:10"
-				},
 				"outbound": {
 					"firstTram": "05:34",
 					"lastTram": "01:09"
+				},
+				"inbound": {
+					"firstTram": "05:40",
+					"lastTram": "00:10"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:40",
-					"lastTram": "00:10"
-				},
 				"outbound": {
 					"firstTram": "06:34",
 					"lastTram": "01:09"
+				},
+				"inbound": {
+					"firstTram": "06:40",
+					"lastTram": "00:10"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:10",
-					"lastTram": "23:10"
-				},
 				"outbound": {
 					"firstTram": "07:02",
 					"lastTram": "00:01"
+				},
+				"inbound": {
+					"firstTram": "07:10",
+					"lastTram": "23:10"
 				}
 			}
 		}
@@ -4795,33 +4795,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:38",
-					"lastTram": "00:08"
-				},
 				"outbound": {
 					"firstTram": "05:36",
 					"lastTram": "01:11"
+				},
+				"inbound": {
+					"firstTram": "05:38",
+					"lastTram": "00:08"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:38",
-					"lastTram": "00:08"
-				},
 				"outbound": {
 					"firstTram": "06:36",
 					"lastTram": "01:11"
+				},
+				"inbound": {
+					"firstTram": "06:38",
+					"lastTram": "00:08"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:08",
-					"lastTram": "23:08"
-				},
 				"outbound": {
 					"firstTram": "07:04",
 					"lastTram": "00:02"
+				},
+				"inbound": {
+					"firstTram": "07:08",
+					"lastTram": "23:08"
 				}
 			}
 		}
@@ -4935,33 +4935,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:36",
-					"lastTram": "00:06"
-				},
 				"outbound": {
 					"firstTram": "05:39",
 					"lastTram": "01:14"
+				},
+				"inbound": {
+					"firstTram": "05:36",
+					"lastTram": "00:06"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:36",
-					"lastTram": "00:06"
-				},
 				"outbound": {
 					"firstTram": "06:39",
 					"lastTram": "01:14"
+				},
+				"inbound": {
+					"firstTram": "06:36",
+					"lastTram": "00:06"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:06",
-					"lastTram": "23:06"
-				},
 				"outbound": {
 					"firstTram": "07:07",
 					"lastTram": "00:14"
+				},
+				"inbound": {
+					"firstTram": "07:06",
+					"lastTram": "23:06"
 				}
 			}
 		}
@@ -5074,33 +5074,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:33",
-					"lastTram": "00:03"
-				},
 				"outbound": {
 					"firstTram": "05:41",
 					"lastTram": "01:16"
+				},
+				"inbound": {
+					"firstTram": "05:33",
+					"lastTram": "00:03"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:33",
-					"lastTram": "00:03"
-				},
 				"outbound": {
 					"firstTram": "06:41",
 					"lastTram": "01:16"
+				},
+				"inbound": {
+					"firstTram": "06:33",
+					"lastTram": "00:03"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:03",
-					"lastTram": "23:03"
-				},
 				"outbound": {
 					"firstTram": "07:09",
 					"lastTram": "00:16"
+				},
+				"inbound": {
+					"firstTram": "07:03",
+					"lastTram": "23:03"
 				}
 			}
 		}
@@ -5157,33 +5157,33 @@
 		"isInUse": true,
 		"operatingHours": {
 			"weekdays": {
-				"inbound": {
-					"firstTram": "05:31",
-					"lastTram": "00:01"
-				},
 				"outbound": {
 					"firstTram": "05:43",
 					"lastTram": "01:18"
+				},
+				"inbound": {
+					"firstTram": "05:31",
+					"lastTram": "00:01"
 				}
 			},
 			"saturday": {
-				"inbound": {
-					"firstTram": "06:31",
-					"lastTram": "00:01"
-				},
 				"outbound": {
 					"firstTram": "06:43",
 					"lastTram": "01:18"
+				},
+				"inbound": {
+					"firstTram": "06:31",
+					"lastTram": "00:01"
 				}
 			},
 			"sunday": {
-				"inbound": {
-					"firstTram": "07:01",
-					"lastTram": "23:01"
-				},
 				"outbound": {
 					"firstTram": "07:11",
 					"lastTram": "00:18"
+				},
+				"inbound": {
+					"firstTram": "07:01",
+					"lastTram": "23:01"
 				}
 			}
 		}
