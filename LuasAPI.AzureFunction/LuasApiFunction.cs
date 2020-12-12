@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using LuasAPI.NET.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace LuasAPI.AzureFunction
 {
@@ -70,6 +72,39 @@ namespace LuasAPI.AzureFunction
             {
                 log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'");
                 return new NotFoundObjectResult($"Unable to find forecast for: '{stationAbbreviation}'");
+            }
+            catch (Exception ex)
+            {
+                log.LogError($"Exception thrown in GetStationForecast", ex);
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        [FunctionName("GetAllStationsForecast")]
+        public static async Task<IActionResult> GetAllStationsForecast(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/all/forecast")] HttpRequest req,
+            ILogger log)
+        {
+            log.LogInformation($"Get station forecast for all stations");
+
+            LuasApi api = new LuasApi();
+
+            var stations = api.GetAllStations();
+            var stationAbbreviations = stations.Select(s => s.Abbreviation);
+
+            try
+            {
+                var allForecasts = 
+                    await Task.WhenAll(
+                        stationAbbreviations.Select(
+                            abbreviation => api.GetForecastAsync(abbreviation)));
+
+                return new OkObjectResult(allForecasts);
+            }
+            catch (StationNotFoundException ex)
+            {
+                log.LogWarning($"StationNotFoundException for '{ex.StationThatWasNotFound}'");
+                return new NotFoundObjectResult($"Unable to find forecast for: '{ex.StationThatWasNotFound}'");
             }
             catch (Exception ex)
             {

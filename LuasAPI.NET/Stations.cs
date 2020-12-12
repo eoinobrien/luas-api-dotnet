@@ -36,7 +36,7 @@ namespace LuasAPI.NET
 
 			if (station == null)
 			{
-				throw new StationNotFoundException(string.Format(CultureInfo.InvariantCulture, "Station Abbreviation '{0}' was not found in list of stations", abbreviation));
+				throw new StationNotFoundException(abbreviation, string.Format(CultureInfo.InvariantCulture, "Station Abbreviation '{0}' was not found in list of stations", abbreviation));
 			}
 
 			return station;
@@ -54,7 +54,7 @@ namespace LuasAPI.NET
 
 			if (station == null)
 			{
-				throw new StationNotFoundException(string.Format(CultureInfo.InvariantCulture, "Station Name '{0}' was not found in list of stations", name));
+				throw new StationNotFoundException(name, string.Format(CultureInfo.InvariantCulture, "Station Name '{0}' was not found in list of stations", name));
 			}
 
 			return station;
