@@ -44,14 +44,16 @@ namespace LuasAPI.AzureFunction
 				Station station = api.GetStation(stationAbbreviation);
 				return new OkObjectResult(station);
 			}
-			catch (StationNotFoundException)
+			catch (StationNotFoundException ex)
 			{
-				log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'");
+				log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'. Exception: {ex}");
 				return new NotFoundObjectResult($"Unable to find station for: '{stationAbbreviation}'");
 			}
-
-			log.LogError($"Unexpected code path '{stationAbbreviation}'");
-			return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+			catch (Exception ex)
+			{
+				log.LogError($"Unexpected code path '{stationAbbreviation}'. Exception: {ex}");
+				return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+			}
 		}
 
 		[FunctionName("GetStationForecast")]
@@ -69,14 +71,14 @@ namespace LuasAPI.AzureFunction
 				var forecast = await api.GetForecastAsync(stationAbbreviation).ConfigureAwait(false);
 				return new OkObjectResult(forecast);
 			}
-			catch (StationNotFoundException)
+			catch (StationNotFoundException ex)
 			{
-				log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'");
+				log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'. Exception: {ex}");
 				return new NotFoundObjectResult($"Unable to find forecast for: '{stationAbbreviation}'");
 			}
 			catch (Exception ex)
 			{
-				log.LogError($"Exception thrown in GetStationForecast", ex);
+				log.LogError($"Exception thrown in GetStationForecast. Exception: {ex}");
 				return new StatusCodeResult(StatusCodes.Status500InternalServerError);
 			}
 		}
@@ -101,18 +103,18 @@ namespace LuasAPI.AzureFunction
 							abbreviation => api.GetForecastAsync(abbreviation)))
 						.ConfigureAwait(false);
 
-				var allForecastsDictionary = allForecasts.Select(forecast => new {forecast.Station.Abbreviation, forecast});
+				var allForecastsDictionary = allForecasts.Select(forecast => new { forecast.Station.Abbreviation, forecast });
 
 				return new OkObjectResult(allForecastsDictionary);
 			}
 			catch (StationNotFoundException ex)
 			{
-				log.LogWarning($"StationNotFoundException for '{ex.StationThatWasNotFound}'");
+				log.LogWarning($"StationNotFoundException for '{ex.StationThatWasNotFound}'. Exception: {ex}");
 				return new NotFoundObjectResult($"Unable to find forecast for: '{ex.StationThatWasNotFound}'");
 			}
 			catch (Exception ex)
 			{
-				log.LogError($"Exception thrown in GetStationForecast", ex);
+				log.LogError($"Exception thrown in GetStationForecast. Exception: {ex}");
 				return new StatusCodeResult(StatusCodes.Status500InternalServerError);
 			}
 		}
