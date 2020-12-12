@@ -1,6 +1,6 @@
-﻿using JsonTools;
-using Newtonsoft.Json;
 using System;
+using JsonTools;
+using Newtonsoft.Json;
 
 namespace LuasAPI.NET.Models
 {

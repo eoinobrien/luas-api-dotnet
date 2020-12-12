@@ -1,7 +1,7 @@
-﻿using LuasAPI.NET.Models;
 using System;
 using System.Diagnostics;
 using System.Threading;
+using LuasAPI.NET.Models;
 
 namespace LuasAPI.NET.Example
 {
@@ -30,7 +30,7 @@ namespace LuasAPI.NET.Example
 
 			long times = 0;
 
-			foreach(string station in stations)
+			foreach (string station in stations)
 			{
 				times += function(station);
 			}

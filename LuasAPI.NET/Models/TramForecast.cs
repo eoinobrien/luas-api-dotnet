@@ -1,5 +1,5 @@
-﻿using LuasAPI.NET.Models.RpaApiXml;
 using System;
+using LuasAPI.NET.Models.RpaApiXml;
 
 namespace LuasAPI.NET.Models
 {
