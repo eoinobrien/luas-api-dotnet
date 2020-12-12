@@ -1,5 +1,5 @@
-﻿using LuasAPI.NET.Models;
 using System.Collections.Generic;
+using LuasAPI.NET.Models;
 
 namespace LuasAPI.NET.Tests.StationInformation
 {
@@ -14,7 +14,7 @@ namespace LuasAPI.NET.Tests.StationInformation
 
 		public void AddStations(params Station[] stationsToAdd)
 		{
-			foreach(Station station in stationsToAdd)
+			foreach (Station station in stationsToAdd)
 			{
 				stations.Add(station.Abbreviation, station);
 			}

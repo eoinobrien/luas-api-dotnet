@@ -1,5 +1,5 @@
-﻿using LuasAPI.NET.Models;
 using System.Threading.Tasks;
+using LuasAPI.NET.Models;
 
 namespace LuasAPI.NET.Infrastructure
 {

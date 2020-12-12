@@ -1,6 +1,6 @@
-﻿using LuasAPI.NET.Models.RpaApiXml;
 using System;
 using System.IO;
+using LuasAPI.NET.Models.RpaApiXml;
 using Xunit;
 
 namespace LuasAPI.NET.Tests.Models

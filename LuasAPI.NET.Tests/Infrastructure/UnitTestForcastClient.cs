@@ -1,9 +1,9 @@
-﻿using LuasAPI.NET.Infrastructure;
-using LuasAPI.NET.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using LuasAPI.NET.Infrastructure;
+using LuasAPI.NET.Models;
 
 namespace LuasAPI.NET.Tests.Infrastructure
 {

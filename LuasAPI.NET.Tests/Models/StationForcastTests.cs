@@ -1,13 +1,13 @@
-﻿using LuasAPI.NET.Models;
-using LuasAPI.NET.Models.RpaApiXml;
-using LuasAPI.NET.Tests.StationInformation;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
+using LuasAPI.NET.Models;
+using LuasAPI.NET.Models.RpaApiXml;
+using LuasAPI.NET.Tests.StationInformation;
+using Newtonsoft.Json;
 using Xunit;
 
 namespace LuasAPI.NET.Tests.Models

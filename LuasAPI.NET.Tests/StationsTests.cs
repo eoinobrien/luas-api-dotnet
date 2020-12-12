@@ -1,8 +1,8 @@
-﻿using LuasAPI.NET.Models;
-using LuasAPI.NET.Tests.StationInformation;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
+using LuasAPI.NET.Models;
+using LuasAPI.NET.Tests.StationInformation;
 using Xunit;
 
 namespace LuasAPI.NET.Tests
