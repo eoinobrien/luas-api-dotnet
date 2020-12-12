@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Version>0.0.0.1</Version>
     <FileVersion>0.0.0.1</FileVersion>
-    <PackageVersion>0.0.1-alpha1</PackageVersion>
+    <PackageVersion>0.0.1-prerelease1</PackageVersion>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
   </PropertyGroup>
 </Project>
