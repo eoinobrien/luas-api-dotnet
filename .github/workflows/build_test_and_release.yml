@@ -80,5 +80,5 @@ jobs:
         asset_name: artifacts/LuasAPI.NET.${{ github.event.release.tag_name }}.nupkg
         asset_content_type: application/zip
     - name: Publish packages
-      run: dotnet nuget push ./artifacts/**.nupkg --source nuget.org --api-key ${{secrets.NUGET_TOKEN}}
+      run: dotnet nuget push ./artifacts/**.nupkg --source nuget.org --api-key ${{secrets.NUGET_API_KEY}}
 
