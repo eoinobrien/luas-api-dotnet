@@ -49,14 +49,14 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.DOTNET_3_VERSION }}
-    - name: Pack Nuget
+    - name: Dotnet Pack Nuget
       run: dotnet pack --output ./nuget-artifact --configuration Release -p:Version=${{ github.event.release.tag_name }}
     - uses: actions/upload-artifact@v1
       with:
         name: nuget-artifact
         path: ./nuget-artifact
-    - name: Publish Function
-      run: dotnet publish .\LuasAPI.AzureFunction\LuasAPI.AzureFunction.csproj --configuration Release --output ./function-artifact
+    - name: Dotnet Publish Function
+      run: dotnet publish ./LuasAPI.AzureFunction/LuasAPI.AzureFunction.csproj --configuration Release --output ./function-artifact
     - uses: actions/upload-artifact@v1
       with:
         name: function-artifact
