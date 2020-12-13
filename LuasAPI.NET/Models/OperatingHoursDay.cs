@@ -1,7 +1,7 @@
-using System;
-
 namespace LuasAPI.NET.Models
 {
+	using System;
+
 	[Serializable]
 	public class OperatingHoursDay
 	{

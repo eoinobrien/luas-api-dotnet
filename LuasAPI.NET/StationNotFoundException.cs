@@ -1,10 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-
 namespace LuasAPI.NET
 {
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using System.Runtime.Serialization;
+
 	public class StationNotFoundException : Exception
 	{
 		public string StationThatWasNotFound { get; }

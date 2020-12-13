@@ -1,11 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using LuasAPI.NET.Models;
-
 namespace LuasAPI.NET
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Globalization;
+	using System.Linq;
+	using LuasAPI.NET.Models;
+
 	public class Stations
 	{
 		public Stations(IStationInformationLoader stationInformationLoader)

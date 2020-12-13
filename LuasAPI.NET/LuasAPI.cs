@@ -1,11 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using LuasAPI.NET.Infrastructure;
-using LuasAPI.NET.Models;
-
 namespace LuasAPI.NET
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Threading.Tasks;
+	using LuasAPI.NET.Infrastructure;
+	using LuasAPI.NET.Models;
+
 	public class LuasApi
 	{
 		private readonly Stations stations;

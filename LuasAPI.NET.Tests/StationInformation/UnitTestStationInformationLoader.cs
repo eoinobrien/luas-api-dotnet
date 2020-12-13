@@ -1,8 +1,8 @@
-using System.Collections.Generic;
-using LuasAPI.NET.Models;
-
 namespace LuasAPI.NET.Tests.StationInformation
 {
+	using System.Collections.Generic;
+	using LuasAPI.NET.Models;
+
 	class UnitTestStationInformationLoader : IStationInformationLoader
 	{
 		public Dictionary<string, Station> stations { get; set; } = new Dictionary<string, Station>();

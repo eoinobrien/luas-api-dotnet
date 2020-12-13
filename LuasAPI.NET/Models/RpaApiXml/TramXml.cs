@@ -1,7 +1,7 @@
-using System.Xml.Serialization;
-
 namespace LuasAPI.NET.Models.RpaApiXml
 {
+	using System.Xml.Serialization;
+
 	[XmlRoot(ElementName = "tram")]
 	public class TramXml
 	{

@@ -1,10 +1,10 @@
-using System;
-using System.Diagnostics;
-using System.Threading;
-using LuasAPI.NET.Models;
-
 namespace LuasAPI.NET.Example
 {
+	using System;
+	using System.Diagnostics;
+	using System.Threading;
+	using LuasAPI.NET.Models;
+
 	/// <summary>
 	/// This class was created to see if async calls were actually faster
 	/// </summary>

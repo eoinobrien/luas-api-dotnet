@@ -1,8 +1,8 @@
-using System;
-using System.Collections.Generic;
-
 namespace LuasAPI.NET.Models
 {
+	using System;
+	using System.Collections.Generic;
+
 	[Serializable]
 	public class Station
 	{

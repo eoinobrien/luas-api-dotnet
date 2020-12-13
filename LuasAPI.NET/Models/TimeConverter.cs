@@ -1,9 +1,9 @@
-using System;
-using System.Globalization;
-using Newtonsoft.Json;
-
 namespace JsonTools
 {
+	using System;
+	using System.Globalization;
+	using Newtonsoft.Json;
+
 	public class TimeConverter : JsonConverter<TimeSpan>
 	{
 		public const string TimeFormatString = @"hh\:mm";

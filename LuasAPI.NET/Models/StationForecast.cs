@@ -1,11 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using LuasAPI.NET.Models.RpaApiXml;
-
 namespace LuasAPI.NET.Models
 {
+	using System;
+	using System.Collections.Generic;
+	using System.Globalization;
+	using System.Linq;
+	using LuasAPI.NET.Models.RpaApiXml;
+
 	public class StationForecast
 	{
 		public Station Station { get; private set; }

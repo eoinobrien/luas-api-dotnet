@@ -1,8 +1,8 @@
-using System;
-using LuasAPI.NET.Models.RpaApiXml;
-
 namespace LuasAPI.NET.Models
 {
+	using System;
+	using LuasAPI.NET.Models.RpaApiXml;
+
 	public class TramForecast
 	{
 		public Station DestinationStation { get; private set; }

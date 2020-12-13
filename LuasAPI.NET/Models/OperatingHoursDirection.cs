@@ -1,9 +1,9 @@
-using System;
-using JsonTools;
-using Newtonsoft.Json;
-
 namespace LuasAPI.NET.Models
 {
+	using System;
+	using JsonTools;
+	using Newtonsoft.Json;
+
 	[Serializable]
 	public class OperatingHoursDirection
 	{

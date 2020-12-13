@@ -1,11 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using LuasAPI.NET.Models;
-using Newtonsoft.Json;
-
 namespace LuasAPI.NET
 {
+	using System;
+	using System.Collections.Generic;
+	using System.IO;
+	using LuasAPI.NET.Models;
+	using Newtonsoft.Json;
+
 	class StationInformationLoader : IStationInformationLoader
 	{
 		public Dictionary<string, Station> Load()

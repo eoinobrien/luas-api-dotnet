@@ -1,7 +1,7 @@
-using System;
-
 namespace LuasAPI.NET
 {
+	using System;
+
 	public enum Direction
 	{
 		Undefined = -1,

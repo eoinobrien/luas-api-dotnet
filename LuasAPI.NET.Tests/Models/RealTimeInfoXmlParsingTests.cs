@@ -1,10 +1,10 @@
-using System;
-using System.IO;
-using LuasAPI.NET.Models.RpaApiXml;
-using Xunit;
-
 namespace LuasAPI.NET.Tests.Models
 {
+	using System;
+	using System.IO;
+	using LuasAPI.NET.Models.RpaApiXml;
+	using Xunit;
+
 	public class RealTimeInfoXmlParsingTests
 	{
 		private Stream ConvertStringToStream(string input)

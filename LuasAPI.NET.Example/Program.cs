@@ -1,8 +1,8 @@
-using System;
-using Newtonsoft.Json;
-
 namespace LuasAPI.NET.Example
 {
+	using System;
+	using Newtonsoft.Json;
+
 	class Program
 	{
 		static void Main()

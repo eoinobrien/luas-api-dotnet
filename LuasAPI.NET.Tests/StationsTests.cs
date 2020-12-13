@@ -1,11 +1,11 @@
-using System;
-using System.Collections.Generic;
-using LuasAPI.NET.Models;
-using LuasAPI.NET.Tests.StationInformation;
-using Xunit;
-
 namespace LuasAPI.NET.Tests
 {
+	using System;
+	using System.Collections.Generic;
+	using LuasAPI.NET.Models;
+	using LuasAPI.NET.Tests.StationInformation;
+	using Xunit;
+
 	public class StationsTests
 	{
 		[Fact]

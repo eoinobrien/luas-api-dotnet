@@ -1,20 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using LuasAPI.NET;
-using LuasAPI.NET.Models;
-using LuasAPI.NET.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-
 namespace LuasAPI.AzureFunction
 {
+	using System;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using LuasAPI.NET;
+	using LuasAPI.NET.Models;
+	using Microsoft.AspNetCore.Http;
+	using Microsoft.AspNetCore.Mvc;
+	using Microsoft.Azure.WebJobs;
+	using Microsoft.Azure.WebJobs.Extensions.Http;
+	using Microsoft.Extensions.Logging;
+
 	public static class LuasApiFunction
 	{
 		[FunctionName("GetAllStations")]
@@ -26,7 +22,7 @@ namespace LuasAPI.AzureFunction
 
 			LuasApi api = new LuasApi();
 
-			return (ActionResult)new OkObjectResult(api.GetAllStations());
+			return new OkObjectResult(api.GetAllStations());
 		}
 
 		[FunctionName("GetStation")]
