@@ -56,7 +56,7 @@ namespace LuasAPI.NET.Tests.Models
 		{
 			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
 			loader.AddStations(new Station() { Abbreviation = "STI", Name = "Stillorgan", IsInUse = true });
-			loader.AddStations(new Station() { Abbreviation = "BRI", Name = "Bride's Glen", IsInUse = true });
+			loader.AddStations(new Station() { Abbreviation = "BRI", Name = "Brides Glen", IsInUse = true });
 			loader.AddStations(new Station() { Abbreviation = "SAN", Name = "Sandyford", IsInUse = true });
 
 			Stations stations = new Stations(loader);
