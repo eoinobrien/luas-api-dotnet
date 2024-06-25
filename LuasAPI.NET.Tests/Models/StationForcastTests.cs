@@ -33,7 +33,7 @@ namespace LuasAPI.NET.Tests.Models
 		}
 
 		[Fact]
-		public void CreateStationForecastFromRealTimeInfo_()
+		public void CreateStationForecastFromRealTimeInfo_1()
 		{
 			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
 			loader.AddStations(new Station() { Abbreviation = "STS", Name = "St. Stephen's Green", IsInUse = true });
@@ -48,6 +48,25 @@ namespace LuasAPI.NET.Tests.Models
 
 			Assert.Equal(realTimeInfo.Stop, forecast.Station.Name);
 			Assert.Single(forecast.InboundTrams);
+			Assert.Single(forecast.OutboundTrams);
+		}
+
+		[Fact]
+		public void CreateStationForecastFromRealTimeInfo_2()
+		{
+			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+			loader.AddStations(new Station() { Abbreviation = "STI", Name = "Stillorgan", IsInUse = true });
+			loader.AddStations(new Station() { Abbreviation = "BRI", Name = "Bride's Glen", IsInUse = true });
+			loader.AddStations(new Station() { Abbreviation = "SAN", Name = "Sandyford", IsInUse = true });
+
+			Stations stations = new Stations(loader);
+
+			RealTimeInfo realTimeInfo = CreateRealTimeInfoFromXml("<stopInfo created = \"2024-06-25T00:47:32\" stop=\"Stillorgan\" stopAbv=\"STI\"><message>Green Line services operating normally</message><direction name = \"Inbound\"><tram destination=\"No trams forecast\" dueMins=\"\" /></direction><direction name = \"Outbound\"><tram dueMins=\"12\" destination=\"Brides Glen\" /></direction></stopInfo>");
+
+			StationForecast forecast = StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfo, stations);
+
+			Assert.Equal(realTimeInfo.Stop, forecast.Station.Name);
+			Assert.Empty(forecast.InboundTrams);
 			Assert.Single(forecast.OutboundTrams);
 		}
 

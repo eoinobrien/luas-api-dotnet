@@ -1,4 +1,4 @@
-﻿{
+{
 	"DEP": {
 		"abbreviation": "DEP",
 		"name": "Depot",
@@ -5190,9 +5190,9 @@
 	},
 	"BRI": {
 		"abbreviation": "BRI",
-		"name": "Bride's Glen",
+		"name": "Brides Glen",
 		"irishName": "Gleann Bhríde",
-		"pronunciation": "bride's glen",
+		"pronunciation": "brides glen",
 		"line": "Green",
 		"hasParking": false,
 		"hasCycleParking": false,
