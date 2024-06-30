@@ -2,7 +2,6 @@ namespace LuasAPI.NET.Tests.Models
 {
 	using System;
 	using System.IO;
-	using System.Text;
 	using System.Xml.Serialization;
 	using LuasAPI.NET.Models;
 	using LuasAPI.NET.Models.RpaApiXml;
@@ -14,8 +13,8 @@ namespace LuasAPI.NET.Tests.Models
 		[Fact]
 		public void CreateStationForecastFromRealTimeInfo_RealTimeInfoIsNull_ThrowsArgumentException()
 		{
-			RealTimeInfo realTimeInfoXml = null;
-			Stations stations = new Stations(new UnitTestStationInformationLoader());
+			RealTimeInfo? realTimeInfoXml = null;
+			var stations = new Stations(new UnitTestStationInformationLoader());
 
 			Assert.Throws<ArgumentException>(() => StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfoXml, stations));
 		}
@@ -23,8 +22,8 @@ namespace LuasAPI.NET.Tests.Models
 		[Fact]
 		public void CreateStationForecastFromRealTimeInfo_StationsIsNull_ThrowsArgumentException()
 		{
-			RealTimeInfo realTimeInfoXml = new RealTimeInfo();
-			Stations stations = null;
+			var realTimeInfoXml = new RealTimeInfo();
+			Stations? stations = null;
 
 			Assert.Throws<ArgumentException>(() => StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfoXml, stations));
 		}
@@ -32,16 +31,16 @@ namespace LuasAPI.NET.Tests.Models
 		[Fact]
 		public void CreateStationForecastFromRealTimeInfo_1()
 		{
-			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+			var loader = new UnitTestStationInformationLoader();
 			loader.AddStations(new Station() { Abbreviation = "STS", Name = "St. Stephen's Green", IsInUse = true });
 			loader.AddStations(new Station() { Abbreviation = "PAR", Name = "Parnell", IsInUse = true });
 			loader.AddStations(new Station() { Abbreviation = "SAN", Name = "Sandyford", IsInUse = true });
 
-			Stations stations = new Stations(loader);
+			var stations = new Stations(loader);
 
 			RealTimeInfo realTimeInfo = CreateRealTimeInfoFromXml("<stopInfo created=\"2019-12-31T12:00:00\" stop=\"St. Stephen's Green\" stopAbv=\"STS\"><message>Green Line services operating normally</message><direction name=\"Inbound\"><tram destination=\"Parnell\" dueMins=\"1\" /></direction><direction name=\"Outbound\"><tram dueMins=\"6\" destination=\"Sandyford\" /></direction></stopInfo>");
 
-			StationForecast forecast = StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfo, stations);
+			var forecast = StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfo, stations);
 
 			Assert.Equal(realTimeInfo.Stop, forecast.Station.Name);
 			Assert.Single(forecast.InboundTrams);
@@ -51,16 +50,16 @@ namespace LuasAPI.NET.Tests.Models
 		[Fact]
 		public void CreateStationForecastFromRealTimeInfo_2()
 		{
-			UnitTestStationInformationLoader loader = new UnitTestStationInformationLoader();
+			var loader = new UnitTestStationInformationLoader();
 			loader.AddStations(new Station() { Abbreviation = "STI", Name = "Stillorgan", IsInUse = true });
 			loader.AddStations(new Station() { Abbreviation = "BRI", Name = "Brides Glen", IsInUse = true });
 			loader.AddStations(new Station() { Abbreviation = "SAN", Name = "Sandyford", IsInUse = true });
 
-			Stations stations = new Stations(loader);
+			var stations = new Stations(loader);
 
 			RealTimeInfo realTimeInfo = CreateRealTimeInfoFromXml("<stopInfo created = \"2024-06-25T00:47:32\" stop=\"Stillorgan\" stopAbv=\"STI\"><message>Green Line services operating normally</message><direction name = \"Inbound\"><tram destination=\"No trams forecast\" dueMins=\"\" /></direction><direction name = \"Outbound\"><tram dueMins=\"12\" destination=\"Brides Glen\" /></direction></stopInfo>");
 
-			StationForecast forecast = StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfo, stations);
+			var forecast = StationForecast.CreateStationForecastFromRealTimeInfo(realTimeInfo, stations);
 
 			Assert.Equal(realTimeInfo.Stop, forecast.Station.Name);
 			Assert.Empty(forecast.InboundTrams);
@@ -69,12 +68,9 @@ namespace LuasAPI.NET.Tests.Models
 
 		private RealTimeInfo CreateRealTimeInfoFromXml(string xml)
 		{
-			XmlSerializer serializer = new XmlSerializer(typeof(RealTimeInfo));
+			var serializer = new XmlSerializer(typeof(RealTimeInfo));
 
-			using (MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(xml)))
-			{
-				return (RealTimeInfo)serializer.Deserialize(stream);
-			}
+			return (RealTimeInfo)serializer.Deserialize(new StringReader(xml));
 		}
 	}
 }
