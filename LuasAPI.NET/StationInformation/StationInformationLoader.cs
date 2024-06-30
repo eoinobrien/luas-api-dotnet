@@ -7,17 +7,16 @@ namespace LuasAPI.NET
 
 	public class StationInformationLoader : IStationInformationLoader
 	{
+		private JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions
+		{
+			PropertyNameCaseInsensitive = true
+		};
+
 		public Dictionary<string, Station> Load()
 		{
-			var options = new JsonSerializerOptions
-			{
-				PropertyNameCaseInsensitive = true
-			};
 
-			var json = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), StationsDataFile));
-			return JsonSerializer.Deserialize<Dictionary<string, Station>>(json, options);
+			var json = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "StationInformation", "Stations.json"));
+			return JsonSerializer.Deserialize<Dictionary<string, Station>>(json, this.jsonSerializerOptions);
 		}
-
-		private const string StationsDataFile = "StationInformation\\Stations.json";
 	}
 }
