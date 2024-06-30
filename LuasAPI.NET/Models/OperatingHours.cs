@@ -1,7 +1,6 @@
 namespace LuasAPI.NET.Models
 {
 	using System;
-	using System.Collections.Generic;
 
 	[Serializable]
 	public class OperatingHours

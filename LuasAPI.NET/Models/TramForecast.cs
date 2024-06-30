@@ -14,17 +14,21 @@ namespace LuasAPI.NET.Models
 
 		public static TramForecast CreateTramForecastFromTramXml(TramXml tramXml, Stations stations)
 		{
+#if NET6_0_OR_GREATER
+			ArgumentNullException.ThrowIfNull(stations);
+#else
+			if (stations == null)
+			{
+				throw new ArgumentNullException(nameof(stations));
+			}
+#endif
+
 			if (tramXml?.Destination == "No trams forecast" && string.IsNullOrEmpty(tramXml.Destination))
 			{
 				return null;
 			}
 
-			if (stations == null)
-			{
-				throw new ArgumentNullException(nameof(stations));
-			}
-
-			if (!int.TryParse(tramXml.DueMins, out int dueMinutes))
+			if (!int.TryParse(tramXml.DueMins, out var dueMinutes))
 			{
 				dueMinutes = 0;
 			}

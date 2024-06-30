@@ -1,37 +1,37 @@
-namespace LuasAPI.AzureFunction
+namespace LuasApi.AzureFunction
 {
-	using System;
-	using System.Linq;
-	using System.Threading.Tasks;
 	using LuasAPI.NET;
 	using LuasAPI.NET.Models;
 	using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.Mvc;
-	using Microsoft.Azure.WebJobs;
-	using Microsoft.Azure.WebJobs.Extensions.Http;
+	using Microsoft.Azure.Functions.Worker;
 	using Microsoft.Extensions.Logging;
 
-	public static class LuasApiFunction
+	public class LuasApiFunction
 	{
-		[FunctionName("GetAllStations")]
-		public static async Task<IActionResult> GetAllStations(
-			[HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations")] HttpRequest req,
-			ILogger log)
+		private readonly ILogger<LuasApiFunction> _logger;
+
+		public LuasApiFunction(ILogger<LuasApiFunction> logger)
 		{
-			log.LogInformation("Get all stations");
+			_logger = logger;
+		}
+
+		[Function("GetAllStations")]
+		public IActionResult GetAllStations([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations")] HttpRequest req)
+		{
+			this._logger.LogInformation("Get all stations");
 
 			LuasApi api = new LuasApi();
 
 			return new OkObjectResult(api.GetAllStations());
 		}
 
-		[FunctionName("GetStation")]
-		public static async Task<IActionResult> GetStation(
+		[Function("GetStation")]
+		public IActionResult GetStation(
 			[HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/{stationAbbreviation}")] HttpRequest req,
-			string stationAbbreviation,
-			ILogger log)
+			string stationAbbreviation)
 		{
-			log.LogInformation($"Get station for '{stationAbbreviation}'");
+			this._logger.LogInformation($"Get station for '{stationAbbreviation}'");
 
 			LuasApi api = new LuasApi();
 
@@ -42,23 +42,22 @@ namespace LuasAPI.AzureFunction
 			}
 			catch (StationNotFoundException ex)
 			{
-				log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'. Exception: {ex}");
+				this._logger.LogWarning($"StationNotFoundException for '{stationAbbreviation}'. Exception: {ex}");
 				return new NotFoundObjectResult($"Unable to find station for: '{stationAbbreviation}'");
 			}
 			catch (Exception ex)
 			{
-				log.LogError($"Unexpected code path '{stationAbbreviation}'. Exception: {ex}");
+				this._logger.LogError($"Unexpected code path '{stationAbbreviation}'. Exception: {ex}");
 				return new StatusCodeResult(StatusCodes.Status500InternalServerError);
 			}
 		}
 
-		[FunctionName("GetStationForecast")]
-		public static async Task<IActionResult> GetStationForecast(
+		[Function("GetStationForecast")]
+		public async Task<IActionResult> GetStationForecast(
 			[HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/{stationAbbreviation}/forecast")] HttpRequest req,
-			string stationAbbreviation,
-			ILogger log)
+			string stationAbbreviation)
 		{
-			log.LogInformation($"Get station forecast for {stationAbbreviation}");
+			this._logger.LogInformation($"Get station forecast for {stationAbbreviation}");
 
 			LuasApi api = new LuasApi();
 
@@ -69,22 +68,21 @@ namespace LuasAPI.AzureFunction
 			}
 			catch (StationNotFoundException ex)
 			{
-				log.LogWarning($"StationNotFoundException for '{stationAbbreviation}'. Exception: {ex}");
+				this._logger.LogWarning($"StationNotFoundException for '{stationAbbreviation}'. Exception: {ex}");
 				return new NotFoundObjectResult($"Unable to find forecast for: '{stationAbbreviation}'");
 			}
 			catch (Exception ex)
 			{
-				log.LogError($"Exception thrown in GetStationForecast. Exception: {ex}");
+				this._logger.LogError($"Exception thrown in GetStationForecast. Exception: {ex}");
 				return new StatusCodeResult(StatusCodes.Status500InternalServerError);
 			}
 		}
 
-		[FunctionName("GetAllStationsForecast")]
-		public static async Task<IActionResult> GetAllStationsForecast(
-			[HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/all/forecast")] HttpRequest req,
-			ILogger log)
+		[Function("GetAllStationsForecast")]
+		public async Task<IActionResult> GetAllStationsForecast(
+			[HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "stations/all/forecast")] HttpRequest req)
 		{
-			log.LogInformation($"Get station forecast for all stations");
+			this._logger.LogInformation($"Get station forecast for all stations");
 
 			LuasApi api = new LuasApi();
 
@@ -105,12 +103,12 @@ namespace LuasAPI.AzureFunction
 			}
 			catch (StationNotFoundException ex)
 			{
-				log.LogWarning($"StationNotFoundException for '{ex.StationThatWasNotFound}'. Exception: {ex}");
+				this._logger.LogWarning($"StationNotFoundException for '{ex.StationThatWasNotFound}'. Exception: {ex}");
 				return new NotFoundObjectResult($"Unable to find forecast for: '{ex.StationThatWasNotFound}'");
 			}
 			catch (Exception ex)
 			{
-				log.LogError($"Exception thrown in GetStationForecast. Exception: {ex}");
+				this._logger.LogError($"Exception thrown in GetStationForecast. Exception: {ex}");
 				return new StatusCodeResult(StatusCodes.Status500InternalServerError);
 			}
 		}

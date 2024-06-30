@@ -13,17 +13,17 @@ namespace LuasAPI.NET
 		public LuasApi()
 		{
 			IStationInformationLoader stationInformationLoader = new StationInformationLoader();
-			stations = new Stations(stationInformationLoader);
+			this.stations = new Stations(stationInformationLoader);
 		}
 
 		public List<Station> GetAllStations()
 		{
-			return stations.GetAllStations();
+			return this.stations.GetAllStations();
 		}
 
 		public Station GetStation(string abbreviation)
 		{
-			return stations.GetStation(abbreviation);
+			return this.stations.GetStation(abbreviation);
 		}
 
 		public StationForecast GetForecast(string stationAbbreviation)
@@ -33,7 +33,7 @@ namespace LuasAPI.NET
 
 		public async Task<StationForecast> GetForecastAsync(string stationAbbreviation)
 		{
-			IForecastClient client = new LuasForecastApiClient(stations);
+			IForecastClient client = new LuasForecastApiClient(this.stations);
 			StationForecast forecast = await client.GetRealTimeInfoAsync(stationAbbreviation).ConfigureAwait(false);
 
 			return forecast;

@@ -1,23 +1,23 @@
 namespace LuasAPI.NET
 {
-	using System;
 	using System.Collections.Generic;
 	using System.IO;
+	using System.Text.Json;
 	using LuasAPI.NET.Models;
-	using Newtonsoft.Json;
 
-	class StationInformationLoader : IStationInformationLoader
+	public class StationInformationLoader : IStationInformationLoader
 	{
 		public Dictionary<string, Station> Load()
 		{
-			using (Stream fileStream = typeof(Station).Assembly.GetManifestResourceStream(stationsDataFile))
-			using (StreamReader file = new StreamReader(fileStream))
+			var options = new JsonSerializerOptions
 			{
-				JsonSerializer jsonSerializer = new JsonSerializer();
-				return (Dictionary<string, Station>)jsonSerializer.Deserialize(file, typeof(Dictionary<string, Station>));
-			}
+				PropertyNameCaseInsensitive = true
+			};
+
+			var json = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), StationsDataFile));
+			return JsonSerializer.Deserialize<Dictionary<string, Station>>(json, options);
 		}
 
-		private const string stationsDataFile = "LuasAPI.NET.StationInformation.Stations.json";
+		private const string StationsDataFile = "StationInformation\\Stations.json";
 	}
 }

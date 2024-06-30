@@ -1,33 +1,33 @@
-namespace JsonTools
+namespace LuasAPI.NET.Models
 {
 	using System;
 	using System.Globalization;
-	using Newtonsoft.Json;
+	using System.Text.Json;
+	using System.Text.Json.Serialization;
 
 	public class TimeConverter : JsonConverter<TimeSpan>
 	{
 		public const string TimeFormatString = @"hh\:mm";
 
-		public override void WriteJson(JsonWriter writer, TimeSpan value, JsonSerializer serializer)
+		public override TimeSpan Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
 		{
+			var timeParts = reader.GetString().Split(":");
+			return new TimeSpan(int.Parse(timeParts[0], CultureInfo.InvariantCulture), int.Parse(timeParts[1], CultureInfo.InvariantCulture), 0);
+		}
+
+		public override void Write(Utf8JsonWriter writer, TimeSpan value, JsonSerializerOptions options)
+		{
+#if NET6_0_OR_GREATER
+			ArgumentNullException.ThrowIfNull(writer);
+#else
 			if (writer == null)
 			{
 				throw new ArgumentNullException(nameof(writer));
 			}
+#endif
 
 			var timespanFormatted = $"{value.ToString(TimeFormatString, CultureInfo.InvariantCulture)}";
-			writer.WriteValue(timespanFormatted);
-		}
-
-		public override TimeSpan ReadJson(JsonReader reader, Type objectType, TimeSpan existingValue, bool hasExistingValue, JsonSerializer serializer)
-		{
-			if (reader == null)
-			{
-				throw new ArgumentNullException(nameof(reader));
-			}
-
-			var timeParts = ((string)reader.Value).Split(":");
-			return new TimeSpan(int.Parse(timeParts[0], CultureInfo.InvariantCulture), int.Parse(timeParts[1], CultureInfo.InvariantCulture), 0);
+			writer.WriteStringValue(timespanFormatted);
 		}
 	}
 }

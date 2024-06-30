@@ -1,7 +1,7 @@
 namespace LuasAPI.NET.Example
 {
 	using System;
-	using Newtonsoft.Json;
+	using System.Text.Json;
 
 	class Program
 	{
@@ -10,10 +10,10 @@ namespace LuasAPI.NET.Example
 			LuasApi api = new LuasApi();
 			var s = api.GetStation("ABB");
 
-			//Console.WriteLine(JsonConvert.SerializeObject(api.GetAllStations()));
+			//Console.WriteLine(JsonSerializer.Serialize(api.GetAllStations()));
 			//Console.WriteLine();
 
-			Console.WriteLine(JsonConvert.SerializeObject(api.GetForecast(s)));
+			Console.WriteLine(JsonSerializer.Serialize(api.GetForecast(s)));
 		}
 	}
 }

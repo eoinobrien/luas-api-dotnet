@@ -24,11 +24,11 @@ namespace LuasAPI.NET.Models
 
 		public double Longitude { get; set; }
 
-		public List<string> InboundStations { get; set; }
+		public List<string> InboundStations { get; }
 
-		public List<string> OutboundStations { get; set; }
+		public List<string> OutboundStations { get; }
 
-		public List<string> WalkingTransfer { get; set; }
+		public List<string> WalkingTransfer { get; }
 
 		public bool IsInUse { get; set; }
 

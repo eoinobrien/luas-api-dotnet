@@ -1,8 +1,7 @@
 namespace LuasAPI.NET.Models
 {
 	using System;
-	using JsonTools;
-	using Newtonsoft.Json;
+	using System.Text.Json.Serialization;
 
 	[Serializable]
 	public class OperatingHoursDirection

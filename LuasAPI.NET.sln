@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29123.88
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET.Tests", "LuasAPI.NET.Tests\LuasAPI.NET.Tests.csproj", "{57C53DD4-D3AC-4B6E-8D47-B6BB8613EA02}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET.Example", "Luas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.NET", "LuasAPI.NET\LuasAPI.NET.csproj", "{92129F06-30FE-40A1-B509-B20BF72867ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuasAPI.AzureFunction", "LuasAPI.AzureFunction\LuasAPI.AzureFunction.csproj", "{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuasAPI.AzureFunction", "LuasAPI.AzureFunction\LuasAPI.AzureFunction.csproj", "{1BBF5024-B0FC-4F61-8617-15437F7FC9DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B498492-7008-4A14-A5F5-EC40EC24550F}"
 	ProjectSection(SolutionItems) = preProject
@@ -34,10 +34,10 @@ Global
 		{92129F06-30FE-40A1-B509-B20BF72867ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92129F06-30FE-40A1-B509-B20BF72867ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92129F06-30FE-40A1-B509-B20BF72867ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BFD0792-2CA1-4093-95B0-EF459A3F3B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBF5024-B0FC-4F61-8617-15437F7FC9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBF5024-B0FC-4F61-8617-15437F7FC9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBF5024-B0FC-4F61-8617-15437F7FC9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBF5024-B0FC-4F61-8617-15437F7FC9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
