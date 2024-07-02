@@ -15,7 +15,7 @@ namespace LuasAPI.NET.Tests
 			string token,
 			JsonSerializerOptions? options = null)
 		{
-			options ??= JsonSerializerOptions.Default;
+			options ??= new JsonSerializerOptions();
 			var bytes = Encoding.UTF8.GetBytes(token);
 			var reader = new Utf8JsonReader(bytes);
 			// advance to token
@@ -46,7 +46,7 @@ namespace LuasAPI.NET.Tests
 			T value,
 			JsonSerializerOptions? options = null)
 		{
-			options ??= JsonSerializerOptions.Default;
+			options ??= new JsonSerializerOptions();
 			using var ms = new MemoryStream();
 			using var writer = new Utf8JsonWriter(ms);
 			converter.Write(writer, value, options);

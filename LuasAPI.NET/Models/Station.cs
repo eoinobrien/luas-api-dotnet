@@ -24,11 +24,13 @@ namespace LuasAPI.NET.Models
 
 		public double Longitude { get; set; }
 
-		public List<string> InboundStations { get; }
+#pragma warning disable CA2227 // Collection properties should be read only, not changes so we can deserialise arrays correctly
+		public List<string> InboundStations { get; set; }
 
-		public List<string> OutboundStations { get; }
+		public List<string> OutboundStations { get; set; }
 
-		public List<string> WalkingTransfer { get; }
+		public List<string> WalkingTransfer { get; set; }
+#pragma warning restore CA2227 // Collection properties should be read only, not changes so we can deserialise arrays correctly
 
 		public bool IsInUse { get; set; }
 
